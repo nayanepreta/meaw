@@ -123,7 +123,7 @@ body {
 
 .info_nome_autor {
     font-weight: bold;
-    margin-top: 3rem;
+    margin-top: 5.5rem;
 }
 
 .info_titulo_livro {
@@ -318,8 +318,14 @@ body {
     background-color: var(--preto);
     .chapter_text, 
     .chapter_subtitle, 
-    .chapter_title {
+    .chapter_title,
+    .info_titulo_livro,
+    .info_nome_autor {
       color: var(--branco);
+    }
+    .header,
+    .navigation button {
+        background-color: #1e1e1e;
     }
   }
   

@@ -15,7 +15,6 @@ const Cover = ({
     <div className="cover">
     <img className="capa" src="https://raw.githubusercontent.com/nayanepreta/alice-in-wonderland/refs/heads/main/src/assets/capa.png" alt="" />
 
-      <h1 className="cover_titulo">{titulo}</h1>
 
       <p className="cover_nome_autor">{autor}</p>
 
