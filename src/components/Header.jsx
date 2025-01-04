@@ -1,51 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import chapters from '../control/chapters';
 
-  const Header = ({chapterIndex}) => {
-    const adjustFontSize = () => {
-      const currentSize = localStorage.getItem('font-size') || 'normal';
-    
-      // Exibir prompt ao usuário
-      const newSize = prompt(
-        'Escolha o tamanho da fonte:\n' +
-        'normal - Tamanho padrão\n' +
-        'grande - Tamanho maior\n' +
-        'extragrande - Tamanho ainda maior',
-        currentSize
-      );
-    
-      if (['normal', 'grande', 'extragrande'].includes(newSize)) {
-        // Atualizar classe do body
-        document.body.classList.remove('font-large', 'font-xlarge');
-        if (newSize === 'grande') {
-          document.body.classList.add('font-large');
-        } else if (newSize === 'extragrande') {
-          document.body.classList.add('font-xlarge');
-        }
-    
-        // Salvar preferência no localStorage
-        localStorage.setItem('font-size', newSize);
-      } else {
-        alert('Tamanho inválido. Escolha "normal", "grande" ou "extragrande".');
-      }
-    };
-
+const Header = ({ chapterIndex }) => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('darkMode') === 'true';
   });
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [lastTouchTime, setLastTouchTime] = useState(0);
+  const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
+  const [selectedFontSize, setSelectedFontSize] = useState(localStorage.getItem('font-size') || 'normal');
+
+  const toggleFontSizeBox = () => {
+    setFontSizeBoxVisible((prev) => !prev);
+  };
+
+  const adjustFontSize = (newSize) => {
+    document.body.classList.remove('font-large', 'font-xlarge');
+    if (newSize === 'grande') {
+      document.body.classList.add('font-large');
+    } else if (newSize === 'extragrande') {
+      document.body.classList.add('font-xlarge');
+    }
+
+    // Salva a preferência no localStorage
+    localStorage.setItem('font-size', newSize);
+    setSelectedFontSize(newSize); // Atualiza o estado
+    setFontSizeBoxVisible(false); // Fecha a caixa
+  };
 
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScrollTop < lastScrollTop) {
-      setIsHeaderVisible(true);
-    } else {
-      setIsHeaderVisible(false);
-    }
-
+    setIsHeaderVisible(currentScrollTop < lastScrollTop);
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
   };
 
@@ -65,48 +51,88 @@ import chapters from '../control/chapters';
     localStorage.setItem('darkMode', newDarkModeState);
   };
 
-  
-
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
     } else {
       document.body.classList.remove('dark-mode');
     }
-  }, [isDarkMode]);
+
+    // Aplica o tamanho da fonte salvo no localStorage
+    if (selectedFontSize === 'grande') {
+      document.body.classList.add('font-large');
+    } else if (selectedFontSize === 'extragrande') {
+      document.body.classList.add('font-xlarge');
+    }
+  }, [isDarkMode, selectedFontSize]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('touchstart', handleTouch);
-
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('touchstart', handleTouch);
     };
   }, [lastScrollTop, lastTouchTime]);
- 
+
   const adicionarTitulo = () => {
     if (chapters[chapterIndex]) {
-      
-      return chapters[chapterIndex].title;}
-    return "";
-  }
-
+      return chapters[chapterIndex].title;
+    }
+    return '';
+  };
 
   if (!isHeaderVisible) return null;
 
-  const ajustesTamanhoFonte = () => {
-    alert("Ajustes");
-  }
-    
   return (
     <div className="header">
-      <button onClick={adjustFontSize}>A</button>
-      <p className='header_titulo'>{adicionarTitulo()}</p>
-        <button onClick={toggleDarkMode}>
-          {isDarkMode ? 'C' : 'N'}
-        </button>
+      <button onClick={toggleFontSizeBox}>A</button>
+      <p className="header_titulo">{adicionarTitulo()}</p>
+      <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
+
+      {/* Caixa para ajuste do tamanho da fonte */}
+      {isFontSizeBoxVisible && (
+        <div className="font-size-box">
+          <label>
+            <div>
+              <input
+                
+                type="radio"
+                id="normal"
+                name="font-size"
+                value="normal"
+                checked={selectedFontSize === 'normal'}
+                onChange={() => adjustFontSize('normal')}
+              />
+              <label className='ajust-option' htmlFor="normal">Normal</label>
+            </div>
+            <div>
+              <input
+                
+                type="radio"
+                id="grande"
+                name="font-size"
+                value="grande"
+                checked={selectedFontSize === 'grande'}
+                onChange={() => adjustFontSize('grande')}
+              />
+              <label className='ajust-option' htmlFor="grande">Grande</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="extragrande"
+                name="font-size"
+                value="extragrande"
+                checked={selectedFontSize === 'extragrande'}
+                onChange={() => adjustFontSize('extragrande')}
+              />
+              <label className='ajust-option' htmlFor="extragrande">Extra Grande</label>
+            </div>
+          </label>
+        </div>
+      )}
     </div>
   );
 };
