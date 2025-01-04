@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import chapters from '../control/chapters';
 
-const Header = () => {
+  const Header = ({chapterIndex}) => {
+   
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Recupera o estado do modo noturno do LocalStorage ao carregar
     return localStorage.getItem('darkMode') === 'true';
   });
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -34,11 +35,12 @@ const Header = () => {
   const toggleDarkMode = () => {
     const newDarkModeState = !isDarkMode;
     setIsDarkMode(newDarkModeState);
-    localStorage.setItem('darkMode', newDarkModeState); // Salva no LocalStorage
+    localStorage.setItem('darkMode', newDarkModeState);
   };
 
+  
+
   useEffect(() => {
-    // Aplica ou remove a classe de modo noturno no body
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
     } else {
@@ -50,26 +52,34 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('touchstart', handleTouch);
 
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('touchstart', handleTouch);
     };
   }, [lastScrollTop, lastTouchTime]);
+ 
+  const adicionarTitulo = () => {
+    if (chapters[chapterIndex]) {
+      
+      return chapters[chapterIndex].title;}
+    return "";
+  }
+
 
   if (!isHeaderVisible) return null;
 
+  const ajustesTamanhoFonte = () => {
+    alert("Ajustes");
+  }
+    
   return (
     <div className="header">
-      <div>
-        <button>A+</button>
-        <button>A-</button>
-      </div>
-      <div>
-        <button>Download</button>
+      <button onClick={ajustesTamanhoFonte}>A</button>
+      <p className='header_titulo'>{adicionarTitulo()}</p>
         <button onClick={toggleDarkMode}>
-          {isDarkMode ? 'Claro' : 'Noturno'}
+          {isDarkMode ? 'C' : 'N'}
         </button>
-      </div>
     </div>
   );
 };

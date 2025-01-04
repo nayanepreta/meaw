@@ -1,13 +1,10 @@
 import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
-import Navigation from './Navigation';
 
 const Contents = ({ 
   goToChapter, 
-  onNext, 
-  goToCover,
-  goToSummary,
-  goToContents }) => {
+  goToCover
+ }) => {
 
   const chapterTitle = "Table of Contents";
 
@@ -59,12 +56,18 @@ const Contents = ({
         ))}
       </tbody>
     </table>
-    <Navigation 
-        goToCover={goToCover} 
-        onNext={onNext} 
-        goToSummary={goToSummary} 
-        goToContents={goToContents}/>
+    <div className="navigation">
+        <button onClick={() => goToChapter(0)}>
+          <img
+            src="https://raw.githubusercontent.com/nayanesenhorinha/abelhinha/refs/heads/main/src/assets/casa.png"
+            alt="Next"
+            className="nav-icon"
+            loading="lazy"
+          />
+        </button>
     </div>
+</div>
+    
   );
 };
 

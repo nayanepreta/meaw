@@ -915,18 +915,48 @@ const chapters = {
 
         }] ),
         
-  7: createChapter("Festa Louca do chá", "I", "https://via.placeholder.com/25", [
+  7: createChapter("Festa Louca do chá", "VII", "https://via.placeholder.com/25", [
     { 
       text: "Texto 1" ,
       className: "text"
     }
   ]),
 
-  8: { title: "O campo de croquet da Rainha", chap: "VIII" },
-  9: { title: "A história da tartaruga falsa", chap: "IX" },
-  10: { title: "A Quadrilha da Lagosta", chap: "X" },
-  11: { title: "Quem roubou as tortas?", chap: "XI" },
-  12: { title: "Depoimento de Alice", chap: "XII" }
+  8: createChapter("O campo de croquet da Rainha", "VIII", "https://via.placeholder.com/25", [
+    { 
+      text: "Texto 1" ,
+      className: "text"
+    }
+  ]),
+
+  9: createChapter("A história da tartaruga falsa", "IX", "https://via.placeholder.com/25", [
+    { 
+      text: "Texto 1" ,
+      className: "text"
+    }
+  ]),
+
+  10: createChapter("A Quadrilha da Lagosta", "X", "https://via.placeholder.com/25", [
+    { 
+      text: "Texto 1" ,
+      className: "text"
+    }
+  ]),
+
+  11: createChapter("Quem roubou as tortas?", "XI", "https://via.placeholder.com/25", [
+    { 
+      text: "Texto 1" ,
+      className: "text"
+    }
+  ]),
+
+  12: createChapter("Depoimento de Alice", "XII", "https://via.placeholder.com/25", [
+    { 
+      text: "Texto 1" ,
+      className: "text"
+    }
+  ])
+
 };
 
 export default chapters;

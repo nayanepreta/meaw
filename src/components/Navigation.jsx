@@ -7,6 +7,10 @@ const Navigation = ({ onNext, goToSummary, goToContents, goToCover }) => {
     setShowAdditionalButtons(!showAdditionalButtons);
   };
 
+  const ajustesTamanhoFonte = () => {
+    alert("Ajustes");
+  }
+
   return (
 
     
@@ -21,15 +25,14 @@ const Navigation = ({ onNext, goToSummary, goToContents, goToCover }) => {
         />
       </button>
 
-      {/* Additional Buttons */}
       <div
         className={`additional-buttons ${showAdditionalButtons ? "visible" : ""}`}
       >
         {goToSummary && <button onClick={goToSummary}>S</button>}
         {goToContents && <button onClick={goToContents}>C</button>}
+
       </div>
 
-      {/* Cover Button */}
       {goToCover && (
         <button onClick={goToCover}>
           <img
@@ -41,7 +44,6 @@ const Navigation = ({ onNext, goToSummary, goToContents, goToCover }) => {
         </button>
       )}
 
-      {/* Next Button */}
       {onNext && (
         <button onClick={onNext}>
           <img

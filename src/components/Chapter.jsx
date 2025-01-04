@@ -3,8 +3,9 @@ import DOMPurify from 'dompurify';
 import chapters from '../control/chapters';
 import Header from '../components/Header';
 import Navigation from './Navigation';
+import Footer from './Footer'; 
 
-const Chapter = ({ chapterNumber, onNext, goToSummary, goToCover, goToContents }) => {
+const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover, goToContents }) => {
   const { title: chapterTitle, chap: chapterRoman, img: image, texts: chapterTexts } = chapters[chapterNumber];
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const Chapter = ({ chapterNumber, onNext, goToSummary, goToCover, goToContents }
 
   return (
     <div className="page chapter_page">
-      <Header />
+      <Header chapterIndex={chapterNumber}/>
       <div className="chapter_head">
         <span className="chapter_subtitle">Chapter {chapterRoman}</span>
         <h2 className="chapter_title">{chapterTitle}</h2>
@@ -41,6 +42,8 @@ const Chapter = ({ chapterNumber, onNext, goToSummary, goToCover, goToContents }
         goToSummary={goToSummary} 
         goToContents={goToContents}
       />
+
+      <Footer />
     </div>
   );
 };
