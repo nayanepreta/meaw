@@ -2,7 +2,34 @@ import React, { useState, useEffect } from 'react';
 import chapters from '../control/chapters';
 
   const Header = ({chapterIndex}) => {
-   
+    const adjustFontSize = () => {
+      const currentSize = localStorage.getItem('font-size') || 'normal';
+    
+      // Exibir prompt ao usuário
+      const newSize = prompt(
+        'Escolha o tamanho da fonte:\n' +
+        'normal - Tamanho padrão\n' +
+        'grande - Tamanho maior\n' +
+        'extragrande - Tamanho ainda maior',
+        currentSize
+      );
+    
+      if (['normal', 'grande', 'extragrande'].includes(newSize)) {
+        // Atualizar classe do body
+        document.body.classList.remove('font-large', 'font-xlarge');
+        if (newSize === 'grande') {
+          document.body.classList.add('font-large');
+        } else if (newSize === 'extragrande') {
+          document.body.classList.add('font-xlarge');
+        }
+    
+        // Salvar preferência no localStorage
+        localStorage.setItem('font-size', newSize);
+      } else {
+        alert('Tamanho inválido. Escolha "normal", "grande" ou "extragrande".');
+      }
+    };
+
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('darkMode') === 'true';
@@ -75,7 +102,7 @@ import chapters from '../control/chapters';
     
   return (
     <div className="header">
-      <button onClick={ajustesTamanhoFonte}>A</button>
+      <button onClick={adjustFontSize}>A</button>
       <p className='header_titulo'>{adicionarTitulo()}</p>
         <button onClick={toggleDarkMode}>
           {isDarkMode ? 'C' : 'N'}

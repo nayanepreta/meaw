@@ -187,19 +187,16 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin: 7rem 1rem 2rem;
+    margin: 6rem 1rem 2rem;
 }
 
 .chapter_title {
     font-family: var(--font-titulos);
     font-weight: bold;
-    font-size: 1.2rem;
     color: var(--preto);
 }
 
-.chapter_subtitle {
-    font-size: 0.75rem;
-}
+
 
 .chapter_content {
     display: flex;
@@ -211,10 +208,52 @@ body {
     text-align: justify;
     text-indent: 1.5rem;
     font-family: var(--font-text);
-    font-size: var(--font-size);
     line-height: 1.5625rem;
     width: 100%;
 }
+
+/* Tamanhos padrão */
+.chapter_text {
+    font-size: 1.1rem;
+    line-height: 1.5625rem;
+  }
+  
+  .chapter_title {
+    font-size: 1.2rem;
+  }
+  
+  .chapter_subtitle {
+    font-size: 0.75rem;
+  }
+  
+  /* Tamanhos grandes */
+  .font-large .chapter_text {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  
+  .font-large .chapter_title {
+    font-size: 1.5rem;
+  }
+  
+  .font-large .chapter_subtitle {
+    font-size: 0.85rem;
+  }
+  
+  /* Tamanhos extragrandes */
+  .font-xlarge .chapter_text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .font-xlarge .chapter_title {
+    font-size: 1.8rem;
+  }
+  
+  .font-xlarge .chapter_subtitle {
+    font-size: 1rem;
+  }
+  
 
     .chapter_text_space {
         width: 100%;
@@ -312,6 +351,7 @@ body {
 
 .header_titulo {
     color: var(--branco);
+    font-size: 0.9rem;
 }
 
 /* MODO NOTURNO */ 
