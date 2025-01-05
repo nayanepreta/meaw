@@ -3,6 +3,8 @@
 :root {
     --preto: #131313;
     --branco: #fefefe;
+    --cinza-escuro: #1e1e1e;
+    --cinza-claro: #b7b7b7;
     --font-text: "Crimson Text", serif;
     --font-titulos: "Source Sans 3";
     --font-size: 1.1rem;
@@ -111,7 +113,7 @@ body {
     bottom: 20%;
 }
 
-/* INFOS::FOLHA DE ROSTO*/
+/* INFOS::FOLHA DE ROSTO */
 
 .info {
     height: 80vh;
@@ -123,7 +125,7 @@ body {
 
 .info_nome_autor {
     font-weight: bold;
-    margin-top: 5.5rem;
+    margin-top: 5rem;
 }
 
 .info_titulo_livro {
@@ -134,59 +136,13 @@ body {
     margin-right: 0.9rem;
 }
 
-
-
-/* SUMÁRIO */
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu_topico {
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 0.125rem solid var(--preto); 
-    color: var(--preto);
-}
-
-.lista-item, .menu_topico {
-    font-size: var(--font-size);
-    font-family: var(--font-text);
-    background-color: transparent;
-    text-align: left;
-}
-
-.menu_tabela {
-    width: 100%;
-    border-collapse: collapse; 
-    border: 0.0625rem solid var(--preto); 
-    margin-top: 1.25rem;
-    overflow: hidden;
-  }
-  
-  .menu_tabela td {
-    border: 0.0625rem solid var(--preto); 
-    padding: 0.5rem; 
-  }
-  
- .lista_topico {
-    text-align: center;
- }
-
-
-  
-
-
 /* CAPÍTULOS */
 
 .chapter_head {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 1.5625rem;
     margin: 6rem 1rem 2rem;
 }
 
@@ -196,8 +152,6 @@ body {
     color: var(--preto);
     text-align: center;
 }
-
-
 
 .chapter_content {
     display: flex;
@@ -213,48 +167,48 @@ body {
     width: 100%;
 }
 
-/* Tamanhos padrão */
-.chapter_text {
-    font-size: 1.1rem;
-    line-height: 1.5625rem;
-  }
-  
-  .chapter_title {
-    font-size: 1.2rem;
-  }
-  
-  .chapter_subtitle {
-    font-size: 0.75rem;
-  }
-  
-  /* Tamanhos grandes */
-  .font-large .chapter_text {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-  }
-  
-  .font-large .chapter_title {
-    font-size: 1.5rem;
-  }
-  
-  .font-large .chapter_subtitle {
-    font-size: 0.85rem;
-  }
-  
-  /* Tamanhos extragrandes */
-  .font-xlarge .chapter_text {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  
-  .font-xlarge .chapter_title {
-    font-size: 1.8rem;
-  }
-  
-  .font-xlarge .chapter_subtitle {
-    font-size: 1rem;
-  }
-  
+    /* Tamanhos padrão */
+
+    .chapter_text {
+        font-size: 1.1rem;
+        line-height: 1.5625rem;
+    }
+
+    .chapter_title {
+        font-size: 1.2rem;
+    }
+
+    .chapter_subtitle {
+        font-size: 0.75rem;
+    }
+
+    /* Tamanhos grandes */
+    .font-large .chapter_text {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    .font-large .chapter_title {
+        font-size: 1.5rem;
+    }
+
+    .font-large .chapter_subtitle {
+        font-size: 0.85rem;
+    }
+
+    /* Tamanhos extragrandes */
+    .font-xlarge .chapter_text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .font-xlarge .chapter_title {
+        font-size: 1.8rem;
+    }
+
+    .font-xlarge .chapter_subtitle {
+        font-size: 1rem;
+    }
 
     .chapter_text_space {
         width: 100%;
@@ -269,13 +223,8 @@ body {
         font-style: bold;
     }
 
-      
-
-    
-
 /* MENU */
 
-  
 .navigation {
     position: fixed;
     width: 100%;
@@ -289,9 +238,9 @@ body {
     gap: 0.5rem;
     align-items: center;
     transition: transform 0.3s ease; 
-  }
-  
-  .navigation button {
+    }
+
+.navigation button {
     background-color: var(--preto);
     width: 1.875rem;
     height: 1.875rem;
@@ -301,13 +250,13 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease; 
-  }
-  
-  .navigation button img {
+    }
+
+.navigation button img {
     width: 0.875rem;
-  }
-  
-  .additional-buttons {
+}
+
+.additional-buttons {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -338,19 +287,19 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: var(--branco);
-    padding: 0 25px;
+    padding: 0 1.5625rem;
 }
 
 .header div {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .header button {
@@ -361,83 +310,120 @@ body {
 .header_titulo {
     color: var(--branco);
     font-size: 0.9rem;
+    font-family: "Crimson Text", serif;
 }
 
 .font-size-box {
     position: fixed;
-    top: 45px;
-    background-color: #1e1e1e;
+    top: 2.8125rem;
+    background-color: var(--cinza-escuro);
     width: 100%;
-    max-width: 400px;
-    margin-left: -25px;
-    padding: 15px 25px;
+    max-width: 800px;
+    height: 45px;
+    margin-left: -1.5625rem;
+    padding: 0 1.5625rem;
 }
 
 .font-size-box label {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .font-size-box label div {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     flex-direction: row;
     align-items: center;
 }
 
-.font-size-box input[type="radio"] {
-    font-size: 0.5rem;
-}
-
 .font-size-box .ajust-option {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-family: "Crimson Text", serif;
 }
 
-/* MODO NOTURNO */ 
+/* BARRA PROGRESSO */
 
-  body.dark-mode {
-    background-color: var(--preto);
-    .chapter_text, 
-    .chapter_subtitle, 
-    .chapter_title,
-    .info_titulo_livro,
-    .info_nome_autor {
-      color: var(--branco);
-    }
-    .header,
-    .navigation button {
-        background-color: #1e1e1e;
-    }
-  }
-  
-  .footer {
+.footer {
     position: fixed;
     background-color: var(--branco);
-    bottom: -1px;
+    bottom: -0.0625rem;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    
-  }
-  
-  .progress-bar {
+}
+
+.progress-bar {
     flex: 1;
-    height: 5px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
+    height: 0.3125rem;
+    background-color: var(--cinza-claro);
+    border-radius: 0.25rem;
     overflow: hidden;
-  }
-  
-  .progress-bar-fill {
+}
+
+.progress-bar-fill {
     height: 100%;
     background-color: #4caf50;
     transition: width 0.2s ease-in-out;
-  }
-  
- 
-  
+}
+
+/* SUMÁRIO */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_topico {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 0.125rem solid var(--preto); 
+    color: var(--preto);
+}
+
+.lista-item, .menu_topico {
+    font-size: var(--font-size);
+    font-family: var(--font-text);
+    background-color: transparent;
+    text-align: left;
+}
+
+.menu_tabela {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 0.0625rem solid var(--preto); 
+    margin-top: 1.25rem;
+    overflow: hidden;
+}
+
+.menu_tabela td {
+    border: 0.0625rem solid var(--preto); 
+    padding: 0.5rem; 
+}
+
+.lista_topico {
+    text-align: center;
+}
+
+/* MODO NOTURNO */ 
+
+body.dark-mode {
+    background-color: var(--preto);
+    .chapter_text, 
+    .chapter_subtitle, 
+    .chapter_title,
+    .info_titulo_livro,
+    .info_nome_autor {
+        color: var(--branco);
+    }
+    .header,
+    .navigation button {
+        background-color: var(--cinza-escuro);
+    }
+}

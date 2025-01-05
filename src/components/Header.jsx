@@ -23,10 +23,9 @@ const Header = ({ chapterIndex }) => {
       document.body.classList.add('font-xlarge');
     }
 
-    // Salva a preferência no localStorage
     localStorage.setItem('font-size', newSize);
-    setSelectedFontSize(newSize); // Atualiza o estado
-    setFontSizeBoxVisible(false); // Fecha a caixa
+    setSelectedFontSize(newSize);
+    setFontSizeBoxVisible(false); 
   };
 
   const handleScroll = () => {
@@ -58,7 +57,6 @@ const Header = ({ chapterIndex }) => {
       document.body.classList.remove('dark-mode');
     }
 
-    // Aplica o tamanho da fonte salvo no localStorage
     if (selectedFontSize === 'grande') {
       document.body.classList.add('font-large');
     } else if (selectedFontSize === 'extragrande') {
@@ -91,7 +89,6 @@ const Header = ({ chapterIndex }) => {
       <p className="header_titulo">{adicionarTitulo()}</p>
       <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
 
-      {/* Caixa para ajuste do tamanho da fonte */}
       {isFontSizeBoxVisible && (
         <div className="font-size-box">
           <label>
@@ -117,7 +114,7 @@ const Header = ({ chapterIndex }) => {
                 checked={selectedFontSize === 'grande'}
                 onChange={() => adjustFontSize('grande')}
               />
-              <label className='ajust-option' htmlFor="grande">Grande</label>
+              <label className='ajust-option' htmlFor="grande">Médio</label>
             </div>
             <div>
               <input
@@ -128,7 +125,7 @@ const Header = ({ chapterIndex }) => {
                 checked={selectedFontSize === 'extragrande'}
                 onChange={() => adjustFontSize('extragrande')}
               />
-              <label className='ajust-option' htmlFor="extragrande">Extra Grande</label>
+              <label className='ajust-option' htmlFor="extragrande">Grande</label>
             </div>
           </label>
         </div>
