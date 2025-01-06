@@ -915,45 +915,1455 @@ const chapters = {
 
         }] ),
         
-  7: createChapter("Festa Louca do chá", "VII", "https://via.placeholder.com/25", [
+  7: createChapter("A Mad Tea-Party", "VII", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. ‘Very uncomfortable for the Dormouse,’ thought Alice; ‘only, as it’s asleep, I suppose it doesn’t mind.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The table was a large one, but the three were all crowded together at one corner of it: ‘No room! No room!’ they cried out when they saw Alice coming. ‘There’s <i>plenty</i> of room!’ said Alice indignantly, and she sat down in a large arm-chair at one end of the table." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Have some wine,’ the March Hare said in an encouraging tone." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice looked all round the table, but there was nothing on it but tea. ‘I don’t see any wine,’ she remarked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’There isn’t any,’ said the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then it wasn’t very civil of you to offer it,’ said Alice angrily." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It wasn’t very civil of you to sit down without being invited,’ said the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I didn’t know it was your table,’ said Alice; ‘it’s laid for a great many more than three.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Your hair wants cutting,’ said the Hatter. He had been looking at Alice for some time with great curiosity, and this was his first speech." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You should learn not to make personal remarks,’ Alice said with some severity; ‘it’s very rude.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Hatter opened his eyes very wide on hearing this; but all he said was, ‘Why is a raven like a writing-desk?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Come, we shall have some fun now!’ thought Alice. ‘I’m glad they’ve begun asking riddles.—I believe I can guess that,’ she added aloud." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Do you mean that you think you can find out the answer to it?’ said the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Exactly so,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then you should say what you mean,’ the March Hare went on." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I do,’ Alice hastily replied; ‘at least—at least I mean what I say—that’s the same thing, you know.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Not the same thing a bit!’ said the Hatter. ‘You might just as well say that ‘I see what I eat’ is the same thing as ‘I eat what I see’!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You might just as well say,’ added the March Hare, ‘that ‘I like what I get’ is the same thing as ‘I get what I like’!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You might just as well say,’ added the Dormouse, who seemed to be talking in his sleep, ‘that ‘I breathe when I sleep’ is the same thing as ‘I sleep when I breathe’!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It <i>is</i> the same thing with you,’ said the Hatter, and here the conversation dropped, and the party sat silent for a minute, while Alice thought over all she could remember about ravens and writing-desks, which wasn’t much." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Hatter was the first to break the silence. ‘What day of the month is it?’ he said, turning to Alice: he had taken his watch out of his pocket, and was looking at it uneasily, shaking it every now and then, and holding it to his ear." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice considered a little, and then said ‘The fourth.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Two days wrong!’ sighed the Hatter. ‘I told you butter wouldn’t suit the works!’ he added looking angrily at the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It was the <i>best</i> butter,’ the March Hare meekly replied." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, but some crumbs must have got in as well,’ the Hatter grumbled: ‘you shouldn’t have put it in with the bread-knife.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The March Hare took the watch and looked at it gloomily: then he dipped it into his cup of tea, and looked at it again: but he could think of nothing better to say than his first remark, ‘It was the <i>best</i> butter, you know.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice had been looking over his shoulder with some curiosity. ‘What a funny watch!’ she remarked. ‘It tells the day of the month, and doesn’t tell what o’clock it is!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why should it?’ muttered the Hatter. ‘Does your watch tell you what year it is?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course not,’ Alice replied very readily: ‘but that’s because it stays the same year for such a long time together.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Which is just the case with <i>mine</i>,’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice felt dreadfully puzzled. The Hatter’s remark seemed to have no sort of meaning in it, and yet it was certainly English. ‘I don’t quite understand you,’ she said, as politely as she could." ,
+      className: "chapter_text"
+    },{ 
+      text: "’The Dormouse is asleep again,’ said the Hatter, and he poured a little hot tea upon its nose." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Dormouse shook its head impatiently, and said, without opening its eyes, ‘Of course, of course; just what I was going to remark myself.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Have you guessed the riddle yet?’ the Hatter said, turning to Alice again." ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, I give it up,’ Alice replied: ‘what’s the answer?’ ’I haven’t the slightest idea,’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nor I,’ said the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice sighed wearily. ‘I think you might do something better with the time,’ she said, ‘than waste it in asking riddles that have no answers.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’If you knew Time as well as I do,’ said the Hatter, ‘you wouldn’t talk about wasting it. It’s <i>him</i>.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I don’t know what you mean,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course you don’t!’ the Hatter said, tossing his head contemptuously. ‘I dare say you never even spoke to Time!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Perhaps not,’ Alice cautiously replied: ‘but I know I have to beat time when I learn music.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Ah! that accounts for it,’ said the Hatter. ‘He won’t stand beating. Now, if you only kept on good terms with him, he’d do almost anything you liked with the clock. For instance, suppose it were nine o’clock in the morning, just time to begin lessons: you’d only have to whisper a hint to Time, and round goes the clock in a twinkling! Half-past one, time for dinner!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "(’I only wish it was,’ the March Hare said to itself in a whisper.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’That would be grand, certainly,’ said Alice thoughtfully: ‘but then—I shouldn’t be hungry for it, you know.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Not at first, perhaps,’ said the Hatter: ‘but you could keep it to half-past one as long as you liked.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Is that the way <i>you</i> manage?’ Alice asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Hatter shook his head mournfully. ‘Not I!’ he replied. ‘We quarrelled last March—just before he went mad, you know—’ (pointing with his tea spoon at the March Hare,) ‘—it was at the great concert given by the Queen of Hearts, and I had to sing" ,
+      className: "chapter_text"
+    },{ 
+      text: "<i>‘‘Twinkle, twinkle, little bat!</br> How I wonder what you’re at!’</i></br> You know the song, perhaps?’</br>’I’ve heard something like it,’ said Alice.</br>’It goes on, you know,’ the Hatter continued, ‘in this way:—</br><i>‘‘Up above the world you fly, Like a tea-tray in the sky.</br>Twinkle, twinkle—‘‘</i>" ,
+      className: "chapter_text"
+    },{ 
+      text: "Here the Dormouse shook itself, and began singing in its sleep <i>‘Twinkle, twinkle, twinkle, twinkle—’</i> and went on so long that they had to pinch it to make it stop." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, I’d hardly finished the first verse,’ said the Hatter, ‘when the Queen jumped up and bawled out, ‘He’s murdering the time! Off with his head!‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’How dreadfully savage!’ exclaimed Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’And ever since that,’ the Hatter went on in a mournful tone, ‘he won’t do a thing I ask! It’s always six o’clock now.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "A bright idea came into Alice’s head. ‘Is that the reason so many tea-things are put out here?’ she asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, that’s it,’ said the Hatter with a sigh: ‘it’s always tea-time, and we’ve no time to wash the things between whiles.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then you keep moving round, I suppose?’ said Alice. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’Exactly so,’ said the Hatter: ‘as the things get used up.’ ’But what happens when you come to the beginning again?’ Alice ventured to ask." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Suppose we change the subject,’ the March Hare interrupted, yawning. ‘I’m getting tired of this. I vote the young lady tells us a story.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’m afraid I don’t know one,’ said Alice, rather alarmed at the proposal." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then the Dormouse shall!’ they both cried. ‘Wake up, Dormouse!’ And they pinched it on both sides at once.The Dormouse slowly opened his eyes. ‘I wasn’t asleep,’ he said in a hoarse, feeble voice: ‘I heard every word you fellows were saying.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Tell us a story!’ said the March Hare. ’Yes, please do!’ pleaded Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’And be quick about it,’ added the Hatter, ‘or you’ll be asleep again before it’s done.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Once upon a time there were three little sisters,’ the Dormouse began in a great hurry; ‘and their names were Elsie, Lacie, and Tillie; and they lived at the bottom of a well—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What did they live on?’ said Alice, who always took a great interest in questions of eating and drinking." ,
+      className: "chapter_text"
+    },{ 
+      text: "’They lived on treacle,’ said the Dormouse, after thinking a minute or two." ,
+      className: "chapter_text"
+    },{ 
+      text: "’They couldn’t have done that, you know,’ Alice gently remarked; ‘they’d have been ill.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’So they were,’ said the Dormouse; ‘<i>very</i> ill.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice tried to fancy to herself what such an extraordinary ways of living would be like, but it puzzled her too much, so she went on: ‘But why did they live at the bottom of a well?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Take some more tea,’ the March Hare said to Alice, very earnestly." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’ve had nothing yet,’ Alice replied in an offended tone, ‘so I can’t take more.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You mean you can’t take less,’ said the Hatter: ‘it’s very easy to take <i>more</i> than nothing.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nobody asked <i>your</i> opinion,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Who’s making personal remarks now?’ the Hatter asked triumphantly." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice did not quite know what to say to this: so she helped herself to some tea and bread-and-butter, and then turned to the Dormouse, and repeated her question. ‘Why did they live at the bottom of a well?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Dormouse again took a minute or two to think about it, and then said, ‘It was a treacle-well.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’There’s no such thing!’ Alice was beginning very angrily, but the Hatter and the March Hare went ‘Sh! sh!’ and the Dormouse sulkily remarked, ‘If you can’t be civil, you’d better finish the story for yourself.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, please go on!’ Alice said very humbly; ‘I won’t interrupt again. I dare say there may be one.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’One, indeed!’ said the Dormouse indignantly. However, he consented to go on. ‘And so these three little sisters—they were learning to draw, you know—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What did they draw?’ said Alice, quite forgetting her promise." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Treacle,’ said the Dormouse, without considering at all this time." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I want a clean cup,’ interrupted the Hatter: ‘let’s all move one place on.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "He moved on as he spoke, and the Dormouse followed him: the March Hare moved into the Dormouse’s place, and Alice rather unwillingly took the place of the March Hare. The Hatter was the only one who got any advantage from the change: and Alice was a good deal worse off than before, as the March Hare had just upset the milk-jug into his plate." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice did not wish to offend the Dormouse again, so she began very cautiously: ‘But I don’t understand. Where did they draw the treacle from?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You can draw water out of a water-well,’ said the Hatter; ‘so I should think you could draw treacle out of a treacle-well—eh, stupid?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’But they were in the well,’ Alice said to the Dormouse, not choosing to notice this last remark." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course they were’, said the Dormouse; ‘—well in.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "This answer so confused poor Alice, that she let the Dormouse go on for some time without interrupting it. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’They were learning to draw,’ the Dormouse went on, yawning and rubbing its eyes, for it was getting very sleepy; ‘and they drew all manner of things—everything that begins with an M—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why with an M?’ said Alice. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why not?’ said the March Hare." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice was silent." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Dormouse had closed its eyes by this time, and was going off into a doze; but, on being pinched by the Hatter, it woke up again with a little shriek, and went on: ‘—that begins with an M, such as mouse-traps, and the moon, and memory, and muchness— you know you say things are ‘much of a muchness’—did you ever see such a thing as a drawing of a muchness?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Really, now you ask me,’ said Alice, very much confused, ‘I don’t think—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then you shouldn’t talk,’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "This piece of rudeness was more than Alice could bear: she got up in great disgust, and walked off; the Dormouse fell asleep instantly, and neither of the others took the least notice of her going, though she looked back once or twice, half hoping that they would call after her: the last time she saw them, they were trying to put the Dormouse into the teapot." ,
+      className: "chapter_text"
+    },{ 
+      text: "’At any rate I’ll never go there again!’ said Alice as she picked her way through the wood. ‘It’s the stupidest tea- party I ever was at in all my life!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Just as she said this, she noticed that one of the trees had a door leading right into it. ‘That’s very curious!’ she thought. ‘But everything’s curious today. I think I may as well go in at once.’ And in she went." ,
+      className: "chapter_text"
+    },{ 
+      text: "Once more she found herself in the long hall, and close to the little glass table. ‘Now, I’ll manage better this time,’ she said to herself, and began by taking the little golden key, and unlocking the door that led into the garden. Then she went to work nibbling at the mushroom (she had kept a piece of it in her pocket) till she was about a foot high: then she walked down the little passage: and then—she found herself at last in the beautiful garden, among the bright flower-beds and the cool fountains." ,
+      className: "chapter_text"
     }
   ]),
 
-  8: createChapter("O campo de croquet da Rainha", "VIII", "https://via.placeholder.com/25", [
+  8: createChapter("The Queen’s Croquet- Ground", "VIII", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, ‘Look out now, Five! Don’t go splashing paint over me like that!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I couldn’t help it,’ said Five, in a sulky tone; ‘Seven jogged my elbow.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "On which Seven looked up and said, ‘That’s right, Five! Always lay the blame on others!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "You’d better not talk!’ said Five. ‘I heard the Queen say only yesterday you deserved to be beheaded!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What for?’ said the one who had spoken first." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s none of your business, Two!’ said Seven." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, it is his business!’ said Five, ‘and I’ll tell him—it was for bringing the cook tulip-roots instead of onions.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Seven flung down his brush, and had just begun ‘Well, of all the unjust things—’ when his eye chanced to fall upon Alice, as she stood watching them, and he checked himself suddenly: the others looked round also, and all of them bowed low." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Would you tell me,’ said Alice, a little timidly, ‘why you are painting those roses?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Five and Seven said nothing, but looked at Two. Two began in a low voice, ‘Why the fact is, you see, Miss, this here ought to have been a red rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we’re doing our best, afore she comes, to— ’ At this moment Five, who had been anxiously looking across the garden, called out ‘The Queen! The Queen!’ and the three gardeners instantly threw themselves flat upon their faces. There was a sound of many footsteps, and Alice looked round, eager to see the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "First came ten soldiers carrying clubs; these were all shaped like the three gardeners, oblong and flat, with their hands and feet at the corners: next the ten courtiers; these were ornamented all over with diamonds, and walked two and two, as the soldiers did. After these came the royal children; there were ten of them, and the little dears came jumping merrily along hand in hand, in couples: they were all ornamented with hearts. Next came the guests, mostly  Kings  and  Queens,  and  among  them  Alice recognised the White Rabbit: it was talking in a hurried nervous manner, smiling at everything that was said, and went by without noticing her. Then followed the Knave of Hearts, carrying the King’s crown on a crimson velvet cushion; and, last of all this grand procession, came THE KING AND QUEEN OF HEARTS." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice was rather doubtful whether she ought not to lie down on her face like the three gardeners, but she could not remember ever having heard of such a rule at processions; ‘and besides, what would be the use of a procession,’ thought she, ‘if people had all to lie down upon their faces, so that they couldn’t see it?’ So she stood still where she was, and waited." ,
+      className: "chapter_text"
+    },{ 
+      text: "When the procession came opposite to Alice, they all stopped and looked at her, and the Queen said severely ‘Who is this?’ She said it to the Knave of Hearts, who only bowed and smiled in reply." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Idiot!’ said the Queen, tossing her head impatiently; and, turning to Alice, she went on, ‘What’s your name, child?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’My name is Alice, so please your Majesty,’ said Alice very politely; but she added, to herself, ‘Why, they’re only a pack of cards, after all. I needn’t be afraid of them!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’And who are these?’ said the Queen, pointing to the three gardeners who were lying round the rosetree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children." ,
+      className: "chapter_text"
+    },{ 
+      text: "’How should I know?’ said Alice, surprised at her own courage. ‘It’s no business of mine.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Queen turned crimson with fury, and, after glaring at her for a moment like a wild beast, screamed ‘Off with her head! Off—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nonsense!’ said Alice, very loudly and decidedly, and the Queen was silent." ,
+      className: "chapter_text"
+    },{ 
+      text: "The King laid his hand upon her arm, and timidly said ‘Consider, my dear: she is only a child!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Queen turned angrily away from him, and said to the Knave ‘Turn them over!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Knave did so, very carefully, with one foot." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Get up!’ said the Queen, in a shrill, loud voice, and the three gardeners instantly jumped up, and began bowing to the King, the Queen, the royal children, and everybody else." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Leave off that!’ screamed the Queen. ‘You make me giddy.’ And then, turning to the rose-tree, she went on, ‘What have you been doing here?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’May it please your Majesty,’ said Two, in a very humble tone, going down on one knee as he spoke, ‘we were trying—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I see!’ said the Queen, who had meanwhile been examining the roses. ‘Off with their heads!’ and the procession moved on, three of the soldiers remaining behind to execute the unfortunate gardeners, who ran to Alice for protection." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You shan’t be beheaded!’ said Alice, and she put them into a large flower-pot that stood near. The three soldiers wandered about for a minute or two, looking for them, and then quietly marched off after the others." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Are their heads off?’ shouted the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Their heads are gone, if it please your Majesty!’ the soldiers shouted in reply." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s right!’ shouted the Queen. ‘Can you play croquet?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The soldiers were silent, and looked at Alice, as the question was evidently meant for her." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes!’ shouted Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Come on, then!’ roared the Queen, and Alice joined the procession, wondering very much what would happen next." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s—it’s a very fine day!’ said a timid voice at her side. She was walking by the White Rabbit, who was peeping anxiously into her face." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Very,’ said Alice: ‘—where’s the Duchess?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Hush! Hush!’ said the Rabbit in a low, hurried tone. He looked anxiously over his shoulder as he spoke, and then raised himself upon tiptoe, put his mouth close to her ear, and whispered ‘She’s under sentence of execution.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What for?’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Did you say ‘What a pity!’?’ the Rabbit asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, I didn’t,’ said Alice: ‘I don’t think it’s at all a pity. I said ‘What for?‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’She boxed the Queen’s ears—’ the Rabbit began. Alice gave a little scream of laughter. ‘Oh, hush!’ the Rabbit whispered in a frightened tone. ‘The Queen will hear you! You see, she came rather late, and the Queen said—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Get to your places!’ shouted the Queen in a voice of thunder, and people began running about in all directions, tumbling up against each other; however, they got settled down in a minute or two, and the game began. Alice thought she had never seen such a curious croquet-ground in her life; it was all ridges and furrows; the balls were live hedgehogs, the mallets live flamingoes, and the soldiers had to double themselves up and to stand on their hands and feet, to make the arches." ,
+      className: "chapter_text"
+    },{ 
+      text: "The chief difficulty Alice found at first was in managing her flamingo: she succeeded in getting its body tucked away, comfortably enough, under her arm, with its legs hanging down, but generally, just as she had got its neck nicely straightened out, and was going to give the hedgehog a blow with its head, it would twist itself round and look up in her face, with such a puzzled expression that she could not help bursting out laughing: and when she had got its head down, and was going to begin again, it was very provoking to find that the hedgehog had unrolled itself, and was in the act of crawling away: besides all this, there was generally a ridge or furrow in the way wherever she wanted to send the hedgehog to, and, as the doubled-up soldiers were always getting up and walking off to other parts of the ground, Alice soon came to the conclusion that it was a very difficult game indeed." ,
+      className: "chapter_text"
+    },{ 
+      text: "The players all played at once without waiting for turns, quarrelling all the while, and fighting for the hedgehogs; and in a very short time the Queen was in a furious passion, and went stamping about, and shouting ‘Off with his head!’ or ‘Off with her head!’ about once in a minute." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice began to feel very uneasy: to be sure, she had not as yet had any dispute with the Queen, but she knew that it might happen any minute, ‘and then,’ thought she, ‘what would become of me? They’re dreadfully fond of beheading people here; the great wonder is, that there’s any one left alive!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "She was looking about for some way of escape, and wondering whether she could get away without being seen, when she noticed a curious appearance in the air: it puzzled her very much at first, but, after watching it a minute or two, she made it out to be a grin, and she said to herself ‘It’s the Cheshire Cat: now I shall have somebody to talk to.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’How are you getting on?’ said the Cat, as soon as there was mouth enough for it to speak with." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice waited till the eyes appeared, and then nodded. ‘It’s no use speaking to it,’ she thought, ‘till its ears have come, or at least one of them.’ In another minute the whole head appeared, and then Alice put down her flamingo, and began an account of the game, feeling very glad she had someone to listen to her. The Cat seemed to think that there was enough of it now in sight, and no more of it appeared." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I don’t think they play at all fairly,’ Alice began, in rather a complaining tone, ‘and they all quarrel so dreadfully one can’t hear oneself speak—and they don’t seem to have any rules in particular; at least, if there are, nobody attends to them—and you’ve no idea how confusing it is all the things being alive; for instance, there’s the arch I’ve got to go through next walking about at the other end of the ground—and I should have croqueted the Queen’s hedgehog just now, only it ran away when it saw mine coming!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’How do you like the Queen?’ said the Cat in a low voice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Not at all,’ said Alice: ‘she’s so extremely—’ Just then she noticed that the Queen was close behind her, listening: so she went on, ‘—likely to win, that it’s hardly worth while finishing the game.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Queen smiled and passed on." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Who are you talking to?’ said the King, going up to Alice, and looking at the Cat’s head with great curiosity." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s a friend of mine—a Cheshire Cat,’ said Alice: ‘allow me to introduce it.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I don’t like the look of it at all,’ said the King: ‘however, it may kiss my hand if it likes.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’d rather not,’ the Cat remarked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Don’t be impertinent,’ said the King, ‘and don’t look at me like that!’ He got behind Alice as he spoke." ,
+      className: "chapter_text"
+    },{ 
+      text: "’A cat may look at a king,’ said Alice. ‘I’ve read that in some book, but I don’t remember where.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, it must be removed,’ said the King very decidedly, and he called the Queen, who was passing at the moment, ‘My dear! I wish you would have this cat removed!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Queen had only one way of settling all difficulties, great or small. ‘Off with his head!’ she said, without even looking round." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’ll fetch the executioner myself,’ said the King eagerly, and he hurried off." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice thought she might as well go back, and see how the game was going on, as she heard the Queen’s voice in the distance, screaming with passion. She had already heard her sentence three of the players to be executed for having missed their turns, and she did not like the look of things at all, as the game was in such confusion that she never knew whether it was her turn or not. So she went in search of her hedgehog." ,
+      className: "chapter_text"
+    },{ 
+      text: "The hedgehog was engaged in a fight with another hedgehog, which seemed to Alice an excellent opportunity for croqueting one of them with the other: the only difficulty was, that her flamingo was gone across to the other side of the garden, where Alice could see it trying in a helpless sort of way to fly up into a tree." ,
+      className: "chapter_text"
+    },{ 
+      text: "By the time she had caught the flamingo and brought it back, the fight was over, and both the hedgehogs were out of sight: ‘but it doesn’t matter much,’ thought Alice, ‘as all the arches are gone from this side of the ground.’ So she tucked it away under her arm, that it might not escape again, and went back for a little more conversation with her friend." ,
+      className: "chapter_text"
+    },{ 
+      text: "When she got back to the Cheshire Cat, she was surprised to find quite a large crowd collected round it: there was a dispute going on between the executioner, the King, and the Queen, who were all talking at once, while all the rest were quite silent, and looked very uncomfortable." ,
+      className: "chapter_text"
+    },{ 
+      text: "The moment Alice appeared, she was appealed to by all three to settle the question, and they repeated their arguments to her, though, as they all spoke at once, she found it very hard indeed to make out exactly what they said." ,
+      className: "chapter_text"
+    },{ 
+      text: "The executioner’s argument was, that you couldn’t cut off a head unless there was a body to cut it off from: that he had never had to do such a thing before, and he wasn’t going to begin at his time of life." ,
+      className: "chapter_text"
+    },{ 
+      text: "The King’s argument was, that anything that had a head could be beheaded, and that you weren’t to talk nonsense." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Queen’s argument was, that if something wasn’t done about it in less than no time she’d have everybody executed, all round. (It was this last remark that had made the whole party look so grave and anxious.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice could think of nothing else to say but ‘It belongs to the Duchess: you’d better ask her about it.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’She’s in prison,’ the Queen said to the executioner: ‘fetch her here.’ And the executioner went off like an arrow." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Cat’s head began fading away the moment he was gone, and, by the time he had come back with the Dutchess, it had entirely disappeared; so the King and the executioner ran wildly up and down looking for it, while the rest of the party went back to the game." ,
+      className: "chapter_text"
     }
   ]),
 
-  9: createChapter("A história da tartaruga falsa", "IX", "https://via.placeholder.com/25", [
+  9: createChapter("The Mock Turtle’s Story", "IX", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "’You can’t think how glad I am to see you again, you dear old thing!’ said the Duchess, as she tucked her arm affectionately into Alice’s, and they walked off together." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’When I’m a Duchess,’ she said to herself, (not in a very hopeful tone though), ‘I won’t have any pepper in my kitchen at all. Soup does very well without—Maybe it’s always pepper that makes people hot-tempered,’ she went on, very much pleased at having found out a new kind of rule, ‘and vinegar that makes them sour—and camomile that makes them bitter—and—and barley-sugar and such things that make children sweet-tempered. I only wish people knew that: then they wouldn’t be so stingy about it, you know—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "She had quite forgotten the Duchess by this time, and was a little startled when she heard her voice close to her ear. ‘You’re thinking about something, my dear, and that makes you forget to talk. I can’t tell you just now what the moral of that is, but I shall remember it in a bit.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Perhaps it hasn’t one,’ Alice ventured to remark." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Tut, tut, child!’ said the Duchess. ‘Everything’s got a moral, if only you can find it.’ And she squeezed herself up closer to Alice’s side as she spoke." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice did not much like keeping so close to her: first, because the Duchess was VERY ugly; and secondly, because she was exactly the right height to rest her chin upon Alice’s shoulder, and it was an uncomfortably sharp chin. However, she did not like to be rude, so she bore it as well as she could." ,
+      className: "chapter_text"
+    },{ 
+      text: "’The game’s going on rather better now,’ she said, by way of keeping up the conversation a little." ,
+      className: "chapter_text"
+    },{ 
+      text: "’’Tis so,’ said the Duchess: ‘and the moral of that is— ‘Oh, ‘tis love, ‘tis love, that makes the world go round!‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Somebody said,’ Alice whispered, ‘that it’s done by everybody minding their own business!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Ah, well! It means much the same thing,’ said the Duchess, digging her sharp little chin into Alice’s shoulder as she added, ‘and the moral of that is—‘Take care of the sense, and the sounds will take care of themselves.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’How fond she is of finding morals in things!’ Alice thought to herself." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I dare say you’re wondering why I don’t put my arm round your waist,’ the Duchess said after a pause: ‘the reason is, that I’m doubtful about the temper of your flamingo. Shall I try the experiment?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’He might bite,’ Alice cautiously replied, not feeling at all anxious to have the experiment tried." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Very true,’ said the Duchess: ‘flamingoes and mustard both bite. And the moral of that is—‘Birds of a feather flock together.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Only mustard isn’t a bird,’ Alice remarked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Right, as usual,’ said the Duchess: ‘what a clear way you have of putting things!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s a mineral, I think,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course it is,’ said the Duchess, who seemed ready to agree to everything that Alice said; ‘there’s a large mustard-mine near here. And the moral of that is—‘The more there is of mine, the less there is of yours.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, I know!’ exclaimed Alice, who had not attended to this last remark, ‘it’s a vegetable. It doesn’t look like one, but it is.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I quite agree with you,’ said the Duchess; ‘and the moral of that is—‘Be what you would seem to be’—or if you’d like it put more simply—‘Never imagine yourself not to be otherwise than what it might appear to others that what you were or might have been was not otherwise than what you had been would have appeared to them to be otherwise.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I think I should understand that better,’ Alice said very politely, ‘if I had it written down: but I can’t quite follow it as you say it.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s nothing to what I could say if I chose,’ the Duchess replied, in a pleased tone." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Pray don’t trouble yourself to say it any longer than that,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, don’t talk about trouble!’ said the Duchess. ‘I make you a present of everything I’ve said as yet.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’A cheap sort of present!’ thought Alice. ‘I’m glad they don’t give birthday presents like that!’ But she did not venture to say it out loud." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Thinking again?’ the Duchess asked, with another dig of her sharp little chin." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’ve a right to think,’ said Alice sharply, for she was beginning to feel a little worried." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Just about as much right,’ said the Duchess, ‘as pigs have to fly; and the m—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "But here, to Alice’s great surprise, the Duchess’s voice died away, even in the middle of her favourite word ‘moral,’ and the arm that was linked into hers began to tremble. Alice looked up, and there stood the Queen in front of them, with her arms folded, frowning like a thunderstorm." ,
+      className: "chapter_text"
+    },{ 
+      text: "’A fine day, your Majesty!’ the Duchess began in a low, weak voice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Now, I give you fair warning,’ shouted the Queen, stamping on the ground as she spoke; ‘either you or your head must be off, and that in about half no time! Take your choice!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Duchess took her choice, and was gone in a moment." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Let’s go on with the game,’ the Queen said to Alice; and Alice was too much frightened to say a word, but slowly followed her back to the croquet-ground." ,
+      className: "chapter_text"
+    },{ 
+      text: "The other guests had taken advantage of the Queen’s absence, and were resting in the shade: however, the moment they saw her, they hurried back to the game, the Queen merely remarking that a moment’s delay would cost them their lives." ,
+      className: "chapter_text"
+    },{ 
+      text: "All the time they were playing the Queen never left off quarrelling with the other players, and shouting ‘Off with his head!’ or ‘Off with her head!’ Those whom she sentenced were taken into custody by the soldiers, who of course had to leave off being arches to do this, so that by the end of half an hour or so there were no arches left, and all the players, except the King, the Queen, and Alice, were in custody and under sentence of execution." ,
+      className: "chapter_text"
+    },{ 
+      text: "Then the Queen left off, quite out of breath, and said to Alice, ‘Have you seen the Mock Turtle yet?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’No,’ said Alice. ‘I don’t even know what a Mock Turtle is.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s the thing Mock Turtle Soup is made from,’ said the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I never saw one, or heard of one,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Come on, then,’ said the Queen, ‘and he shall tell you his history,’" ,
+      className: "chapter_text"
+    },{ 
+      text: "As they walked off together, Alice heard the King say in a low voice, to the company generally, ‘You are all pardoned.’ ‘Come, that’s a good thing!’ she said to herself, for she had felt quite unhappy at the number of executions the Queen had ordered." ,
+      className: "chapter_text"
+    },{ 
+      text: "They very soon came upon a Gryphon, lying fast asleep in the sun. (IF you don’t know what a Gryphon is, look at the picture.) ‘Up, lazy thing!’ said the Queen, ‘and take this young lady to see the Mock Turtle, and to hear his history. I must go back and see after some executions I have ordered’; and she walked off, leaving Alice alone with the Gryphon. Alice did not quite like the look of the creature, but on the whole she thought it would be quite as safe to stay with it as to go after that savage Queen: so she waited." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Gryphon sat up and rubbed its eyes: then it watched the Queen till she was out of sight: then it chuckled. ‘What fun!’ said the Gryphon, half to itself, half to Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’What IS the fun?’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why, she,’ said the Gryphon. ‘It’s all her fancy, that: they never executes nobody, you know. Come on!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Everybody says ‘come on!’ here,’ thought Alice, as she went slowly after it: ‘I never was so ordered about in all my life, never!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "They had not gone far before they saw the Mock Turtle in the distance, sitting sad and lonely on a little ledge of rock, and, as they came nearer, Alice could hear him sighing as if his heart would break. She pitied him deeply. ‘What is his sorrow?’ she asked the Gryphon, and the Gryphon answered, very nearly in the same words as before, ‘It’s all his fancy, that: he hasn’t got no sorrow, you know. Come on!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "So they went up to the Mock Turtle, who looked at them with large eyes full of tears, but said nothing." ,
+      className: "chapter_text"
+    },{ 
+      text: "’This here young lady,’ said the Gryphon, ‘she wants for to know your history, she do.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’ll tell it her,’ said the Mock Turtle in a deep, hollow tone: ‘sit down, both of you, and don’t speak a word till I’ve finished.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "So they sat down, and nobody spoke for some minutes. Alice thought to herself, ‘I don’t see how he can even finish, if he doesn’t begin.’ But she waited patiently." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Once,’ said the Mock Turtle at last, with a deep sigh, ‘I was a real Turtle.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "These words were followed by a very long silence, broken only by an occasional exclamation of ‘Hjckrrh!’ from the Gryphon, and the constant heavy sobbing of the Mock Turtle. Alice was very nearly getting up and saying, ‘Thank you, sir, for your interesting story,’ but she could not help thinking there must be more to come, so she sat still and said nothing." ,
+      className: "chapter_text"
+    },{ 
+      text: "’When we were little,’ the Mock Turtle went on at last, more calmly, though still sobbing a little now and then, ‘we went to school in the sea. The master was an old Turtle—we used to call him Tortoise—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why did you call him Tortoise, if he wasn’t one?’ Alice asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’We called him Tortoise because he taught us,’ said the Mock Turtle angrily: ‘really you are very dull!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You ought to be ashamed of yourself for asking such a simple question,’ added the Gryphon; and then they both sat silent and looked at poor Alice, who felt ready to sink into the earth. At last the Gryphon said to the Mock Turtle, ‘Drive on, old fellow! Don’t be all day about it!’ and he went on in these words:" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, we went to school in the sea, though you mayn’t believe it—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I never said I didn’t!’ interrupted Alice. ’You did,’ said the Mock Turtle." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Hold your tongue!’ added the Gryphon, before Alice could speak again. The Mock Turtle went on." ,
+      className: "chapter_text"
+    },{ 
+      text: "’We had the best of educations—in fact, we went to school every day—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’ve been to a day-school, too,’ said Alice; ‘you needn’t be so proud as all that.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’With extras?’ asked the Mock Turtle a little anxiously. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes,’ said Alice, ‘we learned French and music.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’And washing?’ said the Mock Turtle. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’Certainly not!’ said Alice indignantly." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Ah! then yours wasn’t a really good school,’ said the Mock Turtle in a tone of great relief. ‘Now at ours they had at the end of the bill, ‘French, music, and washing— extra.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You couldn’t have wanted it much,’ said Alice; ‘living at the bottom of the sea.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I couldn’t afford to learn it.’ said the Mock Turtle with a sigh. ‘I only took the regular course.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What was that?’ inquired Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Reeling and Writhing, of course, to begin with,’ the Mock Turtle replied; ‘and then the different branches of Arithmetic— Ambition, Distraction, Uglification, and Derision.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I never heard of ‘Uglification,‘‘ Alice ventured to say. ‘What is it?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Gryphon lifted up both its paws in surprise. ‘What! Never heard of uglifying!’ it exclaimed. ‘You know what to beautify is, I suppose?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes,’ said Alice doubtfully: ‘it means—to—make— anything—prettier.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, then,’ the Gryphon went on, ‘if you don’t know what to uglify is, you are a simpleton.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice did not feel encouraged to ask any more questions about it, so she turned to the Mock Turtle, and said ‘What else had you to learn?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, there was Mystery,’ the Mock Turtle replied, counting off the subjects on his flappers, ‘—Mystery, ancient and modern, with Seaography: then Drawling— the Drawling-master was an old conger-eel, that used to come once a week: He taught us Drawling, Stretching, and Fainting in Coils.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What was that like?’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, I can’t show it you myself,’ the Mock Turtle said: ‘I’m too stiff. And the Gryphon never learnt it.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Hadn’t time,’ said the Gryphon: ‘I went to the Classics master, though. He was an old crab, he was.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I never went to him,’ the Mock Turtle said with a sigh: ‘he taught Laughing and Grief, they used to say.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’So he did, so he did,’ said the Gryphon, sighing in his turn; and both creatures hid their faces in their paws." ,
+      className: "chapter_text"
+    },{ 
+      text: "’And how many hours a day did you do lessons?’ said Alice, in a hurry to change the subject." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Ten hours the first day,’ said the Mock Turtle: ‘nine the next, and so on.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What a curious plan!’ exclaimed Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s the reason they’re called lessons,’ the Gryphon remarked: ‘because they lessen from day to day.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "This was quite a new idea to Alice, and she thought it over a little before she made her next remark. ‘Then the eleventh day must have been a holiday?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course it was,’ said the Mock Turtle." ,
+      className: "chapter_text"
+    },{ 
+      text: "’And how did you manage on the twelfth?’ Alice went on eagerly." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s enough about lessons,’ the Gryphon interrupted in a very decided tone: ‘tell her something about the games now.’" ,
+      className: "chapter_text"
     }
   ]),
 
-  10: createChapter("A Quadrilha da Lagosta", "X", "https://via.placeholder.com/25", [
+  10: createChapter("The Lobster Quadrille", "X", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Alice, and tried to speak, but for a minute or two sobs choked his voice. ‘Same as if he had a bone in his throat,’ said the Gryphon: and it set to work shaking him and punching him in the back. At last the Mock Turtle recovered his voice, and, with tears running down his cheeks, he went on again:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You may not have lived much under the sea—’ (’I haven’t,’ said Alice)— ‘and perhaps you were never even introduced to a lobster—’ (Alice began to say ‘I once tasted—’ but checked herself hastily, and said ‘No, never’) ‘—so you can have no idea what a delightful thing a Lobster Quadrille is!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, indeed,’ said Alice. ‘What sort of a dance is it?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why,’ said the Gryphon, ‘you first form into a line along the sea-shore—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Two lines!’ cried the Mock Turtle. ‘Seals, turtles, salmon, and so on; then, when you’ve cleared all the jelly- fish out of the way—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’<i>THAT</i> generally takes some time,’ interrupted the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’—you advance twice—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Each with a lobster as a partner!’ cried the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course,’ the Mock Turtle said: ‘advance twice, set to partners—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’—change lobsters, and retire in same order,’ continued the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then, you know,’ the Mock Turtle went on, ‘you throw the—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’The lobsters!’ shouted the Gryphon, with a bound into the air." ,
+      className: "chapter_text"
+    },{ 
+      text: "’—as far out to sea as you can—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Swim after them!’ screamed the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Turn a somersault in the sea!’ cried the Mock Turtle, capering wildly about." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Change lobster’s again!’ yelled the Gryphon at the top of its voice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Back to land again, and that’s all the first figure,’ said the Mock Turtle, suddenly dropping his voice; and the two creatures, who had been jumping about like mad things all this time, sat down again very sadly and quietly, and looked at Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It must be a very pretty dance,’ said Alice timidly." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Would you like to see a little of it?’ said the Mock Turtle. " ,
+      className: "chapter_text"
+    },{ 
+      text: "’Very much indeed,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Come, let’s try the first figure!’ said the Mock Turtle to the Gryphon. ‘We can do without lobsters, you know. Which shall sing?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, <i>YOU</i> sing,’ said the Gryphon. ‘I’ve forgotten the words.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "So they began solemnly dancing round and round Alice, every now and then treading on her toes when they passed too close, and waving their forepaws to mark the time, while the Mock Turtle sang this, very slowly and sadly:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’’Will you walk a little faster?’ said a whiting to a snail. ‘There’s a porpoise close behind us, and he’s treading on my tail. See how eagerly the lobsters and the turtles all advance! They are waiting on the shingle—will you come and join the dance?" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "Will you, won’t you, will you, won’t you, will you join the dance? Will you, won’t you, will you, won’t you, won’t you join the dance?" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’’You can really have no notion how delightful it will be When they take us up and throw us, with the lobsters, out to sea!’ But the snail replied ‘Too far, too far!’ and gave a look askance— Said he thanked the whiting kindly, but he would not join the dance. Would not, could not, would not, could not, would not join the dance. Would not, could not, would not, could not, could not join the dance." , 
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’’What matters it how far we go?’ his scaly friend replied. ‘There is another shore, you know, upon the other side. The further off from England the nearer is to France— Then turn not pale, beloved snail, but come and join the dance." ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "Will you, won’t you, will you, won’t you, will you join the dance? Will you, won’t you, will you, won’t you, won’t you join the dance?‘‘" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’Thank you, it’s a very interesting dance to watch,’ said Alice, feeling very glad that it was over at last: ‘and I do so like that curious song about the whiting!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, as to the whiting,’ said the Mock Turtle, ‘they— you’ve seen them, of course?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes,’ said Alice, ‘I’ve often seen them at dinn—’ she checked herself hastily." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I don’t know where Dinn may be,’ said the Mock Turtle, ‘but if you’ve seen them so often, of course you know what they’re like.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I believe so,’ Alice replied thoughtfully. ‘They have their tails in their mouths—and they’re all over crumbs.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You’re wrong about the crumbs,’ said the Mock Turtle: ‘crumbs would all wash off in the sea. But they have their tails in their mouths; and the reason is—’ here the Mock Turtle yawned and shut his eyes.—’Tell her about the reason and all that,’ he said to the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’The reason is,’ said the Gryphon, ‘that they would go with the lobsters to the dance. So they got thrown out to sea. So they had to fall a long way. So they got their tails fast in their mouths. So they couldn’t get them out again. That’s all.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Thank you,’ said Alice, ‘it’s very interesting. I never knew so much about a whiting before.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I can tell you more than that, if you like,’ said the Gryphon. ‘Do you know why it’s called a whiting?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I never thought about it,’ said Alice. ‘Why?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’<i>It does the boots and shoes.</i>’ the Gryphon replied very solemnly." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice was thoroughly puzzled. ‘Does the boots and shoes!’ she repeated in a wondering tone." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why, what are your shoes done with?’ said the Gryphon. ‘I mean, what makes them so shiny?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice looked down at them, and considered a little before she gave her answer. ‘They’re done with blacking, I believe.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Boots and shoes under the sea,’ the Gryphon went on in a deep voice, ‘are done with a whiting. Now you know.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’And what are they made of?’ Alice asked in a tone of great curiosity." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Soles and eels, of course,’ the Gryphon replied rather impatiently: ‘any shrimp could have told you that.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’If I’d been the whiting,’ said Alice, whose thoughts were still running on the song, ‘I’d have said to the porpoise, ‘Keep back, please: we don’t want you with us!‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’They were obliged to have him with them,’ the Mock Turtle said: ‘no wise fish would go anywhere without a porpoise.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Wouldn’t it really?’ said Alice in a tone of great surprise." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course not,’ said the Mock Turtle: ‘why, if a fish came to me, and told me he was going a journey, I should say ‘With what porpoise?‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Don’t you mean ‘purpose’?’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I mean what I say,’ the Mock Turtle replied in an offended tone. And the Gryphon added ‘Come, let’s hear some of your adventures.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I could tell you my adventures—beginning from this morning,’ said Alice a little timidly: ‘but it’s no use going back to yesterday, because I was a different person then.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Explain all that,’ said the Mock Turtle." ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, no! The adventures first,’ said the Gryphon in an impatient tone: ‘explanations take such a dreadful time.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "So Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so very wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating ’You are old, Father William,’ to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said ‘That’s very curious.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s all about as curious as it can be,’ said the Gryphon. ’It all came different!’ the Mock Turtle repeated thoughtfully. ‘I should like to hear her try and repeat something now. Tell her to begin.’ He looked at the Gryphon as if he thought it had some kind of authority over Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Stand up and repeat ‘‘Tis the voice of the sluggard,‘‘ said the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’How the creatures order one about, and make one repeat lessons!’ thought Alice; ‘I might as well be at school at once.’ However, she got up, and began to repeat it, but her head was so full of the Lobster Quadrille, that she hardly knew what she was saying, and the words came very queer indeed:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’’Tis the voice of the Lobster; I heard him declare, ‘You have baked me too brown, I must sugar my hair.’ As a duck with its eyelids, so he with his nose Trims his belt and his buttons, and turns out his toes.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "[later editions continued as follows When the sands are all dry, he is gay as a lark, And will talk in contemptuous tones of the Shark, But, when the tide rises and sharks are around, His voice has a timid and tremulous sound.]" ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s different from what I used to say when I was a child,’ said the Gryphon." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, I never heard it before,’ said the Mock Turtle; ‘but it sounds uncommon nonsense.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice said nothing; she had sat down with her face in her hands, wondering if anything would ever happen in a natural way again." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I should like to have it explained,’ said the Mock Turtle." ,
+      className: "chapter_text"
+    },{ 
+      text: "’She can’t explain it,’ said the Gryphon hastily. ‘Go on with the next verse.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’But about his toes?’ the Mock Turtle persisted. ‘How could he turn them out with his nose, you know?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s the first position in dancing.’ Alice said; but was dreadfully puzzled by the whole thing, and longed to change the subject." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Go on with the next verse,’ the Gryphon repeated impatiently: ‘it begins ‘I passed by his garden.‘‘" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice did not dare to disobey, though she felt sure it would all come wrong, and she went on in a trembling voice:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "I passed by his garden, and marked, with one eye, How the Owl and the Panther were sharing a pie—’" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "The Panther took pie-crust, and gravy, and meat, While the Owl had the dish as its share of the treat. When the pie was all finished, the Owl, as a boon, Was kindly permitted to pocket the spoon: While the Panther received knife and fork with a growl, And concluded the banquet—" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’What IS the use of repeating all that stuff,’ the Mock Turtle interrupted, ‘if you don’t explain it as you go on? It’s by far the most confusing thing I ever heard!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, I think you’d better leave off,’ said the Gryphon: and Alice was only too glad to do so." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Shall we try another figure of the Lobster Quadrille?’ the Gryphon went on. ‘Or would you like the Mock Turtle to sing you a song?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, a song, please, if the Mock Turtle would be so kind,’ Alice replied, so eagerly that the Gryphon said, in a rather offended tone, ‘Hm! No accounting for tastes! Sing her ‘Turtle Soup,’ will you, old fellow?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Mock Turtle sighed deeply, and began, in a voice sometimes choked with sobs, to sing this:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Beautiful Soup, so rich and green, Waiting in a hot tureen! Who for such dainties would not stoop? Soup of the evening, beautiful Soup! Soup of the evening, beautiful Soup! Beau— ootiful Soo—oop! Beau—ootiful Soo—oop! Soo—oop of the e—e—evening, Beautiful, beautiful Soup!" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’Beautiful Soup! Who cares for fish, Game, or any other dish? Who would not give all else for two pennyworth only of beautiful Soup? Pennyworth only of beautiful Soup? Beau— ootiful Soo—oop! Beau—ootiful Soo—oop! Soo—oop of the e—e—evening, Beautiful, beauti—FUL SOUP!’" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’Chorus again!’ cried the Gryphon, and the Mock Turtle had just begun to repeat it, when a cry of ‘The trial’s beginning!’ was heard in the distance." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Come on!’ cried the Gryphon, and, taking Alice by the hand, it hurried off, without waiting for the end of the song." ,
+      className: "chapter_text"
+    },{ 
+      text: "’What trial is it?’ Alice panted as she ran; but the Gryphon only answered ‘Come on!’ and ran the faster, while more and more faintly came, carried on the breeze that followed them, the melancholy words:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Soo—oop of the e—e—evening, Beautiful, beautiful Soup!’" ,
+      className: "chapter_text chapter_text_italic"
     }
   ]),
 
-  11: createChapter("Quem roubou as tortas?", "XI", "https://via.placeholder.com/25", [
+  11: createChapter("Who Stole the Tarts?", "XI", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—’I wish they’d get the trial done,’ she thought, ‘and hand round the refreshments!’ But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice had never been in a court of justice before, but she had read about them in books, and she was quite pleased to find that she knew the name of nearly everything there. ‘That’s the judge,’ she said to herself, ‘because of his great wig.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The judge, by the way, was the King; and as he wore his crown over the wig, (look at the frontispiece if you want to see how he did it,) he did not look at all comfortable, and it was certainly not becoming." ,
+      className: "chapter_text"
+    },{ 
+      text: "’And that’s the jury-box,’ thought Alice, ‘and those twelve creatures,’ (she was obliged to say ‘creatures,’ you see, because some of them were animals, and some were birds,) ‘I suppose they are the jurors.’ She said this last word two or three times over to herself, being rather proud of it: for she thought, and rightly too, that very few little girls of her age knew the meaning of it at all. However, ‘jury-men’ would have done just as well." ,
+      className: "chapter_text"
+    },{ 
+      text: "The twelve jurors were all writing very busily on slates. ‘What are they doing?’ Alice whispered to the Gryphon. ‘They can’t have anything to put down yet, before the trial’s begun.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’They’re putting down their names,’ the Gryphon whispered in reply, ‘for fear they should forget them before the end of the trial.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Stupid things!’ Alice began in a loud, indignant voice, but she stopped hastily, for the White Rabbit cried out, ‘Silence in the court!’ and the King put on his spectacles and looked anxiously round, to make out who was talking." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice could see, as well as if she were looking over their shoulders, that all the jurors were writing down ‘stupid things!’ on their slates, and she could even make out that one of them didn’t know how to spell ‘stupid,’ and that he had to ask his neighbour to tell him. ‘A nice muddle their slates’ll be in before the trial’s over!’ thought Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "One of the jurors had a pencil that squeaked. This of course, Alice could not stand, and she went round the court and got behind him, and very soon found an opportunity of taking it away. She did it so quickly that the poor little juror (it was Bill, the Lizard) could not make out at all what had become of it; so, after hunting all about for it, he was obliged to write with one finger for the rest of the day; and this was of very little use, as it left no mark on the slate." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Herald, read the accusation!’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "On this the White Rabbit blew three blasts on the trumpet, and then unrolled the parchment scroll, and read as follows:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!’" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’Consider your verdict,’ the King said to the jury." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Not yet, not yet!’ the Rabbit hastily interrupted. ‘There’s a great deal to come before that!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Call the first witness,’ said the King; and the White Rabbit blew three blasts on the trumpet, and called out, ‘First witness!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The first witness was the Hatter. He came in with a teacup in one hand and a piece of bread-and-butter in the other. ‘I beg pardon, your Majesty,’ he began, ‘for bringing these in: but I hadn’t quite finished my tea when I was sent for.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’You ought to have finished,’ said the King. ‘When did you begin?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The Hatter looked at the March Hare, who had followed him into the court, arm-in-arm with the Dormouse. ‘Fourteenth of March, I think it was,’ he said." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Fifteenth,’ said the March Hare. ’Sixteenth,’ added the Dormouse." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Write that down,’ the King said to the jury, and the jury eagerly wrote down all three dates on their slates, and then added them up, and reduced the answer to shillings and pence." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Take off your hat,’ the King said to the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It isn’t mine,’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Stolen!’ the King exclaimed, turning to the jury, who instantly made a memorandum of the fact." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I keep them to sell,’ the Hatter added as an explanation; ‘I’ve none of my own. I’m a hatter.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Here the Queen put on her spectacles, and began staring at the Hatter, who turned pale and fidgeted." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Give your evidence,’ said the King; ‘and don’t be nervous, or I’ll have you executed on the spot.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "This did not seem to encourage the witness at all: he kept shifting from one foot to the other, looking uneasily at the Queen, and in his confusion he bit a large piece out of his teacup instead of the bread-and-butter." ,
+      className: "chapter_text"
+    },{ 
+      text: "Just at this moment Alice felt a very curious sensation, which puzzled her a good deal until she made out what it was: she was beginning to grow larger again, and she thought at first she would get up and leave the court; but on second thoughts she decided to remain where she was as long as there was room for her." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I wish you wouldn’t squeeze so.’ said the Dormouse, who was sitting next to her. ‘I can hardly breathe.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I can’t help it,’ said Alice very meekly: ‘I’m growing.’ ’You’ve no right to grow here,’ said the Dormouse. ’Don’t talk nonsense,’ said Alice more boldly: ‘you know you’re growing too.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Yes, but I grow at a reasonable pace,’ said the Dormouse: ‘not in that ridiculous fashion.’ And he got up very sulkily and crossed over to the other side of the court. All this time the Queen had never left off staring at the Hatter, and, just as the Dormouse crossed the court, she said to one of the officers of the court, ‘Bring me the list of the singers in the last concert!’ on which the wretched Hatter trembled so, that he shook both his shoes off." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Give your evidence,’ the King repeated angrily, ‘or I’ll have you executed, whether you’re nervous or not.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’m a poor man, your Majesty,’ the Hatter began, in a trembling voice, ‘—and I hadn’t begun my tea—not above a week or so—and what with the bread-and-butter getting so thin—and the twinkling of the tea—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’The twinkling of the what?’ said the King. ’It began with the tea,’ the Hatter replied." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Of course twinkling begins with a T!’ said the King sharply. ‘Do you take me for a dunce? Go on!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’m a poor man,’ the Hatter went on, ‘and most things twinkled after that—only the March Hare said—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I didn’t!’ the March Hare interrupted in a great hurry." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You did!’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "’He denies it,’ said the King: ‘leave out that part.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, at any rate, the Dormouse said—’ the Hatter went on, looking anxiously round to see if he would deny it too: but the Dormouse denied nothing, being fast asleep." ,
+      className: "chapter_text"
+    },{ 
+      text: "’After that,’ continued the Hatter, ‘I cut some more bread- and-butter—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’But what did the Dormouse say?’ one of the jury asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That I can’t remember,’ said the Hatter." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You must remember,’ remarked the King, ‘or I’ll have you executed.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The miserable Hatter dropped his teacup and bread- and-butter, and went down on one knee. ‘I’m a poor man, your Majesty,’ he began." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You’re a very poor speaker,’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "Here one of the guinea-pigs cheered, and was immediately suppressed by the officers of the court. (As that is rather a hard word, I will just explain to you how it was done. They had a large canvas bag, which tied up at the mouth with strings: into this they slipped the guinea- pig, head first, and then sat upon it.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’m glad I’ve seen that done,’ thought Alice. ‘I’ve so often read in the newspapers, at the end of trials, ‘There was some attempts at applause, which was immediately suppressed by the officers of the court,’ and I never understood what it meant till now.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’If that’s all you know about it, you may stand down,’ continued the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I can’t go no lower,’ said the Hatter: ‘I’m on the floor, as it is.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then you may sit down,’ the King replied." ,
+      className: "chapter_text"
+    },{ 
+      text: "Here the other guinea-pig cheered, and was suppressed. ’Come, that finished the guinea-pigs!’ thought Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "‘Now we shall get on better.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’d rather finish my tea,’ said the Hatter, with an anxious look at the Queen, who was reading the list of singers." ,
+      className: "chapter_text"
+    },{ 
+      text: "’You may go,’ said the King, and the Hatter hurriedly left the court, without even waiting to put his shoes on." ,
+      className: "chapter_text"
+    },{ 
+      text: "’—and just take his head off outside,’ the Queen added to one of the officers: but the Hatter was out of sight before the officer could get to the door." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Call the next witness!’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "The next witness was the Duchess’s cook. She carried the pepper-box in her hand, and Alice guessed who it was, even before she got into the court, by the way the people near the door began sneezing all at once." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Give your evidence,’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Shan’t,’ said the cook." ,
+      className: "chapter_text"
+    },{ 
+      text: "The King looked anxiously at the White Rabbit, who said in a low voice, ‘Your Majesty must cross-examine THIS witness.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, if I must, I must,’ the King said, with a melancholy air, and, after folding his arms and frowning at the cook till his eyes were nearly out of sight, he said in a deep voice, ‘What are tarts made of?’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Pepper, mostly,’ said the cook." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Treacle,’ said a sleepy voice behind her." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Collar that Dormouse,’ the Queen shrieked out. ‘Behead that Dormouse! Turn that Dormouse out of court! Suppress him! Pinch him! Off with his whiskers!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "For some minutes the whole court was in confusion, getting the Dormouse turned out, and, by the time they had settled down again, the cook had disappeared." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Never mind!’ said the King, with an air of great relief. ‘Call the next witness.’ And he added in an undertone to the Queen, ‘Really, my dear, you must cross-examine the next witness. It quite makes my forehead ache!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice watched the White Rabbit as he fumbled over the list, feeling very curious to see what the next witness would be like, ‘—for they haven’t got much evidence yet,’ she said to herself. Imagine her surprise, when the White Rabbit read out, at the top of his shrill little voice, the name ‘Alice!’" ,
+      className: "chapter_text"
     }
   ]),
 
-  12: createChapter("Depoimento de Alice", "XII", "https://via.placeholder.com/25", [
+  12: createChapter("Alice’s Evidence", "XII", "https://via.placeholder.com/25", [
     { 
-      text: "Texto 1" ,
-      className: "text"
+      text: "’Here!’ cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, reminding her very much of a globe of goldfish she had accidentally upset the week before." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, I beg your pardon!’ she exclaimed in a tone of great dismay, and began picking them up again as quickly as she could, for the accident of the goldfish kept running in her head, and she had a vague sort of idea that they must be collected at once and put back into the jury-box, or they would die." ,
+      className: "chapter_text"
+    },{ 
+      text: "’The trial cannot proceed,’ said the King in a very grave voice, ‘until all the jurymen are back in their proper places— all,’ he repeated with great emphasis, looking hard at Alice as he said do." ,
+      className: "chapter_text"
+    },{ 
+      text: "Alice looked at the jury-box, and saw that, in her haste, she had put the Lizard in head downwards, and the poor little thing was waving its tail about in a melancholy way, being quite unable to move. She soon got it out again, and put it right; ‘not that it signifies much,’ she said to herself; ‘I should think it would be quite as much use in the trial one way up as the other.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "As soon as the jury had a little recovered from the shock of being upset, and their slates and pencils had been found and handed back to them, they set to work very diligently to write out a history of the accident, all except the Lizard, who seemed too much overcome to do anything but sit with its mouth open, gazing up into the roof of the court." ,
+      className: "chapter_text"
+    },{ 
+      text: "’What do you know about this business?’ the King said to Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nothing,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nothing <i>whatever?</i>’ persisted the King. <i>’Nothing whatever</i>,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That’s very important,’ the King said, turning to the jury. They were just beginning to write this down on their slates, when the White Rabbit interrupted: ‘Unimportant, your Majesty means, of course,’ he said in a very respectful tone, but frowning and making faces at him as he spoke." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Unimportant, of course, I meant,’ the King hastily said, and went on to himself in an undertone, ‘important—unimportant— unimportant—important—’ as if he were trying which word sounded best." ,
+      className: "chapter_text"
+    },{ 
+      text: "Some of the jury wrote it down ‘important,’ and some ‘unimportant.’ Alice could see this, as she was near enough to look over their slates; ‘but it doesn’t matter a bit,’ she thought to herself." ,
+      className: "chapter_text"
+    },{ 
+      text: "At this moment the King, who had been for some time busily writing in his note-book, cackled out ‘Silence!’ and read out from his book, ‘Rule Forty-two. <i>All persons more than a mile hight to leave the court.’</i>" ,
+      className: "chapter_text"
+    },{ 
+      text: "Everybody looked at Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I’m not a mile high,’ said Alice. ’You are,’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Nearly two miles high,’ added the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Well, I shan’t go, at any rate,’ said Alice: ‘besides, that’s not a regular rule: you invented it just now.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s the oldest rule in the book,’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then it ought to be Number One,’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "The King turned pale, and shut his note-book hastily. ‘Consider your verdict,’ he said to the jury, in a low, trembling voice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’There’s more evidence to come yet, please your Majesty,’ said the White Rabbit, jumping up in a great hurry; ‘this paper has just been picked up.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’What’s in it?’ said the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I haven’t opened it yet,’ said the White Rabbit, ‘but it seems to be a letter, written by the prisoner to—to somebody.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’It must have been that,’ said the King, ‘unless it was written to nobody, which isn’t usual, you know.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Who is it directed to?’ said one of the jurymen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It isn’t directed at all,’ said the White Rabbit; ‘in fact, there’s nothing written on the outside.’ He unfolded the paper as he spoke, and added ‘It isn’t a letter, after all: it’s a set of verses.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Are they in the prisoner’s handwriting?’ asked another of they jurymen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, they’re not,’ said the White Rabbit, ‘and that’s the queerest thing about it.’ (The jury all looked puzzled.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’He must have imitated somebody else’s hand,’ said the King. (The jury all brightened up again.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Please your Majesty,’ said the Knave, ‘I didn’t write it, and they can’t prove I did: there’s no name signed at the end.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’If you didn’t sign it,’ said the King, ‘that only makes the matter worse. You must have meant some mischief, or else you’d have signed your name like an honest man.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "There was a general clapping of hands at this: it was the first really clever thing the King had said that day." ,
+      className: "chapter_text"
+    },{ 
+      text: "’That proves his guilt,’ said the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It proves nothing of the sort!’ said Alice. ‘Why, you don’t even know what they’re about!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Read them,’ said the King." ,
+      className: "chapter_text"
+    },{ 
+      text: "The White Rabbit put on his spectacles. ‘Where shall I begin, please your Majesty?’ he asked." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Begin at the beginning,’ the King said gravely, ‘and go on till you come to the end: then stop.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "These were the verses the White Rabbit read:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "’They told me you had been to her, And mentioned me to him: She gave me a good character, But said I could not swim." ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "He sent them word I had not gone (We know it to be true): If she should push the matter on, What would become of you?" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "I gave her one, they gave him two, You gave us three or more; They all returned from him to you, Though they were mine before." ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "If I or she should chance to be Involved in this affair, He trusts to you to set them free, Exactly as we were." ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "My notion was that you had been (Before she had this fit) An obstacle that came between Him, and ourselves, and it." ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "Don’t let him know she liked them best, For this must ever be A secret, kept from all the rest, Between yourself and me.’" ,
+      className: "chapter_text chapter_text_italic"
+    },{ 
+      text: "’That’s the most important piece of evidence we’ve heard yet,’ said the King, rubbing his hands; ‘so now let the jury—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’If any one of them can explain it,’ said Alice, (she had grown so large in the last few minutes that she wasn’t a bit afraid of interrupting him,) ‘I’ll give him sixpence. I don’t believe there’s an atom of meaning in it.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "The jury all wrote down on their slates, ‘She doesn’t believe there’s an atom of meaning in it,’ but none of them attempted to explain the paper." ,
+      className: "chapter_text"
+    },{ 
+      text: "’If there’s no meaning in it,’ said the King, ‘that saves a world of trouble, you know, as we needn’t try to find any. And yet I don’t know,’ he went on, spreading out the verses on his knee, and looking at them with one eye; ‘I seem to see some meaning in them, after all. ‘-said I could not swim—’ you can’t swim, can you?’ he added, turning to the Knave." ,
+      className: "chapter_text"
+    },{ 
+      text: "The Knave shook his head sadly. ‘Do I look like it?’ he said. (Which he certainly did not, being made entirely of cardboard.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’All right, so far,’ said the King, and he went on muttering over the verses to himself: <i>‘We know it to be true—’ that’s the jury, of course— ‘I gave her one, they gave’ him two—’</i>  why, that must be what he did with the tarts, you know—’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’But, it goes on <i>‘they all returned from him to you,‘‘</i> said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Why, there they are!’ said the King triumphantly, pointing to the tarts on the table. ‘Nothing can be clearer than <i>that</i>. Then again—‘<i>before she had this fit</i>--’ you never had fits, my dear, I think?’ he said to the Queen." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Never!’ said the Queen furiously, throwing an inkstand at the Lizard as she spoke. (The unfortunate little Bill had left off writing on his slate with one finger, as he found it made no mark; but he now hastily began again, using the ink, that was trickling down his face, as long as it lasted.)" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Then the words don’t fit you,’ said the King, looking round the court with a smile. There was a dead silence." ,
+      className: "chapter_text"
+    },{ 
+      text: "’It’s a pun!’ the King added in an offended tone, and everybody laughed, ‘Let the jury consider their verdict,’ the King said, for about the twentieth time that day." ,
+      className: "chapter_text"
+    },{ 
+      text: "’No, no!’ said the Queen. ‘Sentence first—verdict afterwards.’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Stuff and nonsense!’ said Alice loudly. ‘The idea of having the sentence first!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Hold your tongue!’ said the Queen, turning purple." ,
+      className: "chapter_text"
+    },{ 
+      text: "’I won’t!’ said Alice." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Off with her head!’ the Queen shouted at the top of her voice. Nobody moved." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Who cares for you?’ said Alice, (she had grown to her full size by this time.) ‘You’re nothing but a pack of cards!’ At this the whole pack rose up into the air, and came flying down upon her: she gave a little scream, half of fright and half of anger, and tried to beat them off, and found herself lying on the bank, with her head in the lap of her sister, who was gently brushing away some dead leaves that had fluttered down from the trees upon her face." ,
+      className: "chapter_text"
+    },{ 
+      text: "’Wake up, Alice dear!’ said her sister; ‘Why, what a long sleep you’ve had!’" ,
+      className: "chapter_text"
+    },{ 
+      text: "’Oh, I’ve had such a curious dream!’ said Alice, and she told her sister, as well as she could remember them, all these strange Adventures of hers that you have just been reading about; and when she had finished, her sister kissed her, and said, ‘It was a curious dream, dear, certainly: but now run in to your tea; it’s getting late.’ So Alice got up and ran off, thinking while she ran, as well she might, what a wonderful dream it had been." ,
+      className: "chapter_text"
+    },{ 
+      text: "But her sister sat still just as she left her, leaning her head on her hand, watching the setting sun, and thinking of little Alice and all her wonderful Adventures, till she too began dreaming after a fashion, and this was her dream:—" ,
+      className: "chapter_text"
+    },{ 
+      text: "First, she dreamed of little Alice herself, and once again the tiny hands were clasped upon her knee, and the bright eager eyes were looking up into hers—she could hear the very tones of her voice, and see that queer little toss of her head to keep back the wandering hair that would always get into her eyes—and still as she listened, or seemed to listen, the whole place around her became alive the strange creatures of her little sister’s dream." ,
+      className: "chapter_text"
+    },{ 
+      text: "The long grass rustled at her feet as the White Rabbit hurried by—the frightened Mouse splashed his way through the neighbouring pool—she could hear the rattle of the teacups as the March Hare and his friends shared their never-ending meal, and the shrill voice of the Queen ordering off her unfortunate guests to execution—once more the pig-baby was sneezing on the Duchess’s knee, while plates and dishes crashed around it—once more the shriek of the Gryphon, the squeaking of the Lizard’s slate- pencil, and the choking of the suppressed guinea-pigs, filled the air, mixed up with the distant sobs of the miserable Mock Turtle." ,
+      className: "chapter_text"
+    },{ 
+      text: "So she sat on, with closed eyes, and half believed herself in Wonderland, though she knew she had but to open them again, and all would change to dull reality—the grass would be only rustling in the wind, and the pool rippling to the waving of the reeds—the rattling teacups would change to tinkling sheep- bells, and the Queen’s shrill cries to the voice of the shepherd boy—and the sneeze of the baby, the shriek of the Gryphon, and all thy other queer noises, would change (she knew) to the confused clamour of the busy farm-yard—while the lowing of the cattle in the distance would take the place of the Mock Turtle’s heavy sobs." ,
+      className: "chapter_text"
+    },{ 
+      text: "Lastly, she pictured to herself how this same little sister of hers would, in the after-time, be herself a grown woman; and how she would keep, through all her riper years, the simple and loving heart of her childhood: and how she would gather about her other little children, and make THEIR eyes bright and eager with many a strange tale, perhaps even with the dream of Wonderland of long ago: and how she would feel with all their simple sorrows, and find a pleasure in all their simple joys, remembering her own child-life, and the happy summer days." ,
+      className: "chapter_text"
     }
   ])
 
