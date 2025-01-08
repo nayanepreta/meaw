@@ -13,9 +13,7 @@ const Cover = ({
 
   return (
     <div className="cover">
-    <img className="capa" src="https://raw.githubusercontent.com/nayanepreta/alice-in-wonderland/refs/heads/main/src/assets/capa.png" alt="" />
-
-
+      <img className="capa" src="https://raw.githubusercontent.com/nayanepreta/alice-in-wonderland/refs/heads/main/src/assets/capa.png" alt="" />
       <p className="cover_nome_autor">{autor}</p>
 
       <img 
@@ -23,8 +21,7 @@ const Cover = ({
         src="https://via.placeholder.com/25" 
         alt={editora} loading="lazy"/>
       <div className="navigation">
-      
-      <button onClick={onNext}>
+        <button onClick={onNext}>
           <img
             src="https://raw.githubusercontent.com/nayanesenhorinha/abelhinha/refs/heads/main/src/assets/depois.png"
             alt="Next"
@@ -33,7 +30,6 @@ const Cover = ({
           />
         </button>
       </div>
-      
     </div>
   );
 };

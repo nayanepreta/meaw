@@ -13,24 +13,21 @@ const Infos = ({
   goToCover,
   goToSummary}) => {
 
-  return (
-    <div className="page info">
-      <Header />
-      <p className="info_nome_autor">{autor}</p>
-
-      <h1 className="info_titulo_livro">{titulo}</h1>
-      
-      <img 
-        className="info_logo_editora" 
-        src="https://via.placeholder.com/50" 
-        alt={editora} loading="lazy"/>
+return (
+  <div className="page info">
+    <Header />
+    <p className="info_nome_autor">{autor}</p>
+    <h1 className="info_titulo_livro">{titulo}</h1>
+    <img 
+      className="info_logo_editora" 
+      src="https://via.placeholder.com/50" 
+      alt={editora} loading="lazy"/>
     
-      <Navigation 
-        goToCover={goToCover} 
-        onNext={onNext} 
-        goToSummary={goToSummary} />
-    </div>
-  );
-};
+    <Navigation 
+      goToCover={goToCover} 
+      onNext={onNext} 
+      goToSummary={goToSummary} />
+  </div>
+); };
 
 export default Infos;

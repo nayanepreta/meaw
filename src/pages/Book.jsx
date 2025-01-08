@@ -28,7 +28,6 @@ import Colophon from '../components/Colophon';
 const Book = () => {
 
   const [currentPage, setCurrentPage] = useState(0);
-
   const setCurrentPageAndSave = (page) => {
     if (page !== currentPage) {
       setCurrentPage(page);
@@ -37,35 +36,29 @@ const Book = () => {
   };
   
   const pages = [
-
     <Cover  // 0
       goToSummary={() => setCurrentPageAndSave(3)}
-      onNext={() => setCurrentPageAndSave(1)} 
-       />,
+      onNext={() => setCurrentPageAndSave(1)} />,
 
     <Infos // 1
       onNext={() => setCurrentPageAndSave(2)} 
       goToCover={() => setCurrentPageAndSave(0)}
-      goToSummary={() => setCurrentPageAndSave(3)}
-      />,
+      goToSummary={() => setCurrentPageAndSave(3)} />,
 
-      <Intro // 2
+    <Intro // 2
       onNext={() => setCurrentPageAndSave(3)} 
       goToCover={() => setCurrentPageAndSave(0)}
-      goToSummary={() => setCurrentPageAndSave(3)}
-      />,
+      goToSummary={() => setCurrentPageAndSave(3)}/>,
 
     <Summary // 3
       onNext={() => setCurrentPageAndSave(4)} 
       goToCover={() => setCurrentPageAndSave(0)} 
-      goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)}
-      />,
+      goToChapter={(pageIndex) => setCurrentPageAndSave(pageIndex)}/>,
 
     <Preface // 4
       onNext={() => setCurrentPageAndSave(5)} 
       goToCover={() => setCurrentPageAndSave(0)} 
-      goToSummary={() => setCurrentPageAndSave(3)}
-      />,
+      goToSummary={() => setCurrentPageAndSave(3)}/>,
 
     <Chapter1 // 5
       onNext={() => setCurrentPageAndSave(6)} 
@@ -82,66 +75,65 @@ const Book = () => {
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
     
-      <Chapter4 // 8
+    <Chapter4 // 8
       onNext={() => setCurrentPageAndSave(9)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Chapter5 // 9
+    <Chapter5 // 9
       onNext={() => setCurrentPageAndSave(10)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
 
-      <Chapter6 // 10
+    <Chapter6 // 10
       onNext={() => setCurrentPageAndSave(11)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
 
-      <Chapter7 // 11
+    <Chapter7 // 11
       onNext={() => setCurrentPageAndSave(12)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
 
-      <Chapter8 // 12
+    <Chapter8 // 12
       onNext={() => setCurrentPageAndSave(13)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Chapter9 // 13
+    <Chapter9 // 13
       onNext={() => setCurrentPageAndSave(14)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Chapter10 // 14
+    <Chapter10 // 14
       onNext={() => setCurrentPageAndSave(15)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Chapter11 // 15
+    <Chapter11 // 15
       onNext={() => setCurrentPageAndSave(16)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
     
-      <Chapter12 // 16
+    <Chapter12 // 16
       onNext={() => setCurrentPageAndSave(17)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Afterword // 17
+    <Afterword // 17
       onNext={() => setCurrentPageAndSave(18)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Credits // 18
+    <Credits // 18
       onNext={() => setCurrentPageAndSave(19)} 
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
 
-      <Colophon // 19
-
+    <Colophon // 19
       goToCover={() => setCurrentPageAndSave(0)} 
       goToSummary={() => setCurrentPageAndSave(3)}/>,
   ];
