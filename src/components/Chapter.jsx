@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Navigation from './Navigation';
 import Footer from './Footer'; 
 
-const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover, goToContents }) => {
+const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover }) => {
   const { title: chapterTitle, chap: chapterRoman, img: image, texts: chapterTexts } = chapters[chapterNumber];
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover, goToContents 
         goToCover={goToCover} 
         onNext={onNext} 
         goToSummary={goToSummary} 
-        goToContents={goToContents}
+        
       />
 
       <Footer />

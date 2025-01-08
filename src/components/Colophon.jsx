@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
-import Header from '../components/Header';
+import Header from './Header';
 
-const Credits = ({ 
+const Colophon = ({ 
+  
   onNext, 
   goToCover,
   goToSummary,
    }) => {
 
-  const chapterTitle = "Créditos";
+  const chapterTitle = "Ends";
   
     useEffect(() => {
       const bookTitleT = chapters[0].titulo; 
@@ -21,7 +22,7 @@ const Credits = ({
   return (
     <div className="page">
       <Header />
-      Créditos
+      Ends
       <Navigation 
         goToCover={goToCover} 
         onNext={onNext} 
@@ -31,4 +32,4 @@ const Credits = ({
   );
 };
 
-export default Credits;
+export default Colophon;

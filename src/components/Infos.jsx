@@ -9,8 +9,7 @@ const {
   editora: editora} = chapters[0]; 
 
 const Infos = ({ 
-  onNext, 
-  goToContents, 
+  onNext,  
   goToCover,
   goToSummary}) => {
 
@@ -29,7 +28,6 @@ const Infos = ({
       <Navigation 
         goToCover={goToCover} 
         onNext={onNext} 
-        goToContents={goToContents}
         goToSummary={goToSummary} />
     </div>
   );
