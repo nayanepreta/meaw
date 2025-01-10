@@ -65,7 +65,7 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "***",
-          className: "chapter_text_space chapter_text"
+          className: "chapter_text_space"
         },{
           text: "’What a curious feeling!’ said Alice; ‘I must be shutting up like a telescope.’",
           className: "chapter_text"
@@ -89,7 +89,7 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "* * *",
-          className: "chapter_text_space chapter_text"
+          className: "chapter_text_space "
         }
     ]),
 
