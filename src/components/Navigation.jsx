@@ -1,37 +1,19 @@
 import React, { useState } from "react";
 
-const Navigation = ({ onNext, goToSummary, goToContents, goToCover }) => {
-  const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
+const Navigation = ({ onNext, goToSummary, goToCover }) => {
+  
 
-  const handleFirstButtonClick = () => {
-    setShowAdditionalButtons(!showAdditionalButtons);
-  };
-
-  const ajustesTamanhoFonte = () => {
-    alert("Ajustes");
-  }
+  
 
   return (
 
     
-    <div className={`navigation ${showAdditionalButtons ? "show-extra-buttons" : ""}`}>
+    <div className="navigation">
       
-      <button onClick={handleFirstButtonClick}>
-        <img
-          src="https://raw.githubusercontent.com/nayanesenhorinha/abelhinha/refs/heads/main/src/assets/menu.png"
-          alt="More Options"
-          className="nav-icon"
-          loading="lazy"
-        />
-      </button>
+      
+        {goToSummary && (<button onClick={goToSummary}>S</button>)}
 
-      <div
-        className={`additional-buttons ${showAdditionalButtons ? "visible" : ""}`}
-      >
-        {goToSummary && <button onClick={goToSummary}>S</button>}
-        {goToContents && <button onClick={goToContents}>C</button>}
-
-      </div>
+     
 
       {goToCover && (
         <button onClick={goToCover}>

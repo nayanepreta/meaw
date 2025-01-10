@@ -7,6 +7,7 @@
     --cinza-claro: #f7f7f7;
     --font-text: "Crimson Text", serif;
     --font-titulos: "Source Sans 3";
+    --font-alternativa: "Onest", serif;
     --font-size: 1.1rem;
 }
 
@@ -19,7 +20,6 @@
  
 h1, h2, h3, h4, h5, h6, p  {
     font-weight: normal;
-    font-size: var(--font-size); 
     color: var(--preto);
     font-family: var(--font-text);
 }
@@ -143,7 +143,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5625rem;
-    margin: 4rem 1rem 2rem;
+    margin: 5.8rem 1rem 2rem;
 }
 
 .chapter_title {
@@ -151,6 +151,12 @@ body {
     font-weight: bold;
     color: var(--preto);
     text-align: center;
+}
+
+.chapter_subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-alternativa);
 }
 
 .chapter_content {
@@ -309,8 +315,10 @@ body {
 
 .header_titulo {
     color: var(--branco);
-    font-size: 0.9rem;
-    font-family: "Crimson Text", serif;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-family: var(--font-alternativa);
+    font-weight: 500;
 }
 
 .font-size-box {
@@ -390,14 +398,14 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.625rem 1rem;
-    padding-right: 2.3rem;
+    padding: 0.625rem 1.2rem;
+    padding-right: 3rem;
     border-radius: 0.3125rem;
     background-color: var(--cinza-claro);
 }
 
 .menu-index {
-    width: 1rem;
+    width: 0.8rem;
     text-align: center;
     font-family: var(--font-text);
     font-size: 0.8rem;
@@ -426,11 +434,14 @@ body.dark-mode {
     .chapter_subtitle, 
     .chapter_title,
     .info_titulo_livro,
-    .info_nome_autor {
+    .info_nome_autor,
+    .menu-index,
+    .menu-button {
         color: var(--branco);
     }
     .header,
-    .navigation button {
+    .navigation button,
+    .menu-item {
         background-color: var(--cinza-escuro);
     }
 }

@@ -72,6 +72,14 @@ useEffect(() => {
         </button>
       </div>
     ))}
+
+    <div className="menu-item">
+      <button 
+        className="menu-button" 
+        onClick={() => goToChapter(18)}>
+          Credits
+      </button>
+    </div>
   </div>
   <Navigation 
         goToCover={goToCover} 

@@ -140,9 +140,29 @@ const Book = () => {
 
   useEffect(() => {
     const savedPage = localStorage.getItem('currentPage');
+    const savedPosition = localStorage.getItem('currentScrollPosition');
+
     if (savedPage) {
       setCurrentPage(parseInt(savedPage, 10));
     }
+
+    if (savedPosition) {
+      setTimeout(() => {
+        window.scrollTo(0, parseInt(savedPosition, 10));
+      }, 0);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.setItem('currentScrollPosition', window.scrollY || 0);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
   }, []);
 
   const handleSwipeLeft = () => {
