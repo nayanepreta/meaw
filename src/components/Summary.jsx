@@ -56,10 +56,10 @@ useEffect(() => {
     </div>
 
     <div className="menu-item">
-      <button 
-        className="menu-button menu-titulo" >
+      <p 
+        className="menu-titulo" >
           Alice’s Adventures in Wonderland
-      </button>
+      </p>
     </div>
 
     {Object.entries(chapters).slice(1).map(([chapterNumber, chapterData], index) => (

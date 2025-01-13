@@ -10,15 +10,7 @@ const Colophon = ({
   goToSummary,
    }) => {
 
-  const chapterTitle = "Ends";
   
-    useEffect(() => {
-      const bookTitleT = chapters[0].titulo; 
-      document.title = `${chapterTitle} • ${bookTitleT}`;
-      return () => {
-        document.title = chapters[0].titulo; 
-      };
-    }, [chapterTitle]);
   return (
     <div className="page">
       <Header />

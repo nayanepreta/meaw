@@ -196,7 +196,7 @@ const chapters = {
           text: "’I thought you did,’ said the Mouse. ‘—I proceed. ‘Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it advisable—‘‘",
           className: "chapter_text"
         },{
-          text: "’Found what?’ said the Duck.",
+          text: "’Found <i>what?</i>’ said the Duck.",
           className: "chapter_text"
         },{
           text: "’Found it,’ the Mouse replied rather crossly: ‘of course you know what ‘it’ means.’",
@@ -220,7 +220,7 @@ const chapters = {
           text: "’What I was going to say,’ said the Dodo in an offended tone, ‘was, that the best thing to get us dry would be a Caucus-race.’",
           className: "chapter_text"
         },{
-          text: "’What is a Caucus-race?’ said Alice; not that she wanted much to know, but the Dodo had paused as if it thought that somebody ought to speak, and no one else seemed inclined to say anything.",
+          text: "’What <i>is</i> a Caucus-race?’ said Alice; not that she wanted much to know, but the Dodo had paused as if it thought that <i>somebody</i> ought to speak, and no one else seemed inclined to say anything.",
           className: "chapter_text"
         },{
           text: "’Why,’ said the Dodo, ‘the best way to explain it is to do it.’ (And, as you might like to try the thing yourself, some winter day, I will tell you how the Dodo managed it.)",
@@ -229,13 +229,13 @@ const chapters = {
           text: "First it marked out a race-course, in a sort of circle, (’the exact shape doesn’t matter,’ it said,) and then all the party were placed along the course, here and there. There was no ‘One, two, three, and away,’ but they began running when they liked, and left off when they liked, so that it was not easy to know when the race was over. However, when they had been running half an hour or so, and were quite dry again, the Dodo suddenly called out ‘The race is over!’ and they all crowded round it, panting, and asking, ‘But who has won?’",
           className: "chapter_text"
         },{
-          text: "This question the Dodo could not answer without a great deal of thought, and it sat for a long time with one finger pressed upon its forehead (the position in which you usually see Shakespeare, in the pictures of him), while the rest waited in silence. At last the Dodo said, ‘everybody has won, and all must have prizes.’",
+          text: "This question the Dodo could not answer without a great deal of thought, and it sat for a long time with one finger pressed upon its forehead (the position in which you usually see Shakespeare, in the pictures of him), while the rest waited in silence. At last the Dodo said, ‘<i>everybody</i> has won, and <i>all</i> must have prizes.’",
           className: "chapter_text"
         },{
           text: "’But who is to give the prizes?’ quite a chorus of voices asked.",
           className: "chapter_text"
         },{
-          text: "’Why, she, of course,’ said the Dodo, pointing to Alice with one finger; and the whole party at once crowded round her, calling out in a confused way, ‘Prizes! Prizes!’",
+          text: "’Why, <i>she</i>, of course,’ said the Dodo, pointing to Alice with one finger; and the whole party at once crowded round her, calling out in a confused way, ‘Prizes! Prizes!’",
           className: "chapter_text"
         },{
           text: "Alice had no idea what to do, and in despair she put her hand in her pocket, and pulled out a box of comfits, (luckily the salt water had not got into it), and handed them round as prizes. There was exactly one a-piece all round.",
@@ -271,7 +271,7 @@ const chapters = {
           text: "’It IS a long tail, certainly,’ said Alice, looking down with wonder at the Mouse’s tail; ‘but why do you call it sad?’ And she kept on puzzling about it while the Mouse was speaking, so that her idea of the tale was something like this:—",
           className: "chapter_text"
         },{
-          text: "’Fury said to a mouse, That he met in the house, ‘Let us both go to law: I will prosecute you. —Come, I’ll take no denial; We must have a trial: For really this morning I’ve nothing to do.’ Said the mouse to the cur, ‘Such a trial, dear Sir,With no jury or judge, would be wasting our breath.’ ‘I’ll be judge, I’ll be jury,’ said cunning old Fury: I’ll try the whole cause, and condemn you to death.‘",
+          text: "’Fury said to a mouse, That he met in the house, ‘Let us both go to law: I will prosecute <i>you</i>. —Come, I’ll take no denial; We must have a trial: For really this morning I’ve nothing to do.’ Said the mouse to the cur, ‘Such a trial, dear Sir,With no jury or judge, would be wasting our breath.’ ‘I’ll be judge, I’ll be jury,’ said cunning old Fury: I’ll try the whole cause, and condemn you to death.‘",
           className: "chapter_text"
         },{
           text: "’You are not attending!’ said the Mouse to Alice severely. ‘What are you thinking of?’",
@@ -280,7 +280,7 @@ const chapters = {
           text: "’I beg your pardon,’ said Alice very humbly: ‘you had got to the fifth bend, I think?’",
           className: "chapter_text"
         },{
-          text: "’I had not!’ cried the Mouse, sharply and very angrily. ",
+          text: "’I had <i>not</i>!’ cried the Mouse, sharply and very angrily. ",
           className: "chapter_text"
         },{
           text: "’A knot!’ said Alice, always ready to make herself useful, and looking anxiously about her. ‘Oh, do let me help to undo it!’",
@@ -299,7 +299,7 @@ const chapters = {
           className: "chapter_text"
           
         },{
-          text: "’What a pity it wouldn’t stay!’ sighed the Lory, as soon as it was quite out of sight; and an old Crab took the opportunity of saying to her daughter ‘Ah, my dear! Let this be a lesson to you never to lose your temper!’ ‘Hold your tongue, Ma!’ said the young Crab, a little snappishly. ‘You’re enough to try the patience of an oyster!’",
+          text: "’What a pity it wouldn’t stay!’ sighed the Lory, as soon as it was quite out of sight; and an old Crab took the opportunity of saying to her daughter ‘Ah, my dear! Let this be a lesson to you never to lose <i>your</i> temper!’ ‘Hold your tongue, Ma!’ said the young Crab, a little snappishly. ‘You’re enough to try the patience of an oyster!’",
           className: "chapter_text"
         },{
           text: "’I wish I had our Dinah here, I know I do!’ said Alice aloud, addressing nobody in particular. ‘She’d soon fetch it back!’",
@@ -334,22 +334,22 @@ const chapters = {
           text: "’How queer it seems,’ Alice said to herself, ‘to be going messages for a rabbit! I suppose Dinah’ll be sending me on messages next!’ And she began fancying the sort of thing that would happen: ‘Miss Alice! Come here directly, and get ready for your walk!’ ‘Coming in a minute, nurse! But I’ve got to see that the mouse doesn’t get out.’ Only I don’t think,’ Alice went on, ‘that they’d let Dinah stop in the house if it began ordering people about like that!’",
           className: "chapter_text"
         },{
-          text: "By this time she had found her way into a tidy little room with a table in the window, and on it (as she had hoped) a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking- glass. There was no label this time with the words ‘DRINK ME,’ but  nevertheless she uncorked it and put it to her lips. ‘I know something interesting is sure to happen,’ she said to herself, ‘whenever I eat or drink anything; so I’ll just see what this bottle does. I do hope it’ll make me grow large again, for really I’m quite tired of being such a tiny little thing!’",
+          text: "By this time she had found her way into a tidy little room with a table in the window, and on it (as she had hoped) a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking- glass. There was no label this time with the words ‘DRINK ME,’ but  nevertheless she uncorked it and put it to her lips. ‘I know <i>something</i> interesting is sure to happen,’ she said to herself, ‘whenever I eat or drink anything; so I’ll just see what this bottle does. I do hope it’ll make me grow large again, for really I’m quite tired of being such a tiny little thing!’",
           className: "chapter_text"
         },{
           text: "It did so indeed, and much sooner than she had expected: before she had drunk half the bottle, she found her head pressing against the ceiling, and had to stoop to save her neck from being broken. She hastily put down the bottle, saying to herself ‘That’s quite enough—I hope I shan’t grow any more—As it is, I can’t get out at the door—I do wish I hadn’t drunk quite so much!’",
           className: "chapter_text"
         },{
-          text: "Alas! it was too late to wish that! She went on growing, and growing, and very soon had to kneel down on the floor: in another minute there was not even room for this, and she tried the effect of lying down with one elbow against the door, and the other arm curled round her head. Still she went on growing, and, as a last resource, she put one arm out of the window, and one foot up the chimney, and said to herself ‘Now I can do no more, whatever happens. What will become of me?’",
+          text: "Alas! it was too late to wish that! She went on growing, and growing, and very soon had to kneel down on the floor: in another minute there was not even room for this, and she tried the effect of lying down with one elbow against the door, and the other arm curled round her head. Still she went on growing, and, as a last resource, she put one arm out of the window, and one foot up the chimney, and said to herself ‘Now I can do no more, whatever happens. What <i>will</i> become of me?’",
           className: "chapter_text"
         },{
           text: "Luckily for Alice, the little magic bottle had now had its full effect, and she grew no larger: still it was very uncomfortable, and, as there seemed to be no sort of chance of her ever getting out of the room again, no wonder she felt unhappy.",
           className: "chapter_text"
         },{
-          text: "’It was much pleasanter at home,’ thought poor Alice, ‘when one wasn’t always growing larger and smaller, and being ordered about by mice and rabbits. I almost wish I hadn’t gone down that rabbit-hole—and yet—and yet— it’s rather curious, you know, this sort of life! I do wonder what can have happened to me! When I used to read fairy- tales, I fancied that kind of thing never happened, and now here I am in the middle of one! There ought to be a book written about me, that there ought! And when I grow up, I’ll write one—but I’m grown up now,’ she added in a sorrowful tone; ‘at least there’s no room to grow up any more here.’",
+          text: "’It was much pleasanter at home,’ thought poor Alice, ‘when one wasn’t always growing larger and smaller, and being ordered about by mice and rabbits. I almost wish I hadn’t gone down that rabbit-hole—and yet—and yet— it’s rather curious, you know, this sort of life! I do wonder what can have happened to me! When I used to read fairy- tales, I fancied that kind of thing never happened, and now here I am in the middle of one! There ought to be a book written about me, that there ought! And when I grow up, I’ll write one—but I’m grown up now,’ she added in a sorrowful tone; ‘at least there’s no room to grow up any more <i>here</i>.’",
           className: "chapter_text"
         },{
-          text: "But then,’ thought Alice, ‘shall I never get any older than I am now? That’ll be a comfort, one way—never to be an old woman— but then—always to have lessons to learn! Oh, I shouldn’t like that!’",
+          text: "But then,’ thought Alice, ‘shall I never get any older than I am now? That’ll be a comfort, one way—never to be an old woman— but then—always to have lessons to learn! Oh, I shouldn’t like <i>that!</i>’",
           className: "chapter_text"
         },{
           text: "’Oh, you foolish Alice!’ she answered herself. ‘How can you learn lessons in here? Why, there’s hardly room for you, and no room at all for any lesson-books!’",
@@ -364,7 +364,7 @@ const chapters = {
           text: "Presently the Rabbit came up to the door, and tried to open it; but, as the door opened inwards, and Alice’s elbow was pressed hard against it, that attempt proved a failure. Alice heard it say to itself ‘Then I’ll go round and get in at the window.’",
           className: "chapter_text"
         },{
-          text: "’That you won’t’ thought Alice, and, after waiting till she fancied she heard the Rabbit just under the window, she suddenly spread out her hand, and made a snatch in the air. She did not get hold of anything, but she heard a little shriek and a fall, and a crash of broken glass, from which she concluded that it was just possible it had fallen into a cucumber-frame, or something of the sort.",
+          text: "’<i>That</i> you won’t’ thought Alice, and, after waiting till she fancied she heard the Rabbit just under the window, she suddenly spread out her hand, and made a snatch in the air. She did not get hold of anything, but she heard a little shriek and a fall, and a crash of broken glass, from which she concluded that it was just possible it had fallen into a cucumber-frame, or something of the sort.",
           className: "chapter_text"
         },{
           text: "Next came an angry voice—the Rabbit’s—’Pat! Pat! Where are you?’ And then a voice she had never heard before, ‘Sure then I’m here! Digging for apples, yer honour!",
@@ -388,13 +388,13 @@ const chapters = {
           text: "’Well, it’s got no business there, at any rate: go and take it away!’",
           className: "chapter_text"
         },{
-          text: "There was a long silence after this, and Alice could only hear whispers now and then; such as, ‘Sure, I don’t like it, yer honour, at all, at all!’ ‘Do as I tell you, you coward!’ and at last she spread out her hand again, and made another snatch in the air. This time there were two little shrieks, and more sounds of broken glass. ‘What a number of cucumber-frames there must be!’ thought Alice. ‘I wonder what they’ll do next! As for pulling me out of the window, I only wish they could! I’m sure I don’t want to stay in here any longer!’",
+          text: "There was a long silence after this, and Alice could only hear whispers now and then; such as, ‘Sure, I don’t like it, yer honour, at all, at all!’ ‘Do as I tell you, you coward!’ and at last she spread out her hand again, and made another snatch in the air. This time there were <i>two</i> little shrieks, and more sounds of broken glass. ‘What a number of cucumber-frames there must be!’ thought Alice. ‘I wonder what they’ll do next! As for pulling me out of the window, I only wish they <i>could</i>! I’m sure I don’t want to stay in here any longer!’",
           className: "chapter_text"
         },{
           text: "She waited for some time without hearing anything more: at last came a rumbling of little cartwheels, and the sound of a good many voices all talking together: she made out the words: ‘Where’s the other ladder?—Why, I hadn’t to bring but one; Bill’s got the other—Bill! fetch it here, lad!—Here, put ‘em up at this corner—No, tie ‘em together first—they don’t reach half high enough yet— Oh! they’ll do well enough; don’t be particular— Here, Bill! catch hold of this rope—Will the roof bear?—Mind that loose slate—Oh, it’s coming down! Heads below!’ (a loud crash)—’Now, who did that?—It was Bill, I fancy— Who’s to go down the chimney?—Nay, I shan’t! you do it!—That I won’t, then!—Bill’s to go down—Here, Bill! the master says you’re to go down the chimney!’",
           className: "chapter_text"
         },{
-          text: "’Oh! So Bill’s got to come down the chimney, has he?’ said Alice to herself. ‘Shy, they seem to put everything upon Bill! I wouldn’t be in Bill’s place for a good deal: this fireplace is narrow, to be sure; but I think I can kick a little!’",
+          text: "’Oh! So Bill’s got to come down the chimney, has he?’ said Alice to herself. ‘Shy, they seem to put everything upon Bill! I wouldn’t be in Bill’s place for a good deal: this fireplace is narrow, to be sure; but I <i>think</i> I can kick a little!’",
           className: "chapter_text"
         },{
           text: "She drew her foot as far down the chimney as she could, and waited till she heard a little animal (she couldn’t guess of what sort it was) scratching and scrambling about in the chimney close above her: then, saying to herself ‘This is Bill,’ she gave one sharp kick, and waited to see what would happen next.",
@@ -412,13 +412,13 @@ const chapters = {
           text: "’We must burn the house down!’ said the Rabbit’s voice; and Alice called out as loud as she could, ‘If you do. I’ll set Dinah at you!’",
           className: "chapter_text"
         },{
-          text: "There was a dead silence instantly, and Alice thought to herself, ‘I wonder what they will do next! If they had any sense, they’d take the roof off.’ After a minute or two, they began moving about again, and Alice heard the Rabbit say, ‘A barrowful will do, to begin with.’",
+          text: "There was a dead silence instantly, and Alice thought to herself, ‘I wonder what they <i>will</i> do next! If they had any sense, they’d take the roof off.’ After a minute or two, they began moving about again, and Alice heard the Rabbit say, ‘A barrowful will do, to begin with.’",
           className: "chapter_text"
         },{
-          text: "’A barrowful of what?’ thought Alice; but she had not long to doubt, for the next moment a shower of little pebbles came rattling in at the window, and some of them hit her in the face. ‘I’ll put a stop to this,’ she said to herself, and shouted out, ‘You’d better not do that again!’ which produced another dead silence.",
+          text: "’A barrowful of <i>what</i>?’ thought Alice; but she had not long to doubt, for the next moment a shower of little pebbles came rattling in at the window, and some of them hit her in the face. ‘I’ll put a stop to this,’ she said to herself, and shouted out, ‘You’d better not do that again!’ which produced another dead silence.",
           className: "chapter_text"
         },{
-          text: "Alice noticed with some surprise that the pebbles were all turning into little cakes as they lay on the floor, and a bright idea came into her head. ‘If I eat one of these cakes,’ she thought, ‘it’s sure to make some change in my size; and as it can’t possibly make me larger, it must make me smaller, I suppose.’",
+          text: "Alice noticed with some surprise that the pebbles were all turning into little cakes as they lay on the floor, and a bright idea came into her head. ‘If I eat one of these cakes,’ she thought, ‘it’s sure to make <i>some</i> change in my size; and as it can’t possibly make me larger, it must make me smaller, I suppose.’",
           className: "chapter_text"
           
         },{
@@ -456,7 +456,7 @@ const chapters = {
           text: "The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.",
           className: "chapter_text"
         },{
-          text: "’Who are you?’ said the Caterpillar.",
+          text: "’Who are <i>you</i>?’ said the Caterpillar.",
           className: "chapter_text"
         },{
           text: "This was not an encouraging opening for a conversation. Alice replied, rather shyly, ‘I—I hardly know, sir, just at present— at least I know who I WAS when I got up this morning, but I think I must have been changed several times since then.’",
@@ -465,7 +465,7 @@ const chapters = {
           text: "’What do you mean by that?’ said the Caterpillar sternly. ‘Explain yourself!’",
           className: "chapter_text"
         },{
-          text: "’I can’t explain myself, I’m afraid, sir’ said Alice, ‘because I’m not myself, you see.’",
+          text: "’I can’t explain <i>myself</i>, I’m afraid, sir’ said Alice, ‘because I’m not myself, you see.’",
           className: "chapter_text"
         },{
           text: "’I don’t see,’ said the Caterpillar.",
@@ -483,13 +483,13 @@ const chapters = {
           text: "’Not a bit,’ said the Caterpillar.",
           className: "chapter_text"
         },{
-          text: "’Well, perhaps your feelings may be different,’ said Alice; ‘all I know is, it would feel very queer to me.’",
+          text: "’Well, perhaps your feelings may be different,’ said Alice; ‘all I know is, it would feel very queer to <i>me</i>.’",
           className: "chapter_text"
         },{
-          text: "’You!’ said the Caterpillar contemptuously. ‘Who are you?’",
+          text: "’You!’ said the Caterpillar contemptuously. ‘Who are <i>you</i>?’",
           className: "chapter_text"
         },{
-          text: "Which brought them back again to the beginning of the conversation. Alice felt a little irritated at the Caterpillar’s making such very short remarks, and she drew herself up and said, very gravely, ‘I think, you ought to tell me who you are, first.’",
+          text: "Which brought them back again to the beginning of the conversation. Alice felt a little irritated at the Caterpillar’s making such <i>very</i> short remarks, and she drew herself up and said, very gravely, ‘I think, you ought to tell me who <i>you</i> are, first.’",
           className: "chapter_text"
         },{
           text: "’Why?’ said the Caterpillar.",
@@ -516,13 +516,13 @@ const chapters = {
           text: "’I’m afraid I am, sir,’ said Alice; ‘I can’t remember things as I used—and I don’t keep the same size for ten minutes together!’",
           className: "chapter_text"
         },{
-          text: "’Can’t remember what things?’ said the Caterpillar.",
+          text: "’Can’t remember <i>what</i> things?’ said the Caterpillar.",
           className: "chapter_text"
         },{
-          text: "’Well, I’ve tried to say ‘How doth the little busy bee,’ but it all came different!’ Alice replied in a very melancholy voice.",
+          text: "’Well, I’ve tried to say ‘<i>How doth the little busy bee</i>,’ but it all came different!’ Alice replied in a very melancholy voice.",
           className: "chapter_text"
         },{
-          text: "’Repeat, ‘you are old, Father William,‘‘ said the Caterpillar.",
+          text: "’Repeat, ‘<i>you are old, Father William,</i>‘‘ said the Caterpillar.",
           className: "chapter_text"
         },{
           text: "Alice folded her hands, and began:—",
@@ -555,7 +555,7 @@ const chapters = {
           text: "’That is not said right,’ said the Caterpillar.",
           className: "chapter_text"
         },{
-          text: "’Not quite right, I’m afraid,’ said Alice, timidly; ‘some of the words have got altered.’",
+          text: "’Not <i>quite</i> right, I’m afraid,’ said Alice, timidly; ‘some of the words have got altered.’",
           className: "chapter_text"
         },{
           text: "’It is wrong from beginning to end,’ said the Caterpillar decidedly, and there was silence for some minutes.",
@@ -570,7 +570,7 @@ const chapters = {
           text: "’Oh, I’m not particular as to size,’ Alice hastily replied; ‘only one doesn’t like changing so often, you know.’",
           className: "chapter_text"
         },{
-          text: "’I don’t know,’ said the Caterpillar.",
+          text: "’I <i>don’t</i> know,’ said the Caterpillar.",
           className: "chapter_text"
         },{
           text: "Alice said nothing: she had never been so much contradicted in her life before, and she felt that she was losing her temper.",
@@ -579,7 +579,7 @@ const chapters = {
           text: "’Are you content now?’ said the Caterpillar.",
           className: "chapter_text"
         },{
-          text: "’Well, I should like to be a little larger, sir, if you wouldn’t mind,’ said Alice: ‘three inches is such a wretched height to be.’",
+          text: "’Well, I should like to be a <i>little</i> larger, sir, if you wouldn’t mind,’ said Alice: ‘three inches is such a wretched height to be.’",
           className: "chapter_text"
 
         },{
@@ -611,12 +611,12 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "* * *",
-          className: "chapter_text_space chapter_text"
+          className: "chapter_text_space"
         },{
           text: "’Come, my head’s free at last!’ said Alice in a tone of delight, which changed into alarm in another moment, when she found that her shoulders were nowhere to be found: all she could see, when she looked down, was an immense length of neck, which seemed to rise like a stalk out of a sea of green leaves that lay far below her.",
           className: "chapter_text"
         },{
-          text: "’What can all that green stuff be?’ said Alice. ‘And where <i>have</i> my shoulders got to? And oh, my poor hands, how is it I can’t see you?’ She was moving them about as she spoke, but no result seemed to follow, except a little shaking among the distant green leaves.",
+          text: "’What <i>can</i> all that green stuff be?’ said Alice. ‘And where <i>have</i> my shoulders got to? And oh, my poor hands, how is it I can’t see you?’ She was moving them about as she spoke, but no result seemed to follow, except a little shaking among the distant green leaves.",
           className: "chapter_text"
         },{
           text: "As there seemed to be no chance of getting her hands up to her head, she tried to get her head down to them, and was delighted to find that her neck would bend about easily in any direction, like a serpent. She had just succeeded in curving it down into a graceful zigzag, and was going to dive in among the leaves, which she found to be nothing but the tops of the trees under which she had been wandering, when a sharp hiss made her draw back in a hurry: a large pigeon had flown into her face, and was beating her violently with its wings.",
@@ -625,7 +625,7 @@ const chapters = {
           text: "’Serpent!’ screamed the Pigeon.",
           className: "chapter_text"
         },{
-          text: "’I’m not a serpent!’ said Alice indignantly. ‘Let me alone!’",
+          text: "’I’m <i>not</i> a serpent!’ said Alice indignantly. ‘Let me alone!’",
           className: "chapter_text"
         },{
           text: "’Serpent, I say again!’ repeated the Pigeon, but in a more subdued tone, and added with a kind of sob, ‘I’ve tried every way, and nothing seems to suit them!’",
@@ -784,8 +784,8 @@ const chapters = {
           text: "’Talking of axes,’ said the Duchess, ‘chop off her head!’ Alice glanced rather anxiously at the cook, to see if she meant to take the hint; but the cook was busily stirring the soup, and seemed not to be listening, so she went on again: ‘Twenty-four hours, I think; or is it twelve? I—’ ’Oh, don’t bother ME,’ said the Duchess; ‘I never could abide figures!’ And with that she began nursing her child again, singing a sort of lullaby to it as she did so, and giving it a violent shake at the end of every line:",
           className: "chapter_text"
         },{
-          text: "’<i>Speak roughly to your little boy,<br/> And beat him when he sneezes:</br>He only does it to annoy,</br>Because he knows it teases.</i>’</br> CHORUS</br>(In which the cook and the baby joined):—",
-          className: "chapter_text cit"
+          text: "’<i>Speak roughly to your little boy,</br>And beat him when he sneezes:</br>He only does it to annoy,</br>Because he knows it teases.</i>’</br> CHORUS</br>(In which the cook and the baby joined):—",
+          className: "chapter_text_cit "
         },{
           text: "’Wow! wow! wow!’",
           className: "chapter_text"
@@ -793,8 +793,8 @@ const chapters = {
           text: "While the Duchess sang the second verse of the song, she kept tossing the baby violently up and down, and the poor little thing howled so, that Alice could hardly hear the words:—",
           className: "chapter_text"
         },{
-          text: "’I speak severely to my boy,</br> I beat him when he sneezes;</br> For he can thoroughly enjoy</br>The pepper when he pleases!’</br> CHORUS",
-          className: "chapter_text"
+          text: "’<i>I speak severely to my boy,</br> I beat him when he sneezes;</br> For he can thoroughly enjoy</br>The pepper when he pleases!’</i></br> CHORUS",
+          className: "chapter_text_cit"
         },{
           text: "’Wow! wow! wow!’",
           className: "chapter_text"
@@ -1059,7 +1059,7 @@ const chapters = {
       className: "chapter_text"
     },{ 
       text: "<i>‘‘Twinkle, twinkle, little bat!</br> How I wonder what you’re at!’</i></br> You know the song, perhaps?’</br>’I’ve heard something like it,’ said Alice.</br>’It goes on, you know,’ the Hatter continued, ‘in this way:—</br><i>‘‘Up above the world you fly, Like a tea-tray in the sky.</br>Twinkle, twinkle—‘‘</i>" ,
-      className: "chapter_text"
+      className: "chapter_text_cit"
     },{ 
       text: "Here the Dormouse shook itself, and began singing in its sleep <i>‘Twinkle, twinkle, twinkle, twinkle—’</i> and went on so long that they had to pinch it to make it stop." ,
       className: "chapter_text"
@@ -1257,10 +1257,10 @@ const chapters = {
       text: "’My name is Alice, so please your Majesty,’ said Alice very politely; but she added, to herself, ‘Why, they’re only a pack of cards, after all. I needn’t be afraid of them!’" ,
       className: "chapter_text"
     },{ 
-      text: "’And who are these?’ said the Queen, pointing to the three gardeners who were lying round the rosetree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children." ,
+      text: "’And who are <i>these</i>?’ said the Queen, pointing to the three gardeners who were lying round the rosetree; for, you see, as they were lying on their faces, and the pattern on their backs was the same as the rest of the pack, she could not tell whether they were gardeners, or soldiers, or courtiers, or three of her own children." ,
       className: "chapter_text"
     },{ 
-      text: "’How should I know?’ said Alice, surprised at her own courage. ‘It’s no business of mine.’" ,
+      text: "’How should I know?’ said Alice, surprised at her own courage. ‘It’s no business of <i>mine</i>.’" ,
       className: "chapter_text"
     },{ 
       text: "The Queen turned crimson with fury, and, after glaring at her for a moment like a wild beast, screamed ‘Off with her head! Off—’" ,
@@ -1335,7 +1335,7 @@ const chapters = {
       text: "’Get to your places!’ shouted the Queen in a voice of thunder, and people began running about in all directions, tumbling up against each other; however, they got settled down in a minute or two, and the game began. Alice thought she had never seen such a curious croquet-ground in her life; it was all ridges and furrows; the balls were live hedgehogs, the mallets live flamingoes, and the soldiers had to double themselves up and to stand on their hands and feet, to make the arches." ,
       className: "chapter_text"
     },{ 
-      text: "The chief difficulty Alice found at first was in managing her flamingo: she succeeded in getting its body tucked away, comfortably enough, under her arm, with its legs hanging down, but generally, just as she had got its neck nicely straightened out, and was going to give the hedgehog a blow with its head, it would twist itself round and look up in her face, with such a puzzled expression that she could not help bursting out laughing: and when she had got its head down, and was going to begin again, it was very provoking to find that the hedgehog had unrolled itself, and was in the act of crawling away: besides all this, there was generally a ridge or furrow in the way wherever she wanted to send the hedgehog to, and, as the doubled-up soldiers were always getting up and walking off to other parts of the ground, Alice soon came to the conclusion that it was a very difficult game indeed." ,
+      text: "The chief difficulty Alice found at first was in managing her flamingo: she succeeded in getting its body tucked away, comfortably enough, under her arm, with its legs hanging down, but generally, just as she had got its neck nicely straightened out, and was going to give the hedgehog a blow with its head, it <i>would</i> twist itself round and look up in her face, with such a puzzled expression that she could not help bursting out laughing: and when she had got its head down, and was going to begin again, it was very provoking to find that the hedgehog had unrolled itself, and was in the act of crawling away: besides all this, there was generally a ridge or furrow in the way wherever she wanted to send the hedgehog to, and, as the doubled-up soldiers were always getting up and walking off to other parts of the ground, Alice soon came to the conclusion that it was a very difficult game indeed." ,
       className: "chapter_text"
     },{ 
       text: "The players all played at once without waiting for turns, quarrelling all the while, and fighting for the hedgehogs; and in a very short time the Queen was in a furious passion, and went stamping about, and shouting ‘Off with his head!’ or ‘Off with her head!’ about once in a minute." ,
@@ -1435,7 +1435,7 @@ const chapters = {
       text: "Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen." ,
       className: "chapter_text"
     },{ 
-      text: "’When I’m a Duchess,’ she said to herself, (not in a very hopeful tone though), ‘I won’t have any pepper in my kitchen at all. Soup does very well without—Maybe it’s always pepper that makes people hot-tempered,’ she went on, very much pleased at having found out a new kind of rule, ‘and vinegar that makes them sour—and camomile that makes them bitter—and—and barley-sugar and such things that make children sweet-tempered. I only wish people knew that: then they wouldn’t be so stingy about it, you know—’" ,
+      text: "’When <i>I’m</i> a Duchess,’ she said to herself, (not in a very hopeful tone though), ‘I won’t have any pepper in my kitchen at all. Soup does very well without—Maybe it’s always pepper that makes people hot-tempered,’ she went on, very much pleased at having found out a new kind of rule, ‘and vinegar that makes them sour—and camomile that makes them bitter—and—and barley-sugar and such things that make children sweet-tempered. I only wish people knew that: then they wouldn’t be so stingy about it, you know—’" ,
       className: "chapter_text"
     },{ 
       text: "She had quite forgotten the Duchess by this time, and was a little startled when she heard her voice close to her ear. ‘You’re thinking about something, my dear, and that makes you forget to talk. I can’t tell you just now what the moral of that is, but I shall remember it in a bit.’" ,
@@ -1480,7 +1480,7 @@ const chapters = {
       text: "’Right, as usual,’ said the Duchess: ‘what a clear way you have of putting things!’" ,
       className: "chapter_text"
     },{ 
-      text: "’It’s a mineral, I think,’ said Alice." ,
+      text: "’It’s a mineral, I <i>think</i>,’ said Alice." ,
       className: "chapter_text"
     },{ 
       text: "’Of course it is,’ said the Duchess, who seemed ready to agree to everything that Alice said; ‘there’s a large mustard-mine near here. And the moral of that is—‘The more there is of mine, the less there is of yours.‘‘" ,
@@ -1564,7 +1564,7 @@ const chapters = {
       text: "’What IS the fun?’ said Alice." ,
       className: "chapter_text"
     },{ 
-      text: "’Why, she,’ said the Gryphon. ‘It’s all her fancy, that: they never executes nobody, you know. Come on!’" ,
+      text: "’Why, <i>she</i>,’ said the Gryphon. ‘It’s all her fancy, that: they never executes nobody, you know. Come on!’" ,
       className: "chapter_text"
     },{ 
       text: "’Everybody says ‘come on!’ here,’ thought Alice, as she went slowly after it: ‘I never was so ordered about in all my life, never!’" ,
@@ -1868,22 +1868,19 @@ const chapters = {
       text: "’No, no! The adventures first,’ said the Gryphon in an impatient tone: ‘explanations take such a dreadful time.’" ,
       className: "chapter_text"
     },{ 
-      text: "So Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so very wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating ’You are old, Father William,’ to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said ‘That’s very curious.’" ,
+      text: "So Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so very wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating ’<i>You are old, Father William</i>,’ to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said ‘That’s very curious.’" ,
       className: "chapter_text"
     },{ 
       text: "’It’s all about as curious as it can be,’ said the Gryphon. ’It all came different!’ the Mock Turtle repeated thoughtfully. ‘I should like to hear her try and repeat something now. Tell her to begin.’ He looked at the Gryphon as if he thought it had some kind of authority over Alice." ,
       className: "chapter_text"
     },{ 
-      text: "’Stand up and repeat ‘‘Tis the voice of the sluggard,‘‘ said the Gryphon." ,
+      text: "’Stand up and repeat ‘‘<i>Tis the voice of the sluggard</i>,‘‘ said the Gryphon." ,
       className: "chapter_text"
     },{ 
       text: "’How the creatures order one about, and make one repeat lessons!’ thought Alice; ‘I might as well be at school at once.’ However, she got up, and began to repeat it, but her head was so full of the Lobster Quadrille, that she hardly knew what she was saying, and the words came very queer indeed:—" ,
       className: "chapter_text"
     },{ 
       text: "’’Tis the voice of the Lobster; I heard him declare, ‘You have baked me too brown, I must sugar my hair.’ As a duck with its eyelids, so he with his nose Trims his belt and his buttons, and turns out his toes.’" ,
-      className: "chapter_text"
-    },{ 
-      text: "[later editions continued as follows When the sands are all dry, he is gay as a lark, And will talk in contemptuous tones of the Shark, But, when the tide rises and sharks are around, His voice has a timid and tremulous sound.]" ,
       className: "chapter_text"
     },{ 
       text: "’That’s different from what I used to say when I was a child,’ said the Gryphon." ,
@@ -1901,7 +1898,7 @@ const chapters = {
       text: "’She can’t explain it,’ said the Gryphon hastily. ‘Go on with the next verse.’" ,
       className: "chapter_text"
     },{ 
-      text: "’But about his toes?’ the Mock Turtle persisted. ‘How could he turn them out with his nose, you know?’" ,
+      text: "’But about his toes?’ the Mock Turtle persisted. ‘How <i>could</i> he turn them out with his nose, you know?’" ,
       className: "chapter_text"
     },{ 
       text: "’It’s the first position in dancing.’ Alice said; but was dreadfully puzzled by the whole thing, and longed to change the subject." ,
@@ -2046,7 +2043,7 @@ const chapters = {
       text: "’I can’t help it,’ said Alice very meekly: ‘I’m growing.’ ’You’ve no right to grow here,’ said the Dormouse. ’Don’t talk nonsense,’ said Alice more boldly: ‘you know you’re growing too.’" ,
       className: "chapter_text"
     },{ 
-      text: "’Yes, but I grow at a reasonable pace,’ said the Dormouse: ‘not in that ridiculous fashion.’ And he got up very sulkily and crossed over to the other side of the court. All this time the Queen had never left off staring at the Hatter, and, just as the Dormouse crossed the court, she said to one of the officers of the court, ‘Bring me the list of the singers in the last concert!’ on which the wretched Hatter trembled so, that he shook both his shoes off." ,
+      text: "’Yes, but <i>I</i> grow at a reasonable pace,’ said the Dormouse: ‘not in that ridiculous fashion.’ And he got up very sulkily and crossed over to the other side of the court. All this time the Queen had never left off staring at the Hatter, and, just as the Dormouse crossed the court, she said to one of the officers of the court, ‘Bring me the list of the singers in the last concert!’ on which the wretched Hatter trembled so, that he shook both his shoes off." ,
       className: "chapter_text"
     },{ 
       text: "’Give your evidence,’ the King repeated angrily, ‘or I’ll have you executed, whether you’re nervous or not.’" ,
@@ -2055,10 +2052,10 @@ const chapters = {
       text: "’I’m a poor man, your Majesty,’ the Hatter began, in a trembling voice, ‘—and I hadn’t begun my tea—not above a week or so—and what with the bread-and-butter getting so thin—and the twinkling of the tea—’" ,
       className: "chapter_text"
     },{ 
-      text: "’The twinkling of the what?’ said the King. ’It began with the tea,’ the Hatter replied." ,
+      text: "’The twinkling of the <i>what</i>?’ said the King. ’It <i>began</i> with the tea,’ the Hatter replied." ,
       className: "chapter_text"
     },{ 
-      text: "’Of course twinkling begins with a T!’ said the King sharply. ‘Do you take me for a dunce? Go on!’" ,
+      text: "’Of course twinkling <i>begins</i> with a T!’ said the King sharply. ‘Do you take me for a dunce? Go on!’" ,
       className: "chapter_text"
     },{ 
       text: "’I’m a poor man,’ the Hatter went on, ‘and most things twinkled after that—only the March Hare said—’" ,
@@ -2091,7 +2088,7 @@ const chapters = {
       text: "The miserable Hatter dropped his teacup and bread- and-butter, and went down on one knee. ‘I’m a poor man, your Majesty,’ he began." ,
       className: "chapter_text"
     },{ 
-      text: "’You’re a very poor speaker,’ said the King." ,
+      text: "’You’re a very poor <i>speaker</i>,’ said the King." ,
       className: "chapter_text"
     },{ 
       text: "Here one of the guinea-pigs cheered, and was immediately suppressed by the officers of the court. (As that is rather a hard word, I will just explain to you how it was done. They had a large canvas bag, which tied up at the mouth with strings: into this they slipped the guinea- pig, head first, and then sat upon it.)" ,
@@ -2106,7 +2103,7 @@ const chapters = {
       text: "’I can’t go no lower,’ said the Hatter: ‘I’m on the floor, as it is.’" ,
       className: "chapter_text"
     },{ 
-      text: "’Then you may sit down,’ the King replied." ,
+      text: "’Then you may <i>sit</i> down,’ the King replied." ,
       className: "chapter_text"
     },{ 
       text: "Here the other guinea-pig cheered, and was suppressed. ’Come, that finished the guinea-pigs!’ thought Alice." ,
@@ -2167,13 +2164,13 @@ const chapters = {
       text: "’Here!’ cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, reminding her very much of a globe of goldfish she had accidentally upset the week before." ,
       className: "chapter_text"
     },{ 
-      text: "’Oh, I beg your pardon!’ she exclaimed in a tone of great dismay, and began picking them up again as quickly as she could, for the accident of the goldfish kept running in her head, and she had a vague sort of idea that they must be collected at once and put back into the jury-box, or they would die." ,
+      text: "’Oh, I <i>beg</i> your pardon!’ she exclaimed in a tone of great dismay, and began picking them up again as quickly as she could, for the accident of the goldfish kept running in her head, and she had a vague sort of idea that they must be collected at once and put back into the jury-box, or they would die." ,
       className: "chapter_text"
     },{ 
-      text: "’The trial cannot proceed,’ said the King in a very grave voice, ‘until all the jurymen are back in their proper places— all,’ he repeated with great emphasis, looking hard at Alice as he said do." ,
+      text: "’The trial cannot proceed,’ said the King in a very grave voice, ‘until all the jurymen are back in their proper places— <i>all</i>,’ he repeated with great emphasis, looking hard at Alice as he said do." ,
       className: "chapter_text"
     },{ 
-      text: "Alice looked at the jury-box, and saw that, in her haste, she had put the Lizard in head downwards, and the poor little thing was waving its tail about in a melancholy way, being quite unable to move. She soon got it out again, and put it right; ‘not that it signifies much,’ she said to herself; ‘I should think it would be quite as much use in the trial one way up as the other.’" ,
+      text: "Alice looked at the jury-box, and saw that, in her haste, she had put the Lizard in head downwards, and the poor little thing was waving its tail about in a melancholy way, being quite unable to move. She soon got it out again, and put it right; ‘not that it signifies much,’ she said to herself; ‘I should think it would be <i>quite</i> as much use in the trial one way up as the other.’" ,
       className: "chapter_text"
     },{ 
       text: "As soon as the jury had a little recovered from the shock of being upset, and their slates and pencils had been found and handed back to them, they set to work very diligently to write out a history of the accident, all except the Lizard, who seemed too much overcome to do anything but sit with its mouth open, gazing up into the roof of the court." ,
@@ -2188,10 +2185,10 @@ const chapters = {
       text: "’Nothing <i>whatever?</i>’ persisted the King. <i>’Nothing whatever</i>,’ said Alice." ,
       className: "chapter_text"
     },{ 
-      text: "’That’s very important,’ the King said, turning to the jury. They were just beginning to write this down on their slates, when the White Rabbit interrupted: ‘Unimportant, your Majesty means, of course,’ he said in a very respectful tone, but frowning and making faces at him as he spoke." ,
+      text: "’That’s very important,’ the King said, turning to the jury. They were just beginning to write this down on their slates, when the White Rabbit interrupted: ‘<i>Un</i>important, your Majesty means, of course,’ he said in a very respectful tone, but frowning and making faces at him as he spoke." ,
       className: "chapter_text"
     },{ 
-      text: "’Unimportant, of course, I meant,’ the King hastily said, and went on to himself in an undertone, ‘important—unimportant— unimportant—important—’ as if he were trying which word sounded best." ,
+      text: "’<i>Un</i>important, of course, I meant,’ the King hastily said, and went on to himself in an undertone, ‘important—unimportant— unimportant—important—’ as if he were trying which word sounded best." ,
       className: "chapter_text"
     },{ 
       text: "Some of the jury wrote it down ‘important,’ and some ‘unimportant.’ Alice could see this, as she was near enough to look over their slates; ‘but it doesn’t matter a bit,’ she thought to herself." ,
@@ -2203,7 +2200,7 @@ const chapters = {
       text: "Everybody looked at Alice." ,
       className: "chapter_text"
     },{ 
-      text: "’I’m not a mile high,’ said Alice. ’You are,’ said the King." ,
+      text: "’<i>I’m</i> not a mile high,’ said Alice. ’You are,’ said the King." ,
       className: "chapter_text"
     },{ 
       text: "’Nearly two miles high,’ added the Queen." ,
@@ -2251,13 +2248,13 @@ const chapters = {
       text: "’Please your Majesty,’ said the Knave, ‘I didn’t write it, and they can’t prove I did: there’s no name signed at the end.’" ,
       className: "chapter_text"
     },{ 
-      text: "’If you didn’t sign it,’ said the King, ‘that only makes the matter worse. You must have meant some mischief, or else you’d have signed your name like an honest man.’" ,
+      text: "’If you didn’t sign it,’ said the King, ‘that only makes the matter worse. You <i>must</i> have meant some mischief, or else you’d have signed your name like an honest man.’" ,
       className: "chapter_text"
     },{ 
       text: "There was a general clapping of hands at this: it was the first really clever thing the King had said that day." ,
       className: "chapter_text"
     },{ 
-      text: "’That proves his guilt,’ said the Queen." ,
+      text: "’That <i>proves</i> his guilt,’ said the Queen." ,
       className: "chapter_text"
     },{ 
       text: "’It proves nothing of the sort!’ said Alice. ‘Why, you don’t even know what they’re about!’" ,

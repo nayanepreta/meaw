@@ -6,7 +6,7 @@
     --cinza-escuro: #1e1e1e;
     --cinza-claro: #f7f7f7;
     --font-text: "Crimson Text", serif;
-    --font-titulos: "Source Sans 3";
+    --font-titulos: "Crimson Text", serif;
     --font-alternativa: "Onest", serif;
     --font-size: 1.1rem;
 }
@@ -143,7 +143,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5625rem;
-    margin: 5.8rem 1rem 2rem;
+    margin: 5.9rem 1rem 2rem;
 }
 
 .chapter_title {
@@ -227,6 +227,15 @@ body {
 
     .chapter_text_bold {
         font-style: bold;
+    }
+
+    .chapter_text_cit {
+        color: var(--preto);
+        text-align: justify;
+        padding-left: 1.5rem;
+        font-family: var(--font-text);
+        width: 100%;
+        margin-bottom: 0.3rem;
     }
 
 /* MENU */
