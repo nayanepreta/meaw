@@ -1,15 +1,48 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import chapters from '../control/chapters';
 
 const Header = ({ chapterIndex }) => {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem('darkMode') === 'true';
-  });
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-  const [lastTouchTime, setLastTouchTime] = useState(0);
-  const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
   const [selectedFontSize, setSelectedFontSize] = useState(localStorage.getItem('font-size') || 'normal');
+  const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
+
+  const handleScroll = useCallback(() => {
+    const headerElement = document.querySelector('.header');
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const lastScrollTop = parseInt(localStorage.getItem('lastScrollTop'), 10) || 0;
+
+    const isScrollingUp = currentScrollTop < lastScrollTop;
+
+    if (headerElement) {
+      if (isScrollingUp) {
+        headerElement.classList.add('visible');
+      } else {
+        headerElement.classList.remove('visible');
+        setFontSizeBoxVisible(false); // Fecha o menu caso esteja aberto
+      }
+    }
+
+    localStorage.setItem('lastScrollTop', currentScrollTop <= 0 ? 0 : currentScrollTop);
+  }, []);
+
+  const handleTouch = useCallback(() => {
+    const headerElement = document.querySelector('.header');
+    const lastTouchTime = parseInt(localStorage.getItem('lastTouchTime'), 10) || 0;
+    const currentTime = new Date().getTime();
+
+    if (headerElement) {
+      if (currentTime - lastTouchTime < 300) {
+        headerElement.classList.toggle('visible');
+      }
+      localStorage.setItem('lastTouchTime', currentTime);
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newDarkModeState = !isDarkMode;
+    setIsDarkMode(newDarkModeState);
+    localStorage.setItem('darkMode', newDarkModeState);
+  };
 
   const toggleFontSizeBox = () => {
     setFontSizeBoxVisible((prev) => !prev);
@@ -22,40 +55,9 @@ const Header = ({ chapterIndex }) => {
     } else if (newSize === 'extragrande') {
       document.body.classList.add('font-xlarge');
     }
-
     localStorage.setItem('font-size', newSize);
     setSelectedFontSize(newSize);
-    setFontSizeBoxVisible(false); 
-  };
-
-  const handleScroll = () => {
-    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    const isScrollingUp = currentScrollTop < lastScrollTop;
-    setIsHeaderVisible(isScrollingUp);
-
-    if (!isScrollingUp) {
-      // Fecha o menu quando o cabeçalho é ocultado
-      setFontSizeBoxVisible(false);
-    }
-
-    setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
-  };
-
-  const handleTouch = () => {
-    const currentTime = new Date().getTime();
-    const timeDifference = currentTime - lastTouchTime;
-
-    if (timeDifference < 300) {
-      setIsHeaderVisible((prevState) => !prevState);
-    }
-    setLastTouchTime(currentTime);
-  };
-
-  const toggleDarkMode = () => {
-    const newDarkModeState = !isDarkMode;
-    setIsDarkMode(newDarkModeState);
-    localStorage.setItem('darkMode', newDarkModeState);
+    setFontSizeBoxVisible(false);
   };
 
   useEffect(() => {
@@ -80,16 +82,9 @@ const Header = ({ chapterIndex }) => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('touchstart', handleTouch);
     };
-  }, [lastScrollTop, lastTouchTime]);
+  }, [handleScroll, handleTouch]);
 
-  const adicionarTitulo = () => {
-    if (chapters[chapterIndex]) {
-      return chapters[chapterIndex].title;
-    }
-    return '';
-  };
-
-  if (!isHeaderVisible) return null;
+  const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
 
   return (
     <div className="header">
@@ -97,46 +92,42 @@ const Header = ({ chapterIndex }) => {
       <p className="header_titulo">{adicionarTitulo()}</p>
       <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
 
-      {isFontSizeBoxVisible && (
-        <div className="menu-config">
-          <p>Tamanho fonte</p>
-          <label>
-            <div>
-              <input
-                type="radio"
-                id="normal"
-                name="font-size"
-                value="normal"
-                checked={selectedFontSize === 'normal'}
-                onChange={() => adjustFontSize('normal')}
-              />
-              <label className='ajust-option' htmlFor="normal">Normal</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="grande"
-                name="font-size"
-                value="grande"
-                checked={selectedFontSize === 'grande'}
-                onChange={() => adjustFontSize('grande')}
-              />
-              <label className='ajust-option' htmlFor="grande">Médio</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="extragrande"
-                name="font-size"
-                value="extragrande"
-                checked={selectedFontSize === 'extragrande'}
-                onChange={() => adjustFontSize('extragrande')}
-              />
-              <label className='ajust-option' htmlFor="extragrande">Grande</label>
-            </div>
-          </label>
+      <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
+        <p>Tamanho fonte</p>
+        <div>
+          <input
+            type="radio"
+            id="normal"
+            name="font-size"
+            value="normal"
+            checked={selectedFontSize === 'normal'}
+            onChange={() => adjustFontSize('normal')}
+          />
+          <label className="ajust-option" htmlFor="normal">Normal</label>
         </div>
-      )}
+        <div>
+          <input
+            type="radio"
+            id="grande"
+            name="font-size"
+            value="grande"
+            checked={selectedFontSize === 'grande'}
+            onChange={() => adjustFontSize('grande')}
+          />
+          <label className="ajust-option" htmlFor="grande">Médio</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="extragrande"
+            name="font-size"
+            value="extragrande"
+            checked={selectedFontSize === 'extragrande'}
+            onChange={() => adjustFontSize('extragrande')}
+          />
+          <label className="ajust-option" htmlFor="extragrande">Grande</label>
+        </div>
+      </div>
     </div>
   );
 };

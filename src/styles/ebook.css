@@ -305,7 +305,7 @@ body {
 .header {
     background-color: var(--preto);
     position: fixed;
-    top: 0;
+    top: -45px; 
     width: 100%;
     max-width: 500px;
     height: 45px;
@@ -315,6 +315,14 @@ body {
     align-items: center;
     color: var(--branco);
     padding: 0 1.5625rem;
+    transition: top 0.3s ease, opacity 0.3s ease; 
+    z-index: 1000; 
+    opacity: 0; 
+}
+
+.header.visible {
+    top: 0; 
+    opacity: 1; 
 }
 
 .header div {
@@ -325,6 +333,8 @@ body {
 .header button {
     background-color: transparent;
     color: var(--branco);
+    cursor: pointer; 
+    border: none;
 }
 
 .header_titulo {
@@ -333,7 +343,6 @@ body {
     text-transform: uppercase;
     font-family: var(--font-alternativa);
     font-weight: 500;
-    
 }
 
 .menu-config {
@@ -342,11 +351,18 @@ body {
     width: 100%;
     max-width: 500px;
     margin-left: -1.5625rem;
-    padding: 0 1.5625rem;
-    bottom: 0;
+    bottom: -100%; 
     padding: 1.5rem 1.6rem 4.8rem 1.6rem;
     display: flex;
     flex-direction: column;
+    transition: bottom 0.3s ease, opacity 0.3s ease; 
+    z-index: 999; 
+    opacity: 0; 
+}
+
+.menu-config.visible {
+    bottom: 0; 
+    opacity: 1; 
 }
 
 .menu-config label {
@@ -355,6 +371,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     background-color: #4caf50;
+    padding: 0.5rem 0;
+    border-radius: 4px; 
 }
 
 .menu-config label div {
@@ -368,8 +386,6 @@ body {
     font-size: 0.95rem;
     font-family: "Crimson Text", serif;
 }
-
-
 
 /* BARRA PROGRESSO */
 
