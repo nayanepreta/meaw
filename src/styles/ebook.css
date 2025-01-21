@@ -197,6 +197,7 @@ body {
     cursor: pointer;
     margin-left: 0.5rem; /* Para separar do input, se necessário */
   }
+  
    /* Tamanhos compacto */
 .font-compact .chapter_text {
     font-size: 0.9rem;

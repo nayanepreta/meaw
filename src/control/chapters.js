@@ -785,7 +785,7 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "’<i>Speak roughly to your little boy,</br>And beat him when he sneezes:</br>He only does it to annoy,</br>Because he knows it teases.</i>’</br> CHORUS</br>(In which the cook and the baby joined):—",
-          className: "chapter_text_cit "
+          className: "chapter_text chapter_text_cit "
         },{
           text: "’Wow! wow! wow!’",
           className: "chapter_text"
@@ -794,7 +794,7 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "’<i>I speak severely to my boy,</br> I beat him when he sneezes;</br> For he can thoroughly enjoy</br>The pepper when he pleases!’</i></br> CHORUS",
-          className: "chapter_text_cit"
+          className: "chapter_text chapter_text_cit"
         },{
           text: "’Wow! wow! wow!’",
           className: "chapter_text"
@@ -1059,7 +1059,7 @@ const chapters = {
       className: "chapter_text"
     },{ 
       text: "<i>‘‘Twinkle, twinkle, little bat!</br> How I wonder what you’re at!’</i></br> You know the song, perhaps?’</br>’I’ve heard something like it,’ said Alice.</br>’It goes on, you know,’ the Hatter continued, ‘in this way:—</br><i>‘‘Up above the world you fly, Like a tea-tray in the sky.</br>Twinkle, twinkle—‘‘</i>" ,
-      className: "chapter_text_cit"
+      className: "chapter_text chapter_text_cit"
     },{ 
       text: "Here the Dormouse shook itself, and began singing in its sleep <i>‘Twinkle, twinkle, twinkle, twinkle—’</i> and went on so long that they had to pinch it to make it stop." ,
       className: "chapter_text"
