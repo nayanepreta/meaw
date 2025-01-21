@@ -177,48 +177,68 @@ body {
     margin-bottom: 0.3rem;
 }
 
-    /* Tamanhos padrão */
+/* Margem sem margem (padrão) */
+.chapter_content .sem-margem{
+    margin: 0;
+  }
+  
+  
+  /* Margem média */
+  .margin-medium .chapter_content {
+    margin: 1rem;
+  }
+  
+  /* Margem grande */
+  .margin-large .chapter_content {
+    margin: 2rem;
+  }
+  
+  label.ajust-option {
+    cursor: pointer;
+    margin-left: 0.5rem; /* Para separar do input, se necessário */
+  }
+   /* Tamanhos compacto */
+.font-compact .chapter_text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
 
-    .chapter_text {
-        font-size: 1.1rem;
-        line-height: 1.6rem;
-    }
+.font-compact .chapter_title {
+    font-size: 1.2rem;
+}
 
-    .chapter_title {
-        font-size: 1.5rem;
-    }
+.font-compact .chapter_subtitle {
+    font-size: 0.65rem;
+}
 
-    .chapter_subtitle {
-        font-size: 0.75rem;
-    }
+/* Tamanhos padrão (atual "normal") */
+.chapter_text {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
 
-    /* Tamanhos grandes */
-    .font-large .chapter_text {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-    }
+.chapter_title {
+    font-size: 1.5rem;
+}
 
-    .font-large .chapter_title {
-        font-size: 1.5rem;
-    }
+.chapter_subtitle {
+    font-size: 0.75rem;
+}
 
-    .font-large .chapter_subtitle {
-        font-size: 0.85rem;
-    }
+/* Tamanhos grandes */
+.font-large .chapter_text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
 
-    /* Tamanhos extragrandes */
-    .font-xlarge .chapter_text {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
+.font-large .chapter_title {
+    font-size: 1.8rem;
+}
 
-    .font-xlarge .chapter_title {
-        font-size: 1.8rem;
-    }
+.font-large .chapter_subtitle {
+    font-size: 1rem;
+}
 
-    .font-xlarge .chapter_subtitle {
-        font-size: 1rem;
-    }
 
     .chapter_text_space {
         width: 100%;
@@ -345,6 +365,8 @@ body {
     font-weight: 500;
 }
 
+/* MENU CONFIGURAÇÕES */
+
 .menu-config {
     position: fixed;
     background-color: var(--preto);
@@ -352,7 +374,7 @@ body {
     max-width: 500px;
     margin-left: -1.5625rem;
     bottom: -100%; 
-    padding: 1.5rem 1.6rem 4.8rem 1.6rem;
+    padding: 0.5rem 3rem 4.8rem 3rem;
     display: flex;
     flex-direction: column;
     transition: bottom 0.3s ease, opacity 0.3s ease; 
@@ -360,31 +382,41 @@ body {
     opacity: 0; 
 }
 
+.musi {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .menu-config.visible {
     bottom: 0; 
     opacity: 1; 
 }
 
-.menu-config label {
-    width: 100%;
+.menu-config p {
+    color: var(--branco);
+    font-family: var(--font-alternativa);
+    padding-bottom: 0.4rem;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+}
+
+.menu-config .op {
     display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-bottom: solid 0.1rem var(--cinza-escuro);
+}
+
+.menu-config .ap {
+    display: flex;
+    padding: 0.3rem;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #4caf50;
-    padding: 0.5rem 0;
-    border-radius: 4px; 
 }
 
-.menu-config label div {
-    display: flex;
-    gap: 0.5rem;
-    flex-direction: row;
-    align-items: center;
-}
-
-.menu-config .ajust-option {
-    font-size: 0.95rem;
-    font-family: "Crimson Text", serif;
+.menu-config .ap label {
+    font-family: var(--font-text);
 }
 
 /* BARRA PROGRESSO */
