@@ -5,9 +5,9 @@
     --branco: #fefefe;
     --cinza-escuro: #1e1e1e;
     --cinza-claro: #f7f7f7;
-    --font-text: "Crimson Text", serif;
-    --font-titulos: "Crimson Text", serif;
-    --font-alternativa: "Onest", serif;
+    --font-text: "Crimson Text", serif;;
+    --font-titulos: "Crimson Pro", serif;;
+    --font-alternativa: "Onest";
     --font-size: 1.1rem;
 }
 
@@ -98,7 +98,7 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: -6.2rem;
-    
+    font-family: var(--font-tituloss);
 }
 
 .cover_nome_autor {
@@ -106,6 +106,7 @@ body {
     top: 5.5rem;
     font-weight: bold;
     color: var(--branco);
+    font-family: var(--font-text);
 }
 
 .cover_logo_editora {
@@ -143,20 +144,23 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5625rem;
-    margin: 5.9rem 1rem 2rem;
+    margin: 4rem 0.8rem 2rem;
 }
 
 .chapter_title {
     font-family: var(--font-titulos);
-    font-weight: bold;
+    font-weight: 700;
     color: var(--preto);
     text-align: center;
+    font-optical-sizing: auto;
 }
 
 .chapter_subtitle {
     text-transform: uppercase;
     font-weight: bold;
     font-family: var(--font-alternativa);
+    color: var(--cinza-escuro);
+    
 }
 
 .chapter_content {
@@ -181,7 +185,7 @@ body {
     }
 
     .chapter_title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .chapter_subtitle {
@@ -219,6 +223,7 @@ body {
     .chapter_text_space {
         width: 100%;
         text-align: center;
+        padding: 1rem 0;
     }
 
     .chapter_text_italic {
@@ -328,44 +333,50 @@ body {
     text-transform: uppercase;
     font-family: var(--font-alternativa);
     font-weight: 500;
+    
 }
 
-.font-size-box {
+.menu-config {
     position: fixed;
-    top: 2.8125rem;
-    background-color: var(--cinza-escuro);
+    background-color: var(--preto);
     width: 100%;
     max-width: 500px;
-    height: 45px;
     margin-left: -1.5625rem;
     padding: 0 1.5625rem;
+    bottom: 0;
+    padding: 1.5rem 1.6rem 4.8rem 1.6rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.font-size-box label {
+.menu-config label {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #4caf50;
 }
 
-.font-size-box label div {
+.menu-config label div {
     display: flex;
     gap: 0.5rem;
     flex-direction: row;
     align-items: center;
 }
 
-.font-size-box .ajust-option {
+.menu-config .ajust-option {
     font-size: 0.95rem;
     font-family: "Crimson Text", serif;
 }
+
+
 
 /* BARRA PROGRESSO */
 
 .footer {
     position: fixed;
     background-color: var(--branco);
-    bottom: -0.0625rem;
+    bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
@@ -378,7 +389,6 @@ body {
     flex: 1;
     height: 0.3rem;
     background-color: var(--cinza-claro);
-    border-radius: 0.25rem;
     overflow: hidden;
 }
 

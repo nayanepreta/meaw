@@ -30,7 +30,15 @@ const Header = ({ chapterIndex }) => {
 
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    setIsHeaderVisible(currentScrollTop < lastScrollTop);
+
+    const isScrollingUp = currentScrollTop < lastScrollTop;
+    setIsHeaderVisible(isScrollingUp);
+
+    if (!isScrollingUp) {
+      // Fecha o menu quando o cabeçalho é ocultado
+      setFontSizeBoxVisible(false);
+    }
+
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
   };
 
@@ -90,11 +98,11 @@ const Header = ({ chapterIndex }) => {
       <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
 
       {isFontSizeBoxVisible && (
-        <div className="font-size-box">
+        <div className="menu-config">
+          <p>Tamanho fonte</p>
           <label>
             <div>
               <input
-                
                 type="radio"
                 id="normal"
                 name="font-size"
@@ -106,7 +114,6 @@ const Header = ({ chapterIndex }) => {
             </div>
             <div>
               <input
-                
                 type="radio"
                 id="grande"
                 name="font-size"
