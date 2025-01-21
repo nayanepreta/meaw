@@ -5,6 +5,7 @@
     --branco: #fefefe;
     --cinza-escuro: #1e1e1e;
     --cinza-claro: #f7f7f7;
+    --cor-1: rgb(0, 52, 0);
     --font-text: "Crimson Text", serif;;
     --font-titulos: "Crimson Pro", serif;;
     --font-alternativa: "Onest";
@@ -177,6 +178,19 @@ body {
     margin-bottom: 0.3rem;
 }
 
+.align-left {
+    .chapter_text, .chapter_subtitle, .chapter_title {
+        text-align: left;
+    }
+  }
+  
+  .align-center {
+    .chapter_text, .chapter_subtitle, .chapter_title {
+        text-align: justify;
+    }
+  }
+  
+
 /* Margem sem margem (padrão) */
 .chapter_content .sem-margem{
     margin: 0;
@@ -281,6 +295,7 @@ body {
     transition: transform 0.3s ease; 
     }
 
+
 .navigation button {
     background-color: var(--preto);
     width: 1.875rem;
@@ -370,12 +385,12 @@ body {
 
 .menu-config {
     position: fixed;
-    background-color: var(--preto);
+    background-color: var(--cinza-escuro);
     width: 100%;
     max-width: 500px;
     margin-left: -1.5625rem;
     bottom: -100%; 
-    padding: 0.5rem 3rem 4.8rem 3rem;
+    padding: 0.2rem 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     transition: bottom 0.3s ease, opacity 0.3s ease; 
@@ -387,7 +402,36 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-bottom:1rem;
 }
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 3rem;
+}
+
+.tabs button {
+    width: 4rem;
+    padding: 0.4rem 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: var(--branco);
+    color: var(--preto);
+  }
+  
+  .tabs button:hover {
+    background-color: var(--branco
+    );
+  }
+
+
 
 .menu-config.visible {
     bottom: 0; 
@@ -405,20 +449,37 @@ body {
 .menu-config .op {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
-    border-bottom: solid 0.1rem var(--cinza-escuro);
+    justify-content: space-around;
+    padding: 0.8rem 0;
+    border-top: solid 0.1rem var(--preto);
+    border-bottom: solid 0.1rem var(--preto);
 }
 
 .menu-config .ap {
     display: flex;
-    padding: 0.3rem;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.menu-config .ap label {
+.menu-config .ap-dois {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-config .ap label,.menu-config .ap-dois label {
     font-family: var(--font-text);
 }
+
+body.text-left {
+    text-align: left;
+  }
+  
+  body.text-center {
+    text-align: center;
+  }
+  
 
 /* BARRA PROGRESSO */
 

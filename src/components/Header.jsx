@@ -6,6 +6,10 @@ const Header = ({ chapterIndex }) => {
   const [selectedFontSize, setSelectedFontSize] = useState(localStorage.getItem('font-size') || 'normal');
   const [selectedMargin, setSelectedMargin] = useState(localStorage.getItem('margin-size') || 'padrao');
   const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
+  const [activeTab, setActiveTab] = useState('layout'); // Define a aba ativa
+  const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'centralizado');
+
+
 
   const handleScroll = useCallback(() => {
     const headerElement = document.querySelector('.header');
@@ -13,6 +17,8 @@ const Header = ({ chapterIndex }) => {
     const lastScrollTop = parseInt(localStorage.getItem('lastScrollTop'), 10) || 0;
 
     const isScrollingUp = currentScrollTop < lastScrollTop;
+
+    
 
     if (headerElement) {
       if (isScrollingUp) {
@@ -115,95 +121,198 @@ const Header = ({ chapterIndex }) => {
 
   const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
 
+  const toggleTab = (tab) => {
+    setActiveTab(tab);
+  };
+  
+
+  const adjustTextAlignment = (newAlignment) => {
+    document.body.classList.remove('align-left', 'align-center');
+  
+    if (newAlignment === 'esquerda') {
+      document.body.classList.add('align-left');
+    } else if (newAlignment === 'centralizado') {
+      document.body.classList.add('align-center');
+    }
+  
+    localStorage.setItem('alignment', newAlignment);
+    setSelectedAlignment(newAlignment);
+    setFontSizeBoxVisible(false); // Fecha o menu após a interação
+  };
+  
+  useEffect(() => {
+    if (selectedAlignment === 'esquerda') {
+      document.body.classList.add('align-left');
+    } else if (selectedAlignment === 'centralizado') {
+      document.body.classList.add('align-center');
+    }
+  }, [selectedAlignment]);
+  
+  
+
   return (
     <div className="header">
       <button onClick={toggleFontSizeBox}>A</button>
       <p className="header_titulo">{adicionarTitulo()}</p>
       <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
 
-      <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
-        <div className="musi" onClick={toggleFontSizeBox}>------</div>
-        <div className="op">
-          <p>Layout</p>
+   
+       
 
-          <div className="ap">
-            <div>
-              <input
-                type="radio"
-                id="compacto"
-                name="font-size"
-                value="compacto"
-                checked={selectedFontSize === 'compacto'}
-                onChange={() => adjustFontSize('compacto')}
-              />
-              <label className="ajust-option" htmlFor="compacto">Compacto</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="padrao-id"
-                name="font-size"
-                value="padrao"
-                checked={selectedFontSize === 'padrao'}
-                onChange={() => adjustFontSize('padrao')}
-              />
-              <label className="ajust-option" htmlFor="padrao-id">Padrão</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="grande"
-                name="font-size"
-                value="grande"
-                checked={selectedFontSize === 'grande'}
-                onChange={() => adjustFontSize('grande')}
-              />
-              <label className="ajust-option" htmlFor="grande">Grande</label>
-            </div>
-          </div>
+        <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
+   <div className="musi" onClick={toggleFontSizeBox}>------</div>
+
+  <div className="tabs">
+    
+    <button
+      className={activeTab === 'layout' ? 'active' : ''}
+      onClick={() => toggleTab('layout')}
+    >
+      Fonte
+    </button>
+
+    <button
+  className={activeTab === 'alinhamento' ? 'active' : ''}
+  onClick={() => toggleTab('alinhamento')}
+>
+  Layout
+</button>
+
+    <button
+      className={activeTab === 'margem' ? 'active' : ''}
+      onClick={() => toggleTab('margem')}
+    >
+      Margem
+    </button>
+
+    
+
+  </div>
+
+  {activeTab === 'layout' && (
+    <div className="op">
+      <div className="ap">
+        
+        <div>
+          <input
+            type="radio"
+            id="padrao-id"
+            name="font-size"
+            value="padrao"
+            checked={selectedFontSize === 'padrao'}
+            onChange={() => adjustFontSize('padrao')}
+          />
+          <label className="ajust-option" htmlFor="padrao-id">Padrão</label>
         </div>
-
-        <div className="op">
-          <p>Margem</p>
-          <div className="ap">
-            <div>
-              <input
-                type="radio"
-                id="sem-margem"
-                name="margin-size"
-                value="sem-margem"
-                checked={selectedMargin === 'sem-margem'}
-                onChange={() => adjustMarginSize('sem-margem')}
-              />
-              <label className="ajust-option" htmlFor="sem-margem">Compacto</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="padrao"
-                name="margin-size"
-                value="padrao"
-                checked={selectedMargin === 'padrao'}
-                onChange={() => adjustMarginSize('padrao')}
-              />
-              <label className="ajust-option" htmlFor="padrao">Padrão</label>
-            </div>
-            
-            <div>
-              <input
-                type="radio"
-                id="margem-grande"
-                name="margin-size"
-                value="margem-grande"
-                checked={selectedMargin === 'margem-grande'}
-                onChange={() => adjustMarginSize('margem-grande')}
-              />
-              <label className="ajust-option" htmlFor="margem-grande">Grande</label>
-            </div>
-          </div>
+        <div>
+          <input
+            type="radio"
+            id="compacto"
+            name="font-size"
+            value="compacto"
+            checked={selectedFontSize === 'compacto'}
+            onChange={() => adjustFontSize('compacto')}
+          />
+          <label className="ajust-option" htmlFor="compacto">Compacto</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="grande"
+            name="font-size"
+            value="grande"
+            checked={selectedFontSize === 'grande'}
+            onChange={() => adjustFontSize('grande')}
+          />
+          <label className="ajust-option" htmlFor="grande">Grande</label>
         </div>
       </div>
     </div>
+  )}
+
+{activeTab === 'alinhamento' && (
+  <div className="op">
+    <div className=" ap-dois">
+
+    <div>
+        <input
+          type="radio"
+          id="centralizado"
+          name="alignment"
+          value="centralizado"
+          checked={selectedAlignment === 'centralizado'}
+          onChange={() => adjustTextAlignment('centralizado')}
+        />
+        <label className="ajust-option" htmlFor="centralizado">Justificado</label>
+      </div>
+
+      <div>
+        <input
+          type="radio"
+          id="esquerda"
+          name="alignment"
+          value="esquerda"
+          checked={selectedAlignment === 'esquerda'}
+          onChange={() => adjustTextAlignment('esquerda')}
+        />
+        <label className="ajust-option" htmlFor="esquerda">Esquerda</label>
+      </div>
+      
+    </div>
+  </div>
+)}
+
+  {activeTab === 'margem' && (
+    <div className="op">
+      <div className="ap">
+        
+        <div>
+          <input
+            type="radio"
+            id="padrao"
+            name="margin-size"
+            value="padrao"
+            checked={selectedMargin === 'padrao'}
+            onChange={() => adjustMarginSize('padrao')}
+          />
+          <label className="ajust-option" htmlFor="padrao">Padrão</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="sem-margem"
+            name="margin-size"
+            value="sem-margem"
+            checked={selectedMargin === 'sem-margem'}
+            onChange={() => adjustMarginSize('sem-margem')}
+          />
+          <label className="ajust-option" htmlFor="sem-margem">Compacto</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="margem-grande"
+            name="margin-size"
+            value="margem-grande"
+            checked={selectedMargin === 'margem-grande'}
+            onChange={() => adjustMarginSize('margem-grande')}
+          />
+          <label className="ajust-option" htmlFor="margem-grande">Grande</label>
+        </div>
+      </div>
+    </div>
+  )}
+
+
+
+
+
+</div>
+
+
+
+        </div>
+   
   );
 };
 
