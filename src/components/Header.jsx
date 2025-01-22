@@ -243,7 +243,7 @@ const Header = ({ chapterIndex }) => {
           checked={selectedAlignment === 'centralizado'}
           onChange={() => adjustTextAlignment('centralizado')}
         />
-        <label className="ajust-option" htmlFor="centralizado">Justificado</label>
+        <label className="ajust-option" htmlFor="centralizado">Alinhado</label>
       </div>
 
       <div>

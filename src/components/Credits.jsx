@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
-import Header from '../components/Header';
 
 const Credits = ({ 
   onNext, 
@@ -20,7 +19,6 @@ const Credits = ({
     }, [chapterTitle]);
   return (
     <div className="page">
-      <Header />
       Créditos
       <Navigation 
         goToCover={goToCover} 

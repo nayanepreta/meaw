@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from './Navigation';
-import Header from './Header';
 
 const Intro = ({ 
   onNext, 
@@ -11,7 +10,6 @@ const Intro = ({
   
   return (
     <div className="page">
-      <Header />
       Ilustração de introdução
       <Navigation 
         goToCover={goToCover} 

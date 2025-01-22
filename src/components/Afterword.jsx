@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Navigation from './Navigation';
-import Header from './Header';
 
 const Afterword = ({ 
  
@@ -11,7 +10,6 @@ const Afterword = ({
   
   return (
     <div className="page">
-      <Header />
       Encerramento
       <Navigation 
         goToCover={goToCover} 

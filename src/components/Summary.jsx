@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
-import Header from '../components/Header';
 
 const Summary = ({ 
   goToChapter, 
@@ -22,7 +21,6 @@ useEffect(() => {
 
   return (
     <div className="page summary">
-      <Header />
       <img 
         className="icone_cabeco" 
         src="https://via.placeholder.com/25" 

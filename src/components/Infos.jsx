@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
 import chapters from '../control/chapters';
-import Header from '../components/Header';
 
 const { 
   titulo: titulo, 
@@ -15,7 +14,6 @@ const Infos = ({
 
 return (
   <div className="page info">
-    <Header />
     <p className="info_nome_autor">{autor}</p>
     <h1 className="info_titulo_livro">{titulo}</h1>
     <img 
