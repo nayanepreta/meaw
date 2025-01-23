@@ -4,12 +4,10 @@ import chapters from '../control/chapters';
 const Header = ({ chapterIndex }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
   const [selectedFontSize, setSelectedFontSize] = useState(localStorage.getItem('font-size') || 'normal');
-  const [selectedMargin, setSelectedMargin] = useState(localStorage.getItem('margin-size') || 'padrao');
   const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState('layout'); // Define a aba ativa
   const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'centralizado');
-
-
+  const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
+  
 
   const handleScroll = useCallback(() => {
     const headerElement = document.querySelector('.header');
@@ -18,17 +16,14 @@ const Header = ({ chapterIndex }) => {
 
     const isScrollingUp = currentScrollTop < lastScrollTop;
 
-    
-
     if (headerElement) {
       if (isScrollingUp) {
         headerElement.classList.add('visible');
       } else {
         headerElement.classList.remove('visible');
-        setFontSizeBoxVisible(false); // Fecha o menu caso esteja aberto
+        setFontSizeBoxVisible(false);
       }
     }
-
     localStorage.setItem('lastScrollTop', currentScrollTop <= 0 ? 0 : currentScrollTop);
   }, []);
 
@@ -40,7 +35,7 @@ const Header = ({ chapterIndex }) => {
     if (headerElement) {
       if (currentTime - lastTouchTime < 300) {
         headerElement.classList.toggle('visible');
-        setFontSizeBoxVisible(false); // Fecha o menu caso esteja aberto
+        setFontSizeBoxVisible(false);
       }
       localStorage.setItem('lastTouchTime', currentTime);
     }
@@ -57,35 +52,36 @@ const Header = ({ chapterIndex }) => {
   };
 
   const adjustFontSize = (newSize) => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
     document.body.classList.remove('font-compact', 'font-large');
-
+  
     if (newSize === 'compacto') {
       document.body.classList.add('font-compact');
     } else if (newSize === 'grande') {
       document.body.classList.add('font-large');
     }
-
+  
     localStorage.setItem('font-size', newSize);
     setSelectedFontSize(newSize);
-    setFontSizeBoxVisible(false); // Fecha o menu após a interação
+  
+    window.scrollTo(0, scrollTop);
   };
+  
 
-  const adjustMarginSize = (newSize) => {
-    document.body.classList.remove('margin-none', 'margin-medium', 'margin-large');
-  
-    if (newSize === 'sem-margem') {
-      document.body.classList.add('margin-none');
-    } else if (newSize === 'padrao') {
-      document.body.classList.add('margin-medium');
-    } else if (newSize === 'margem-grande') {
-      document.body.classList.add('margin-large');
-    }
-  
-    localStorage.setItem('margin-size', newSize);
-    setSelectedMargin(newSize);
-    setFontSizeBoxVisible(false); // Fecha o menu após a interação
-  };
-  
+  const adjustTextAlignment = (newAlignment) => {
+  document.body.classList.remove('align-left', 'align-center');
+
+  if (newAlignment === 'esquerda') {
+    document.body.classList.add('align-left');
+  } else if (newAlignment === 'centralizado') {
+    document.body.classList.add('align-center');
+  }
+
+  localStorage.setItem('alignment', newAlignment);
+  setSelectedAlignment(newAlignment);
+};
+
 
   useEffect(() => {
     if (isDarkMode) {
@@ -100,14 +96,12 @@ const Header = ({ chapterIndex }) => {
       document.body.classList.add('font-compact');
     }
 
-    if (selectedMargin === 'sem-margem') {
-      document.body.classList.add('margin-none');
-    } else if (selectedMargin === 'padrao') {
-      document.body.classList.add('margin-medium');
-    } else if (selectedMargin === 'margem-grande') {
-      document.body.classList.add('margin-large');
+    if (selectedAlignment === 'esquerda') {
+      document.body.classList.add('align-left');
+    } else if (selectedAlignment === 'centralizado') {
+      document.body.classList.add('align-center');
     }
-  }, [isDarkMode, selectedFontSize, selectedMargin]);
+  }, [isDarkMode, selectedFontSize, selectedAlignment]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -119,200 +113,63 @@ const Header = ({ chapterIndex }) => {
     };
   }, [handleScroll, handleTouch]);
 
-  const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
-
-  const toggleTab = (tab) => {
-    setActiveTab(tab);
-  };
-  
-
-  const adjustTextAlignment = (newAlignment) => {
-    document.body.classList.remove('align-left', 'align-center');
-  
-    if (newAlignment === 'esquerda') {
-      document.body.classList.add('align-left');
-    } else if (newAlignment === 'centralizado') {
-      document.body.classList.add('align-center');
-    }
-  
-    localStorage.setItem('alignment', newAlignment);
-    setSelectedAlignment(newAlignment);
-    setFontSizeBoxVisible(false); // Fecha o menu após a interação
-  };
-  
-  useEffect(() => {
-    if (selectedAlignment === 'esquerda') {
-      document.body.classList.add('align-left');
-    } else if (selectedAlignment === 'centralizado') {
-      document.body.classList.add('align-center');
-    }
-  }, [selectedAlignment]);
-  
-  
-
   return (
     <div className="header">
       <button onClick={toggleFontSizeBox}>A</button>
       <p className="header_titulo">{adicionarTitulo()}</p>
       <button onClick={toggleDarkMode}>{isDarkMode ? 'C' : 'N'}</button>
 
-   
-       
+      <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
+        <div className="font-options">
+          <p>-</p>
+          <div className="buttons">
+            <button
+              className={`ajust-option ${selectedFontSize === 'compacto' ? 'active' : ''}`}
+              onClick={() => adjustFontSize('compacto')}
+            >
+              C
+            </button>
+            <button
+              className={`ajust-option ${selectedFontSize === 'padrao' ? 'active' : ''}`}
+              onClick={() => adjustFontSize('padrao')}
+            >
+              P
+            </button>
+            
+            <button
+              className={`ajust-option ${selectedFontSize === 'grande' ? 'active' : ''}`}
+              onClick={() => adjustFontSize('grande')}
+            >
+              G
+            </button>
 
-        <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
-   <div className="musi" onClick={toggleFontSizeBox}>------</div>
-
-  <div className="tabs">
-    
-    <button
-      className={activeTab === 'layout' ? 'active' : ''}
-      onClick={() => toggleTab('layout')}
-    >
-      Fonte
-    </button>
-
-    <button
-  className={activeTab === 'alinhamento' ? 'active' : ''}
-  onClick={() => toggleTab('alinhamento')}
->
-  Layout
-</button>
-
-    <button
-      className={activeTab === 'margem' ? 'active' : ''}
-      onClick={() => toggleTab('margem')}
-    >
-      Margem
-    </button>
-
-    
-
-  </div>
-
-  {activeTab === 'layout' && (
-    <div className="op">
-      <div className="ap">
-        
-        <div>
-          <input
-            type="radio"
-            id="padrao-id"
-            name="font-size"
-            value="padrao"
-            checked={selectedFontSize === 'padrao'}
-            onChange={() => adjustFontSize('padrao')}
-          />
-          <label className="ajust-option" htmlFor="padrao-id">Padrão</label>
+            <button
+              className={`ajust-option ${selectedFontSize === 'grande' ? 'active' : ''}`}
+              onClick={() => adjustFontSize('grande')}
+            >
+              
+            </button>
+          </div>
+          <p>+</p>
         </div>
-        <div>
-          <input
-            type="radio"
-            id="compacto"
-            name="font-size"
-            value="compacto"
-            checked={selectedFontSize === 'compacto'}
-            onChange={() => adjustFontSize('compacto')}
-          />
-          <label className="ajust-option" htmlFor="compacto">Compacto</label>
+
+        <div className="align-options">
+          <button
+            className={`ajust-option ${selectedAlignment === 'centralizado' ? 'active' : ''}`}
+            onClick={() => adjustTextAlignment('centralizado')}
+          >
+            A
+          </button>
+          <button
+            className={`ajust-option ${selectedAlignment === 'esquerda' ? 'active' : ''}`}
+            onClick={() => adjustTextAlignment('esquerda')}
+          >
+            E
+          </button>
         </div>
-        <div>
-          <input
-            type="radio"
-            id="grande"
-            name="font-size"
-            value="grande"
-            checked={selectedFontSize === 'grande'}
-            onChange={() => adjustFontSize('grande')}
-          />
-          <label className="ajust-option" htmlFor="grande">Grande</label>
-        </div>
+
       </div>
     </div>
-  )}
-
-{activeTab === 'alinhamento' && (
-  <div className="op">
-    <div className=" ap-dois">
-
-    <div>
-        <input
-          type="radio"
-          id="centralizado"
-          name="alignment"
-          value="centralizado"
-          checked={selectedAlignment === 'centralizado'}
-          onChange={() => adjustTextAlignment('centralizado')}
-        />
-        <label className="ajust-option" htmlFor="centralizado">Alinhado</label>
-      </div>
-
-      <div>
-        <input
-          type="radio"
-          id="esquerda"
-          name="alignment"
-          value="esquerda"
-          checked={selectedAlignment === 'esquerda'}
-          onChange={() => adjustTextAlignment('esquerda')}
-        />
-        <label className="ajust-option" htmlFor="esquerda">Esquerda</label>
-      </div>
-      
-    </div>
-  </div>
-)}
-
-  {activeTab === 'margem' && (
-    <div className="op">
-      <div className="ap">
-        
-        <div>
-          <input
-            type="radio"
-            id="padrao"
-            name="margin-size"
-            value="padrao"
-            checked={selectedMargin === 'padrao'}
-            onChange={() => adjustMarginSize('padrao')}
-          />
-          <label className="ajust-option" htmlFor="padrao">Padrão</label>
-        </div>
-        <div>
-          <input
-            type="radio"
-            id="sem-margem"
-            name="margin-size"
-            value="sem-margem"
-            checked={selectedMargin === 'sem-margem'}
-            onChange={() => adjustMarginSize('sem-margem')}
-          />
-          <label className="ajust-option" htmlFor="sem-margem">Compacto</label>
-        </div>
-        <div>
-          <input
-            type="radio"
-            id="margem-grande"
-            name="margin-size"
-            value="margem-grande"
-            checked={selectedMargin === 'margem-grande'}
-            onChange={() => adjustMarginSize('margem-grande')}
-          />
-          <label className="ajust-option" htmlFor="margem-grande">Grande</label>
-        </div>
-      </div>
-    </div>
-  )}
-
-
-
-
-
-</div>
-
-
-
-        </div>
-   
   );
 };
 

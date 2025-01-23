@@ -1,5 +1,4 @@
 /* VARIÁVEIS E RESETS */
-
 :root {
     --preto: #131313;
     --branco: #fefefe;
@@ -18,7 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 h1, h2, h3, h4, h5, h6, p  {
     font-weight: normal;
     color: var(--preto);
@@ -44,7 +43,6 @@ body {
 }
 
 /* FORMATO PÁGINAS */
-
 .page {
     max-width: 400px; 
     margin: 0 auto; 
@@ -73,7 +71,6 @@ body {
 }
 
 /* CAPA */
-
 .cover {
     display: flex;
     flex-direction: column;
@@ -116,7 +113,6 @@ body {
 }
 
 /* INFOS::FOLHA DE ROSTO */
-
 .info {
     height: 80vh;
     display: flex;
@@ -139,7 +135,6 @@ body {
 }
 
 /* CAPÍTULOS */
-
 .chapter_head {
     display: flex;
     flex-direction: column;
@@ -155,6 +150,7 @@ body {
     text-align: center;
     font-optical-sizing: auto;
     line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 .chapter_subtitle {
@@ -162,7 +158,7 @@ body {
     font-weight: bold;
     font-family: var(--font-alternativa);
     color: var(--cinza-escuro);
-    
+    font-size: 0.6rem;
 }
 
 .chapter_content {
@@ -179,115 +175,41 @@ body {
     text-indent: 1.5rem;
     font-family: var(--font-text);
     width: 100%;
+    padding: 0 0.8rem;
     margin-bottom: 0.3rem;
-}
-
-.align-left {
-    .chapter_text {
-        text-align: left;
-    }
-  }
-  
-  .align-center {
-    .chapter_text {
-        text-align: justify;
-    }
-  }
-  
-
-/* Margem sem margem (padrão) */
-.chapter_content .sem-margem{
-    margin: 0;
-  }
-  
-  
-  /* Margem média */
-  .margin-medium .chapter_content {
-    margin: 1rem;
-  }
-  
-  /* Margem grande */
-  .margin-large .chapter_content {
-    margin: 2rem;
-  }
-  
-  label.ajust-option {
-    cursor: pointer;
-    margin-left: 0.5rem; /* Para separar do input, se necessário */
-  }
-  
-   /* Tamanhos compacto */
-.font-compact .chapter_text {
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-}
-
-.font-compact .chapter_title {
-    font-size: 1.2rem;
-}
-
-.font-compact .chapter_subtitle {
-    font-size: 0.65rem;
-}
-
-/* Tamanhos padrão (atual "normal") */
-.chapter_text {
     font-size: 1.1rem;
     line-height: 1.6rem;
 }
 
-.chapter_title {
-    font-size: 1.5rem;
+/* Estilos de caractere */
+.chapter_text_space {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-.chapter_subtitle {
-    font-size: 0.75rem;
+.chapter_text_italic {
+    font-style: italic;
 }
 
-/* Tamanhos grandes */
-.font-large .chapter_text {
-    font-size: 1.5rem;
-    line-height: 2rem;
+.chapter_text_bold {
+    font-style: bold;
 }
 
-.font-large .chapter_title {
-    font-size: 1.8rem;
+.chapter_text_cit {
+    color: var(--preto);
+    text-align: justify;
+    padding-left: 1.5rem;
+    font-family: var(--font-text);
+    width: 100%;
+    margin-bottom: 0.3rem;
 }
 
-.font-large .chapter_subtitle {
-    font-size: 1rem;
-}
-
-
-    .chapter_text_space {
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    .chapter_text_italic {
-        font-style: italic;
-    }
-
-    .chapter_text_bold {
-        font-style: bold;
-    }
-
-    .chapter_text_cit {
-        color: var(--preto);
-        text-align: justify;
-        padding-left: 1.5rem;
-        font-family: var(--font-text);
-        width: 100%;
-        margin-bottom: 0.3rem;
-    }
-
-/* MENU */
-
+/* NAVIGATION */
 .navigation {
     position: fixed;
     width: 100%;
-    bottom: 1.25rem;
+    bottom: 1.2rem;
     left: 50%; 
     transform: translateX(-50%);
     z-index: 1000;
@@ -298,7 +220,6 @@ body {
     align-items: center;
     transition: transform 0.3s ease; 
     }
-
 
 .navigation button {
     background-color: var(--preto);
@@ -316,32 +237,7 @@ body {
     width: 0.875rem;
 }
 
-.additional-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    transform: translateX(-20px); 
-    pointer-events: none;
-    position: absolute;
-    visibility: hidden;
-}
-
-.additional-buttons.visible {
-    opacity: 1;
-    transform: translateX(0); 
-    pointer-events: auto;
-    visibility: visible;
-    position: static;
-}
-
-.navigation.show-extra-buttons {
-    transform: translateX(-50%) translateX(-3px);
-}
-
-/* MENU CABEÇALHO */
-
+/* HEADER */
 .header {
     background-color: var(--preto);
     position: fixed;
@@ -354,7 +250,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: var(--branco);
-    padding: 0 1.5625rem;
+    padding: 0 2.6rem;
     transition: top 0.3s ease, opacity 0.3s ease; 
     z-index: 1000; 
     opacity: 0; 
@@ -363,11 +259,6 @@ body {
 .header.visible {
     top: 0; 
     opacity: 1; 
-}
-
-.header div {
-    display: flex;
-    gap: 0.625rem;
 }
 
 .header button {
@@ -379,8 +270,8 @@ body {
 
 .header_titulo {
     color: var(--branco);
-    font-size: 0.65rem;
-    text-transform: uppercase;
+    font-size: 0.8rem;
+    
     font-family: var(--font-alternativa);
     font-weight: 500;
 }
@@ -391,102 +282,122 @@ body {
     position: fixed;
     background-color: var(--preto);
     width: 100%;
+    height: 50px;
     max-width: 500px;
-    margin-left: -1.5625rem;
+    margin-left: -2.6rem;
     bottom: -100%; 
-    padding: 0rem 2.5rem 0.5rem 2.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
     transition: bottom 0.3s ease, opacity 0.3s ease; 
     z-index: 999; 
     opacity: 0; 
     color: var(--branco);
 }
 
-.musi {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom:1rem;
-}
-
-.tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 3rem;
-}
-
-.tabs button {
-    width: 6rem;
-    padding: 0.4rem 0;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-    font-family: var(--font-alternativa);
-  }
-  
-  .tabs button.active {
-    background-color: var(--branco);
-    color: var(--preto);
-  }
-  
-  .tabs button:hover {
-    background-color: var(--branco);
-  }
-
-
-
 .menu-config.visible {
-    bottom: 0; 
+    bottom: 0.2rem; 
     opacity: 1; 
 }
 
-
-
-.menu-config .op {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0.6rem 0;
-    border-top: solid 0.1rem var(--cinza-escuro);
-    
-}
-
-.menu-config .ap {
+.menu-config .align-options {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: pink;
 }
 
-.menu-config .ap-dois {
+.menu-config .font-options {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+
+.menu-config .font-options .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 2rem;
 }
 
-.menu-config .ap div {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    gap: 0.4rem;
+.menu-config .font-options .buttons button {
+    background-color: var(--branco);
+    color: transparent;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    border: solid 0.1rem var(--branco);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.menu-config input, .menu-config label {
-    margin: 0;
-    padding: 0;
+.menu-config .font-options .buttons button.active {
+    background-color: #4caf50; 
+    border-color: #4caf50;    
 }
 
-.menu-config .ap label,.menu-config .ap-dois label {
-    font-family: var(--font-alternativa);
-    font-size: 0.8rem;
+.menu-config .align-options .ajust-option {
+    background-color: var(--branco);
+    color: transparent;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    border: solid 0.1rem var(--branco);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-config .align-options .ajust-option.active {
+    background-color: #4caf50; /* Cor de fundo para o botão ativo */
+    border-color: #4caf50;    /* Alterar também a borda para combinar */
+}
+
+
+/* Opções de alinhamento */
+.align-left {
+    .chapter_text {
+        text-align: left;
+    }
+}
+
+.align-center {
+    .chapter_text {
+        text-align: justify;
+    }
+}
+
+/* Opções tamanho de fontes */
+.font-compact {
+    .chapter_text {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .chapter_title {
+        font-size: 1.2rem;
+    }
+    .chapter_subtitle {
+        font-size: 0.6rem;
+    }
+}
+
+.font-large {
+    .chapter_text {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    .chapter_title {
+        font-size: 1.8rem;
+    }
+    .chapter_subtitle {
+        font-size: 0.8rem;
+    }
 }
 
 /* BARRA PROGRESSO */
-
 .footer {
     position: fixed;
     background-color: var(--branco);
@@ -501,7 +412,7 @@ body {
 
 .progress-bar {
     flex: 1;
-    height: 0.3rem;
+    height: 0.2rem;
     background-color: var(--cinza-claro);
     overflow: hidden;
 }
@@ -513,7 +424,6 @@ body {
 }
 
 /* SUMÁRIO */
-
 .page .menu {
     display: flex;
     flex-direction: column;
@@ -552,12 +462,9 @@ body {
     font-size: 1rem;
 }
 
-
-
 .navigation {
     margin-top: 1.5625rem;
 }
-
 
 /* MODO NOTURNO */ 
 
