@@ -8,7 +8,6 @@ const Header = ({ chapterIndex }) => {
   const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'centralizado');
   const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
   
-
   const handleScroll = useCallback(() => {
     const headerElement = document.querySelector('.header');
     const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -54,12 +53,14 @@ const Header = ({ chapterIndex }) => {
   const adjustFontSize = (newSize) => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   
-    document.body.classList.remove('font-compact', 'font-large');
+    document.body.classList.remove('font-compact', 'font-large', 'font-super-grande');
   
     if (newSize === 'compacto') {
       document.body.classList.add('font-compact');
     } else if (newSize === 'grande') {
       document.body.classList.add('font-large');
+    } else if (newSize === 'super-grande') {
+      document.body.classList.add('font-super-grande');
     }
   
     localStorage.setItem('font-size', newSize);
@@ -67,21 +68,19 @@ const Header = ({ chapterIndex }) => {
   
     window.scrollTo(0, scrollTop);
   };
-  
 
   const adjustTextAlignment = (newAlignment) => {
-  document.body.classList.remove('align-left', 'align-center');
+    document.body.classList.remove('align-left', 'align-center');
 
-  if (newAlignment === 'esquerda') {
-    document.body.classList.add('align-left');
-  } else if (newAlignment === 'centralizado') {
-    document.body.classList.add('align-center');
-  }
+    if (newAlignment === 'esquerda') {
+      document.body.classList.add('align-left');
+    } else if (newAlignment === 'centralizado') {
+      document.body.classList.add('align-center');
+    }
 
-  localStorage.setItem('alignment', newAlignment);
-  setSelectedAlignment(newAlignment);
-};
-
+    localStorage.setItem('alignment', newAlignment);
+    setSelectedAlignment(newAlignment);
+  };
 
   useEffect(() => {
     if (isDarkMode) {
@@ -94,6 +93,8 @@ const Header = ({ chapterIndex }) => {
       document.body.classList.add('font-large');
     } else if (selectedFontSize === 'compacto') {
       document.body.classList.add('font-compact');
+    } else if (selectedFontSize === 'super-grande') {
+      document.body.classList.add('font-super-grande');
     }
 
     if (selectedAlignment === 'esquerda') {
@@ -121,7 +122,7 @@ const Header = ({ chapterIndex }) => {
 
       <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
         <div className="font-options">
-          <p>-</p>
+          <button className='mds'>M</button>
           <div className="buttons">
             <button
               className={`ajust-option ${selectedFontSize === 'compacto' ? 'active' : ''}`}
@@ -135,7 +136,6 @@ const Header = ({ chapterIndex }) => {
             >
               P
             </button>
-            
             <button
               className={`ajust-option ${selectedFontSize === 'grande' ? 'active' : ''}`}
               onClick={() => adjustFontSize('grande')}
@@ -144,13 +144,13 @@ const Header = ({ chapterIndex }) => {
             </button>
 
             <button
-              className={`ajust-option ${selectedFontSize === 'grande' ? 'active' : ''}`}
-              onClick={() => adjustFontSize('grande')}
+              className={`ajust-option ${selectedFontSize === 'super-grande' ? 'active' : ''}`}
+              onClick={() => adjustFontSize('super-grande')}
             >
-              
+              SG
             </button>
           </div>
-          <p>+</p>
+          <button className='mds'>M</button>
         </div>
 
         <div className="align-options">
@@ -167,7 +167,6 @@ const Header = ({ chapterIndex }) => {
             E
           </button>
         </div>
-
       </div>
     </div>
   );

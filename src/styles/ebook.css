@@ -3,7 +3,8 @@
     --preto: #131313;
     --branco: #fefefe;
     --cinza-escuro: #1e1e1e;
-    --cinza-claro: #f7f7f7;
+    --cinza-medio: #6f6f6f;
+    --cinza-claro: #cacaca;
     --cor-1: rgb(0, 52, 0);
     --font-text: "Crimson Text", serif;;
     --font-titulos: "Crimson Pro", serif;;
@@ -288,17 +289,18 @@ body {
     bottom: -100%; 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
     align-items: center;
     transition: bottom 0.3s ease, opacity 0.3s ease; 
     z-index: 999; 
     opacity: 0; 
     color: var(--branco);
+    padding: 0 3.2rem;
 }
 
 .menu-config.visible {
-    bottom: 0.2rem; 
+    bottom: 0; 
     opacity: 1; 
 }
 
@@ -307,8 +309,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    background-color: pink;
+    gap: 0.5rem;
+}
+
+.mds {
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 .menu-config .font-options {
@@ -316,17 +322,49 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
+    gap: 0.6rem;
 }
 
 .menu-config .font-options .buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem;
+    position: relative; /* Para possibilitar a linha atrás dos botões */
+  }
+  
+  .menu-config .font-options .buttons::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: var(--cinza-claro); /* Cor da linha */
+    transform: translateY(-30%);
+    z-index: -1; 
+  }
+  
+
+.menu-config .align-options .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .menu-config .font-options .buttons button {
+    background-color: var(--cinza-medio);
+    color: transparent;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    border: solid 0.1rem var(--cinza-claro);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    
+}
+
+.menu-config .align-options button {
     background-color: var(--branco);
     color: transparent;
     width: 0.8rem;
@@ -334,27 +372,19 @@ body {
     border-radius: 100%;
     border: solid 0.1rem var(--branco);
     transition: background-color 0.3s ease, border-color 0.3s ease;
+    
 }
 
 .menu-config .font-options .buttons button.active {
     background-color: #4caf50; 
-    border-color: #4caf50;    
+    border: solid 0.1rem var(--cinza-claro);    
 }
 
-.menu-config .align-options .ajust-option {
-    background-color: var(--branco);
-    color: transparent;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 100%;
-    border: solid 0.1rem var(--branco);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+.menu-config .align-options button.active {
+    background-color: #4caf50; 
+    border: solid 0.1rem var(--branco);   
 }
 
-.menu-config .align-options .ajust-option.active {
-    background-color: #4caf50; /* Cor de fundo para o botão ativo */
-    border-color: #4caf50;    /* Alterar também a borda para combinar */
-}
 
 
 /* Opções de alinhamento */
@@ -376,12 +406,6 @@ body {
         font-size: 0.9rem;
         line-height: 1.4rem;
     }
-    .chapter_title {
-        font-size: 1.2rem;
-    }
-    .chapter_subtitle {
-        font-size: 0.6rem;
-    }
 }
 
 .font-large {
@@ -389,18 +413,19 @@ body {
         font-size: 1.5rem;
         line-height: 2.2rem;
     }
-    .chapter_title {
-        font-size: 1.8rem;
-    }
-    .chapter_subtitle {
-        font-size: 0.8rem;
-    }
+
 }
+.font-super-grande {
+    .chapter_text {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}  
 
 /* BARRA PROGRESSO */
 .footer {
     position: fixed;
-    background-color: var(--branco);
+    background-color: var(--preto);
     bottom: 0;
     left: 0;
     width: 100%;
@@ -435,6 +460,7 @@ body {
     flex-direction: column;
     gap: 0.3125rem;
     margin-top: 2rem;
+    background-color: pink;
 }
 
 .menu-item {
@@ -442,9 +468,8 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 0.625rem 1.2rem;
-    padding-right: 3rem;
-    border-radius: 0.3125rem;
-    background-color: var(--cinza-claro);
+    padding-right: 2rem;
+    background-color: var(--branco);
 }
 
 .menu-index {

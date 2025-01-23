@@ -25,7 +25,7 @@ const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover }) => {
         goToSummary={goToSummary} 
         
       />
-      
+      <Footer />
       <Header chapterIndex={chapterNumber}/>
       <div className="chapter_head">
         <span className="chapter_subtitle">Chapter {chapterRoman}</span>
@@ -45,7 +45,7 @@ const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover }) => {
 
       
 
-      <Footer />
+      
     </div>
   );
 };
