@@ -1,4 +1,7 @@
-/* VARIÁVEIS E RESETS */
+/* VARIÁVEIS E RESETS
+--font-text: "Gentium Plus";
+
+*/
 :root {
     --preto: #131313;
     --branco: #fefefe;
@@ -6,7 +9,7 @@
     --cinza-medio: #6f6f6f;
     --cinza-claro: #cacaca;
     --cor-1: rgb(0, 52, 0);
-    --font-text: "Crimson Text", serif;;
+    --font-text: "Crimson Pro";
     --font-titulos: "Crimson Pro", serif;;
     --font-alternativa: "Onest";
     --font-size: 1.1rem;
@@ -145,13 +148,13 @@ body {
 }
 
 .chapter_title {
-    font-family: var(--font-titulos);
+    font-family: var(--font-text);
     font-weight: 700;
     color: var(--preto);
     text-align: center;
     font-optical-sizing: auto;
     line-height: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .chapter_subtitle {
