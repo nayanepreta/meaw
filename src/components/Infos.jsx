@@ -14,11 +14,26 @@ const Infos = ({
 
 return (
   <div className="page info">
-    <p className="info_nome_autor">{autor}</p>
-    <h1 className="info_titulo_livro">{titulo}</h1>
+
+    <div className='info_head'>
+      <img 
+          src="https://placehold.co/25" 
+          alt="Imagem Placeholder" 
+          loading="lazy" 
+        />
+      <p>{autor}</p>
+    </div>
+
+    <div className='info_titulo'>
+      <img 
+        src="https://placehold.co/350x250" 
+        alt={editora} loading="lazy"/>
+      <p>Alice’s Adventures in Wonderland</p>
+    </div>
+
     <img 
-      className="info_logo_editora" 
-      src="https://via.placeholder.com/50" 
+      className="info_logo" 
+      src="https://placehold.co/100" 
       alt={editora} loading="lazy"/>
     
     <Navigation 

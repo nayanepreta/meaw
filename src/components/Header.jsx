@@ -122,7 +122,7 @@ const Header = ({ chapterIndex }) => {
 
       <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
         <div className="font-options">
-          <button className='mds'>M</button>
+          <button className='mds aumentar'>M</button>
           <div className="buttons">
             <button
               className={`ajust-option ${selectedFontSize === 'compacto' ? 'active' : ''}`}
@@ -150,7 +150,7 @@ const Header = ({ chapterIndex }) => {
               SG
             </button>
           </div>
-          <button className='mds'>M</button>
+          <button className='mds diminuir'>M</button>
         </div>
 
         <div className="align-options">

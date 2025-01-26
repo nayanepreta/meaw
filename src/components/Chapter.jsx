@@ -27,6 +27,7 @@ const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover }) => {
       />
       <Footer />
       <Header chapterIndex={chapterNumber}/>
+      
       <div className="chapter_head">
         <span className="chapter_subtitle">Chapter {chapterRoman}</span>
         <h2 className="chapter_title">{chapterTitle}</h2>

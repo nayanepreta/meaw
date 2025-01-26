@@ -23,27 +23,37 @@ useEffect(() => {
     <div className="page summary">
       <img 
         className="icone_cabeco" 
-        src="https://via.placeholder.com/25" 
+        src="https://placehold.co/25" 
         alt="Imagem Placeholder" 
         loading="lazy" 
       />
 
     <div className="menu-container">
+
+      <div className="menu-item">
+        <p className="menu-titulo">Sumário</p>
+      </div>
+
       <div className="menu-item">
         <button 
           className="menu-button" 
-          onClick={() => goToChapter(0)}>
-          Cover
+          onClick={() => goToChapter(2)}>
+            Introdução
         </button>
-    </div>
+      </div>
 
-    <div className="menu-item">
-      <button 
-        className="menu-button" 
-        onClick={() => goToChapter(2)}>
-          Introducion
-      </button>
-    </div>
+      <div className='menu-fotos'>
+        <img 
+          src="https://placehold.co/300x150" 
+          loading="lazy"/>
+      </div>
+
+      <div className="menu-item">
+        <p 
+          className="menu-titulo" >
+            Alice’s Adventures in Wonderland
+        </p>
+      </div>
 
     <div className="menu-item">
       <button 
@@ -53,12 +63,7 @@ useEffect(() => {
       </button>
     </div>
 
-    <div className="menu-item">
-      <p 
-        className="menu-titulo" >
-          Alice’s Adventures in Wonderland
-      </p>
-    </div>
+    
 
     {Object.entries(chapters).slice(1).map(([chapterNumber, chapterData], index) => (
       <div key={chapterNumber} className="menu-item">
@@ -68,6 +73,7 @@ useEffect(() => {
           onClick={() => goToChapter(Number(chapterNumber) + 4)}>
             {chapterData.title}
         </button>
+        <span className="menu-index">{Number(chapterNumber)}</span>
       </div>
     ))}
 
