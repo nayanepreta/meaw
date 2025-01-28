@@ -26,14 +26,14 @@ return (
 
     <div className='info_titulo'>
       <img 
-        src="https://placehold.co/350x250" 
+        src="https://placehold.co/300x200" 
         alt={editora} loading="lazy"/>
-      <p>Alice’s Adventures in Wonderland</p>
+      <p>Alice’s Adventures in Wonderland<br/>Through the Looking-Glass</p>
     </div>
 
     <img 
       className="info_logo" 
-      src="https://placehold.co/100" 
+      src="https://placehold.co/50" 
       alt={editora} loading="lazy"/>
     
     <Navigation 

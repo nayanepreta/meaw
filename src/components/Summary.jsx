@@ -34,18 +34,18 @@ useEffect(() => {
         <p className="menu-titulo">Sumário</p>
       </div>
 
+      <div className='menu-fotos'>
+        <img 
+          src="https://placehold.co/300x150" 
+          loading="lazy"/>
+      </div>
+
       <div className="menu-item">
         <button 
           className="menu-button" 
           onClick={() => goToChapter(2)}>
             Introdução
         </button>
-      </div>
-
-      <div className='menu-fotos'>
-        <img 
-          src="https://placehold.co/300x150" 
-          loading="lazy"/>
       </div>
 
       <div className="menu-item">
@@ -77,6 +77,21 @@ useEffect(() => {
       </div>
     ))}
 
+      <div className="menu-item">
+        <p 
+          className="menu-titulo" >
+            Through the Looking-Glass
+        </p>
+      </div>
+
+    <div className="menu-item">
+      <button 
+        className="menu-button" 
+        onClick={() => goToChapter(17)}>
+          Afterword
+      </button>
+    </div>
+
     <div className="menu-item">
       <button 
         className="menu-button" 
@@ -84,6 +99,7 @@ useEffect(() => {
           Credits
       </button>
     </div>
+
   </div>
   <Navigation 
         goToCover={goToCover} 
