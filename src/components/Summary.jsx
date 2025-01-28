@@ -51,7 +51,7 @@ useEffect(() => {
       <div className="menu-item">
         <p 
           className="menu-titulo" >
-            Alice’s Adventures in Wonderland
+            Alice’s Adventures in<br/> Wonderland
         </p>
       </div>
 
