@@ -30,10 +30,6 @@ useEffect(() => {
 
     <div className="menu-container">
 
-      <div className="menu-item">
-        <p className="menu-titulo">Sumário</p>
-      </div>
-
       <div className='menu-fotos'>
         <img 
           src="https://placehold.co/300x150" 
@@ -44,7 +40,7 @@ useEffect(() => {
         <button 
           className="menu-button" 
           onClick={() => goToChapter(2)}>
-            Introdução
+            Introduction
         </button>
       </div>
 

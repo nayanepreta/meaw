@@ -8,7 +8,7 @@ const chapters = {
     ano: "2025"
   },
 
-  1: createChapter("Down the Rabbit-Hole", "I", "https://via.placeholder.com/25", [
+  1: createChapter("Down the Rabbit-Hole", "I", "https://placehold.co/25", [
         {
           text: "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversation?’",
           className: "chapter_text"
@@ -93,7 +93,7 @@ const chapters = {
         }
     ]),
 
-  2: createChapter("The Pool of Tears", "II", "https://via.placeholder.com/25", 
+  2: createChapter("The Pool of Tears", "II", "https://placehold.co/25", 
     [
         {
           text: "’Curiouser and curiouser!’ cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English); ‘now I’m opening out like the largest telescope that ever was! Good-bye, feet!’ (for when she looked down at her feet, they seemed to be almost out of sight, they were getting so far off). ‘Oh, my poor little feet, I wonder who will put on your shoes and stockings for you now, dears? I’m sure I shan’t be able! I shall be a great deal too far off to trouble myself about you: you must manage the best way you can; —but I must be kind to them,’ thought Alice, ‘or perhaps they won’t walk the way I want to go! Let me see: I’ll give them a new pair of boots every Christmas.’",
@@ -170,7 +170,7 @@ const chapters = {
         }
       ]),
     
-  3: createChapter("A Caucus-Race and a Long Tale", "III", "https://via.placeholder.com/25", [
+  3: createChapter("A Caucus-Race and a Long Tale", "III", "https://placehold.co/25", [
         {
           text: "They were indeed a queer-looking party that assembled on the bank—the birds with draggled feathers, the animals with their fur clinging close to them, and all dripping wet, cross, and uncomfortable.",
           className: "chapter_text"
@@ -320,7 +320,7 @@ const chapters = {
         
         }]),
 
-  4: createChapter("The Rabbit Sends in a Little Bill", "IV", "https://via.placeholder.com/25",[
+  4: createChapter("The Rabbit Sends in a Little Bill", "IV", "https://placehold.co/25",[
         {
           text: "It was the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something; and she heard it muttering to itself ‘The Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She’ll get me executed, as sure as ferrets are ferrets! Where can I have dropped them, I wonder?’ Alice guessed in a moment that it was looking for the fan and the pair of white kid gloves, and she very good-naturedly began hunting about for them, but they were nowhere to be seen—everything seemed to have changed since her swim in the pool, and the great hall, with the glass table and the little door, had vanished completely.",
           className: "chapter_text"
@@ -451,7 +451,7 @@ const chapters = {
           
         }]
       ),
-  5: createChapter("Advice from a Caterpillar", "V", "https://via.placeholder.com/25", [
+  5: createChapter("Advice from a Caterpillar", "V", "https://placehold.co/25", [
         {
           text: "The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.",
           className: "chapter_text"
@@ -682,7 +682,7 @@ const chapters = {
 
         }]
       ),
-  6: createChapter("Pig and Pepper", "VI", "https://via.placeholder.com/25",[
+  6: createChapter("Pig and Pepper", "VI", "https://placehold.co/25",[
         {
           text: "For a minute or two she stood looking at the house, and wondering what to do next, when suddenly a footman in livery came running out of the wood—(she considered him to be a footman because he was in livery: otherwise, judging by his face only, she would have called him a fish)—and rapped loudly at the door with his knuckles. It was opened by another footman in livery, with a round face, and large eyes like a frog; and both footmen, Alice noticed, had powdered hair that curled all over their heads. She felt very curious to know what it was all about, and crept a little way out of the wood to listen.",
           className: "chapter_text"
@@ -915,7 +915,7 @@ const chapters = {
 
         }] ),
         
-  7: createChapter("A Mad Tea-Party", "VII", "https://via.placeholder.com/25", [
+  7: createChapter("A Mad Tea-Party", "VII", "https://placehold.co/25", [
     { 
       text: "There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. ‘Very uncomfortable for the Dormouse,’ thought Alice; ‘only, as it’s asleep, I suppose it doesn’t mind.’" ,
       className: "chapter_text"
@@ -1210,7 +1210,7 @@ const chapters = {
     }
   ]),
 
-  8: createChapter("The Queen’s Croquet- Ground", "VIII", "https://via.placeholder.com/25", [
+  8: createChapter("The Queen’s Croquet- Ground", "VIII", "https://placehold.co/25", [
     { 
       text: "A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say, ‘Look out now, Five! Don’t go splashing paint over me like that!’" ,
       className: "chapter_text"
@@ -1427,7 +1427,7 @@ const chapters = {
     }
   ]),
 
-  9: createChapter("The Mock Turtle’s Story", "IX", "https://via.placeholder.com/25", [
+  9: createChapter("The Mock Turtle’s Story", "IX", "https://placehold.co/25", [
     { 
       text: "’You can’t think how glad I am to see you again, you dear old thing!’ said the Duchess, as she tucked her arm affectionately into Alice’s, and they walked off together." ,
       className: "chapter_text"
@@ -1704,7 +1704,7 @@ const chapters = {
     }
   ]),
 
-  10: createChapter("The Lobster Quadrille", "X", "https://via.placeholder.com/25", [
+  10: createChapter("The Lobster Quadrille", "X", "https://placehold.co/25", [
     { 
       text: "The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Alice, and tried to speak, but for a minute or two sobs choked his voice. ‘Same as if he had a bone in his throat,’ said the Gryphon: and it set to work shaking him and punching him in the back. At last the Mock Turtle recovered his voice, and, with tears running down his cheeks, he went on again:—" ,
       className: "chapter_text"
@@ -1951,7 +1951,7 @@ const chapters = {
     }
   ]),
 
-  11: createChapter("Who Stole the Tarts?", "XI", "https://via.placeholder.com/25", [
+  11: createChapter("Who Stole the Tarts?", "XI", "https://placehold.co/25", [
     { 
       text: "The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them—’I wish they’d get the trial done,’ she thought, ‘and hand round the refreshments!’ But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time." ,
       className: "chapter_text"
@@ -2159,7 +2159,7 @@ const chapters = {
     }
   ]),
 
-  12: createChapter("Alice’s Evidence", "XII", "https://via.placeholder.com/25", [
+  12: createChapter("Alice’s Evidence", "XII", "https://placehold.co/25", [
     { 
       text: "’Here!’ cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, reminding her very much of a globe of goldfish she had accidentally upset the week before." ,
       className: "chapter_text"

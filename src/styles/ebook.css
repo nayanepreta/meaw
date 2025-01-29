@@ -207,7 +207,7 @@ body {
     
     font-family: var(--font-text);
     color: var(--preto);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .chapter_content {
@@ -320,6 +320,7 @@ body {
     color: var(--branco);
     cursor: pointer; 
     border: none;
+    display: flex;
 }
 
 .header_titulo {
@@ -343,7 +344,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
     align-items: center;
     transition: bottom 0.3s ease, opacity 0.3s ease; 
     z-index: 999; 
@@ -356,69 +356,26 @@ body {
     opacity: 1; 
 }
 
-.menu-config .align-options {
+.menu-config div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-}
-
-.menu-config .font-options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.menu-config .font-options .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1.8rem;
-}
-
-
-
-.menu-config .align-options .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.menu-config .font-options .buttons button {
-    background-color: var(--preto);
-    color: transparent;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 100%;
-    border: solid 0.1rem var(--cinza-claro);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    box-shadow: 0 0 0 3px var(--preto); 
+    color: var(--cinza-medio);
 }
 
 .menu-config .align-options button {
-    background-color: var(--branco);
-    color: transparent;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 100%;
-    border: solid 0.1rem var(--branco);
     transition: background-color 0.3s ease, border-color 0.3s ease;
     
 }
 
-.menu-config .font-options .buttons button.active {
-    background-color: var(--branco); 
-    border: solid 0.1rem var(--cinza-claro);    
+.menu-config .font-options button {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.menu-config .align-options button.active {
-    background-color: var(--cinza-claro); 
-    border: solid 0.1rem var(--branco);   
-}
+
+
 
 
 /* BARRA PROGRESSO */
@@ -458,7 +415,7 @@ body {
 .menu-container {
     display: flex;
     flex-direction: column;
-    gap: 0.3125rem;
+    gap: 0.8rem;
     margin-top: 2rem;
     align-items: center;
     font-size: 0.9rem;
@@ -478,8 +435,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.625rem 0rem;
-    background-color: var(--branco);
 }
 
 .menu-index {
