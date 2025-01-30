@@ -2,6 +2,7 @@
 --font-text: "Gentium Plus";
 
 */
+
 :root {
     --preto: #131313;
     --branco: #fefefe;
@@ -11,7 +12,7 @@
     --lilas-escuro: #25092f;
     --lilas-claro: #f2bfdd;
     --cor-1: rgb(0, 52, 0);
-    --font-text: "STIX Two Text", serif;
+    --font-text: "Buenard", serif;
     --font-titulos: "EB Garamond", serif;
     --font-alternativa: "Onest";
     --font-size: 1.1rem;
@@ -200,14 +201,14 @@ body {
     text-align: center;
     font-optical-sizing: auto;
     line-height: 2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .chapter_subtitle {
     
     font-family: var(--font-text);
     color: var(--preto);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .chapter_content {
@@ -226,7 +227,7 @@ body {
     width: 100%;
     padding: 0 0.8rem;
     margin-bottom: 0.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6rem;
 }
 
@@ -325,9 +326,9 @@ body {
 
 .header_titulo {
     color: var(--branco);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     
-    font-family: var(--font-alternativa);
+    font-family: var(--font-text);
     font-weight: 500;
 }
 
@@ -418,7 +419,7 @@ body {
     gap: 0.8rem;
     margin-top: 2rem;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .menu-titulo {
@@ -440,7 +441,7 @@ body {
 .menu-index {
     text-align: center;
     font-family: var(--font-text);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -449,7 +450,7 @@ body {
     border: none;
     cursor: pointer;
     font-family: var(--font-text);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .navigation {

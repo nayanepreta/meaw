@@ -2,11 +2,7 @@ import React, { useEffect } from 'react';
 import chapters from '../control/chapters';
 import Navigation from './Navigation';
 
-const Credits = ({ 
-  onNext, 
-  goToCover,
-  goToSummary,
-   }) => {
+const Credits = ({onNext, goToCover, goToSummary}) => {
 
   const chapterTitle = "Créditos";
   
