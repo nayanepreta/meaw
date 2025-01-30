@@ -13,8 +13,7 @@
     --lilas-claro: #f2bfdd;
     --cor-1: rgb(0, 52, 0);
     --font-text: "Buenard", serif;
-    --font-titulos: "EB Garamond", serif;
-    --font-alternativa: "Onest";
+    --font-titulos: "Buenard", serif;
     --font-size: 1.1rem;
 }
 
@@ -92,18 +91,6 @@ body {
     height: 100%; 
     width: auto;
     overflow: hidden;
-}
-
-.cover_titulo {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-    position: absolute;
-    color: var(--branco);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -6.2rem;
-    font-family: var(--font-tituloss);
 }
 
 .cover_nome_autor {
@@ -270,16 +257,19 @@ body {
 
 /* Opções tamanho de fontes */
 .font-compact {
-    .chapter_text {
+    .chapter_text, .chapter_title {
         font-size: 0.9rem;
         line-height: 1.4rem;
     }
 }
 
 .font-large {
-    .chapter_text {
-        font-size: 1.5rem;
+    .chapter_text, .chapter_title  {
+        font-size: 1.4rem;
         line-height: 2.2rem;
+    }
+    .chapter_subtitle {
+        font-size: 1rem;
     }
 
 }
@@ -287,6 +277,9 @@ body {
     .chapter_text, .chapter_title {
         font-size: 3rem;
         line-height: 4rem;
+    }
+    .chapter_subtitle {
+        font-size: 2rem;
     }
 
 }  
@@ -467,12 +460,15 @@ body.dark-mode {
     .info_titulo_livro,
     .info_nome_autor,
     .menu-index,
-    .menu-button {
+    .menu-button,
+    .menu-titulo,
+    .info p {
         color: var(--branco);
     }
+
     .header,
-    .navigation button,
-    .menu-item {
+    .menu-config,
+    .navigation button {
         background-color: var(--cinza-escuro);
     }
 }

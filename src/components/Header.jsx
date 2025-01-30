@@ -181,6 +181,16 @@ const Header = ({ chapterIndex }) => {
             />
           </button>
           <button
+            className={`ajust-option ${selectedFontSize === 'grande' ? 'active' : ''}`}
+            onClick={() => adjustFontSize('grande')}
+          >
+            <img
+              src="https://placehold.co/20"
+              alt="Fonte grande"
+              loading="lazy"
+            />
+          </button>
+          <button
             className={`ajust-option ${selectedFontSize === 'super-grande' ? 'active' : ''}`}
             onClick={() => adjustFontSize('super-grande')}
           >
