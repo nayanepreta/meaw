@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import DOMPurify from 'dompurify';
-import chapters from '../control/chapters';
+import book_infos from '../control/book_infos';
+import chapters from '../control/chapters_in_wonderland';
 import Header from '../components/Header';
 import Navigation from './Navigation';
 import Footer from './Footer'; 
@@ -9,11 +10,11 @@ const Chapter = ({  chapterNumber, onNext, goToSummary, goToCover }) => {
   const { title: chapterTitle, chap: chapterRoman, img: image, texts: chapterTexts } = chapters[chapterNumber];
 
   useEffect(() => {
-    const bookTitleT = chapters[0].titulo;
+    const bookTitleT = book_infos.title;
     document.title = `${chapterTitle} | ${bookTitleT}`;
     window.scrollTo(0, 0);
     return () => {
-      document.title = chapters[0].titulo;
+      document.title = book_infos.title;
     };
   }, [chapterTitle]);
 

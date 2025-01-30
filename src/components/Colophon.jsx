@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import chapters from '../control/chapters';
+import chapters from '../control/chapters_in_wonderland';
 import Navigation from './Navigation';
 
 const Colophon = ({ 

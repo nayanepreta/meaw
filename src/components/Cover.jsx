@@ -1,8 +1,8 @@
 import React from 'react';
-import chapters from '../control/chapters';
+import book_infos from '../control/book_infos';
 
 const Cover = ({ onNext }) => {
-  const { titulo, autor, editora } = chapters[0];
+  const { title: titulo, publisher: editora, author: autor } = book_infos;
 
   return (
     <div className="cover">
@@ -10,15 +10,6 @@ const Cover = ({ onNext }) => {
         className="cover-image" 
         src="https://raw.githubusercontent.com/nayanepreta/alice-in-wonderland/refs/heads/main/src/assets/capa.png" 
         alt={`Capa do livro ${titulo}`} 
-        loading="lazy" 
-      />
-
-      <p className="cover-author">{autor}</p>
-
-      <img 
-        className="cover-publisher-logo" 
-        src="https://via.placeholder.com/25" 
-        alt={`Logo da editora ${editora}`} 
         loading="lazy" 
       />
 

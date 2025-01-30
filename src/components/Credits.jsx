@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import chapters from '../control/chapters';
+import book_infos from '../control/book_infos';
 import Navigation from './Navigation';
 
 const Credits = ({onNext, goToCover, goToSummary}) => {
@@ -7,12 +7,13 @@ const Credits = ({onNext, goToCover, goToSummary}) => {
   const chapterTitle = "Créditos";
   
     useEffect(() => {
-      const bookTitleT = chapters[0].titulo; 
+      const bookTitleT = book_infos.title; 
       document.title = `${chapterTitle} • ${bookTitleT}`;
       return () => {
-        document.title = chapters[0].titulo; 
+        document.title = book_infos.title; 
       };
     }, [chapterTitle]);
+
   return (
     <div className="page">
       Créditos

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import chapters from '../control/chapters';
+import book_infos from '../control/book_infos';
+import chapters_in_wonderland from '../control/chapters_in_wonderland';
 
 const Header = ({ chapterIndex }) => {
   // Estados
@@ -8,7 +9,7 @@ const Header = ({ chapterIndex }) => {
   const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
   const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'centralizado');
   const [showTitle, setShowTitle] = useState(false); // Estado para alternar entre autor e título
-  const adicionarTitulo = () => chapters[chapterIndex]?.title || '';
+  const adicionarTitulo = () => chapters_in_wonderland[chapterIndex]?.title || '';
   
   // Função para detectar rolagem e ajustar a visibilidade do cabeçalho e o estado do título
   const handleScroll = useCallback(() => {

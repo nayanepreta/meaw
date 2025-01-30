@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import chapters from '../control/chapters';
+import book_infos from '../control/book_infos';
+import chapters_in_wonderland from '../control/chapters_in_wonderland';
+import chapters_looking_glass from '../control/chapters_looking_glass';
 import Navigation from './Navigation';
 
 const Summary = ({ 
@@ -12,10 +14,10 @@ const Summary = ({
 const chapterTitle = "Summary";
 
 useEffect(() => {
-  const bookTitleT = chapters[0].titulo; 
+  const bookTitleT = book_infos.title; 
   document.title = `${chapterTitle} | ${bookTitleT}`;
   return () => {
-    document.title = chapters[0].titulo; 
+    document.title = book_infos.title; 
   };
 }, [chapterTitle]);
 
@@ -61,7 +63,7 @@ useEffect(() => {
 
     
 
-    {Object.entries(chapters).slice(1).map(([chapterNumber, chapterData], index) => (
+    {Object.entries(chapters_in_wonderland).slice(1).map(([chapterNumber, chapterData], index) => (
       <div key={chapterNumber} className="menu-item">
         <span className="menu-index">{chapterData.chap}</span>
         <button 
@@ -73,6 +75,8 @@ useEffect(() => {
       </div>
     ))}
 
+   
+
       <div className="menu-item">
         <p 
           className="menu-titulo" >
@@ -80,6 +84,18 @@ useEffect(() => {
         </p>
       </div>
 
+      {Object.entries(chapters_looking_glass).slice(1).map(([chapterNumber, chapterData], index) => (
+      <div key={chapterNumber} className="menu-item">
+        <span className="menu-index">{chapterData.chap}</span>
+        <button 
+          className="menu-button" 
+          onClick={() => goToChapter(Number(chapterNumber) + 4)}>
+            {chapterData.title}
+        </button>
+        <span className="menu-index">{Number(chapterNumber)}</span>
+      </div>
+    ))}
+    
     <div className="menu-item">
       <button 
         className="menu-button" 
